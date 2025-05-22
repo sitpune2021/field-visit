@@ -27,4 +27,15 @@ $routes->match(['get','post'],'/AddOfficePro'                   , 'Office\Office
 $routes->match(['get','post'],'/updateOffice'                   , 'Office\OfficeController::updateOffice');
 $routes->match(['get','post'],'/updateOfficePro'                , 'Office\OfficeController::updateOfficePro');
 
+$routes->match(['get','post'],'/Taluka'                         , 'Taluka\TalukaController::Taluka');
+$routes->match(['get','post'],'/AddTaluka'                      , 'Taluka\TalukaController::AddTaluka');
+$routes->match(['get','post'],'/AddTalukaPro'                   , 'Taluka\TalukaController::AddTalukaPro');
+$routes->match(['get','post'],'/UpdateTaluka'                   , 'Taluka\TalukaController::UpdateTaluka');
+$routes->match(['get','post'],'/UpdateTalukaPro'                , 'Taluka\TalukaController::UpdateTalukaPro');
+
+$routes->match(['get','post'],'/Officer'                        , 'Officer\OfficerController::Officer');
+$routes->match(['get','post'],'/AddOfficer'                     , 'Officer\OfficerController::AddOfficer');
+$routes->match(['get','post'],'/AddOfficerPro'                  , 'Officer\OfficerController::AddOfficerPro');
+$routes->match(['get','post'],'/UpdateOfficer'                  , 'Officer\OfficerController::UpdateOfficer');
+$routes->match(['get','post'],'/UpdateOfficerPro'               , 'Officer\OfficerController::UpdateOfficerPro');
 /*******************************************************************************************************/

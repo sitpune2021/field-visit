@@ -7,7 +7,7 @@
     <meta name="description" content="Admiro admin is super flexible, powerful, clean &amp; modern responsive bootstrap 5 admin template with unlimited possibilities.">
     <meta name="keywords" content="admin template, Admiro admin template, best javascript admin, dashboard template, bootstrap admin template, responsive admin template, web app">
     <meta name="author" content="pixelstrap">
-    <title>Field Visit - अ‍ॅड कार्यालय प्रकार </title>
+    <title>Field Visit - अ‍ॅड कार्यालय </title>
    
     <?php echo view('Include/header'); ?>
 
@@ -16,7 +16,7 @@
             <div class="page-title">
               <div class="row">
                 <div class="col-sm-6 col-12">
-                  <h2>अ‍ॅड कार्यालय  प्रकार </h2>
+                  <h2>अ‍ॅड कार्यालय </h2>
                 </div>
                 <div class="col-sm-6 col-12">
                   <ol class="breadcrumb">
@@ -35,19 +35,61 @@
                 <div class="card">
                   <div class="card-body basic-form">
                     <div class="card-wrapper border rounded-3">
-                       <?php echo form_open('/AddOfficeTypePro', array('autocomplete' => 'off','class' => 'p-0 row')); ?>
-                        <div class="mb-4 mt-3 col-md-6">
+                       <?php echo form_open('/AddOfficePro', array('autocomplete' => 'off','class' => 'p-0 row')); ?>
+
+                       <div class="row mb-4 mt-3">
+
+                       <div class="col-md-6 mb-3">
+                          <label class="form-label" for="exampleFormControlInput1">तालुका  <span class="mandatory">*</span></label>
+                          <?php $talukaid = isset($talukaid) ? $talukaid : set_value('taluka'); ?>
+                            <select class="form-select" aria-label="Default select example" name="taluka" id="taluka">
+                                <option value="">तालुका निवडा</option>
+                                <?php foreach($talukaD as $taluka) { ?>
+                                    <option value="<?= $taluka['id']; ?>" 
+                                        <?php if($talukaid == $taluka['id']) { echo 'selected'; } ?>>
+                                        <?= $taluka['taluka']; ?>
+                                    </option>
+                                <?php } ?>
+                            </select>
+                            <?php if (isset($validation) && $validation->hasError('taluka')){ ?>
+                                <div class="text-danger" style="text-align: left; margin-left: 5px; color: #ec536c!important;">
+                                    <?= $validation->getError('taluka'); ?>
+                                </div>
+                            <?php } ?>
+                        </div>
+
+                       <div class="col-md-6">
                           <label class="form-label" for="exampleFormControlInput1">कार्यालय प्रकार <span class="mandatory">*</span></label>
-                          <input class="form-control AlphabetsOnlyWithSpace" id="office_type" name="office_type" type="text" placeholder="कार्यालय प्रकार प्रविष्ठ करा.">
+                          <?php $officeTypeid = isset($officeTypeid) ? $officeTypeid : set_value('office_type'); ?>
+                            <select class="form-select" aria-label="Default select example" name="office_type" id="office_type">
+                                <option value="">कार्यालय प्रकार निवडा</option>
+                                <?php foreach($officeTypeD as $officeType) { ?>
+                                    <option value="<?= $officeType['id']; ?>" 
+                                        <?php if($officeTypeid == $officeType['id']) { echo 'selected'; } ?>>
+                                        <?= $officeType['office_type']; ?>
+                                    </option>
+                                <?php } ?>
+                            </select>
                             <?php if (isset($validation) && $validation->hasError('office_type')){ ?>
                                 <div class="text-danger" style="text-align: left; margin-left: 5px; color: #ec536c!important;">
                                     <?= $validation->getError('office_type'); ?>
                                 </div>
-                            <?php } else if(session()->getFlashdata('errorOfficeype')){ ?>
+                            <?php } ?>
+                        </div>
+
+                        <div class="col-md-6">
+                          <label class="form-label" for="exampleFormControlInput1">कार्यालय <span class="mandatory">*</span></label>
+                          <input class="form-control AlphabetsOnlyWithSpace" id="office" name="office" type="text" placeholder="कार्यालय प्रविष्ठ करा." value="<?= set_value('office'); ?>">
+                            <?php if (isset($validation) && $validation->hasError('office')){ ?>
+                                <div class="text-danger" style="text-align: left; margin-left: 5px; color: #ec536c!important;">
+                                    <?= $validation->getError('office'); ?>
+                                </div>
+                            <?php } else if(session()->getFlashdata('errorOffice')){ ?>
                                 <div class="text-danger">
-                                    <?= session()->getFlashdata('errorOfficeype'); ?>
+                                    <?= session()->getFlashdata('errorOffice'); ?>
                                 </div>
                             <?php } ?>
+                        </div>
                         </div>
                         <div class="row">
                             <div class="text-start">
@@ -71,7 +113,7 @@
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="staticBackdropLabel">कार्यालय प्रकार</h5>
+                        <h5 class="modal-title" id="staticBackdropLabel">कार्यालय </h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body row">
@@ -79,13 +121,13 @@
                             <i class="mdi mdi-check-circle" aria-hidden="true" style="font-size: 45px;color: #06a406;"></i>
                         </div>
                         <div class="col-md-10 my-4" style="font-size: 18px;font-weight: 800;">
-                            <?php  $session = session(); error_reporting(0); echo $_SESSION['officeTypemsg'];?>
+                            <?php  $session = session(); error_reporting(0); echo $_SESSION['officemsg'];?>
                         </div>
                     
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-light text-dark me-2" data-bs-dismiss="modal">Close</button>
-                            <a href="<?php echo base_url(); ?>officeTypeList"><button type="button" class="btn btn-primary">Ok</button></a>
+                            <a href="<?php echo base_url(); ?>officeList"><button type="button" class="btn btn-primary">Ok</button></a>
                     </div>
                 </div>
             </div>
@@ -94,7 +136,7 @@
 
 <script>
 $( document ).ready(function(){
-    var homeunmsg='<?=$_SESSION['officeTypemsg'];?>';
+    var homeunmsg='<?=$_SESSION['officemsg'];?>';
     if(homeunmsg!='')
     {
         $('#staticBackdrop').modal('show');
@@ -114,7 +156,7 @@ function onLoad() {
     };
 
     var control = new google.elements.transliteration.TransliterationControl(options);
-    control.makeTransliteratable(["office_type"]);
+    control.makeTransliteratable(["office"]);
 }
 google.setOnLoadCallback(onLoad);
 

@@ -21,3 +21,377 @@ in APPPATH\Controllers\Office\OfficeController.php on line 15.
  4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
  5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
  6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-05-22 07:31:13 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'field_visit_og' in C:\xampp\htdocs\field_visit\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\xampp\htdocs\field_visit\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'field_visit_og', 3306, '', 0)
+#1 C:\xampp\htdocs\field_visit\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\field_visit\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\field_visit\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\field_visit\app\Models\Login\LoginModel.php(16): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\field_visit\app\Controllers\Login\LoginController.php(31): App\Models\Login\LoginModel->checkUsernamePass()
+#6 C:\xampp\htdocs\field_visit\system\CodeIgniter.php(933): App\Controllers\Login\LoginController->signIn()
+#7 C:\xampp\htdocs\field_visit\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login\LoginController))
+#8 C:\xampp\htdocs\field_visit\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\field_visit\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\field_visit\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\field_visit\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'field_visit_og' in C:\xampp\htdocs\field_visit\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\xampp\htdocs\field_visit\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\field_visit\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\field_visit\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\field_visit\app\Models\Login\LoginModel.php(16): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\field_visit\app\Controllers\Login\LoginController.php(31): App\Models\Login\LoginModel->checkUsernamePass()
+#5 C:\xampp\htdocs\field_visit\system\CodeIgniter.php(933): App\Controllers\Login\LoginController->signIn()
+#6 C:\xampp\htdocs\field_visit\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login\LoginController))
+#7 C:\xampp\htdocs\field_visit\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\field_visit\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\field_visit\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\field_visit\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2025-05-22 07:31:13 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'field_visit_og'
+[Method: POST, Route: signIn]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `login_master`
+WHERE `username` = :username:
+AND `password` = :password:
+AND `isdeleted` = :isdeleted:', [...], false)
+ 3 APPPATH\Models\Login\LoginModel.php(16): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\Login\LoginController.php(31): App\Models\Login\LoginModel->checkUsernamePass()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login\LoginController->signIn()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login\LoginController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-05-22 07:31:20 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'field_visit_og' in C:\xampp\htdocs\field_visit\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\xampp\htdocs\field_visit\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'field_visit_og', 3306, '', 0)
+#1 C:\xampp\htdocs\field_visit\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\field_visit\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\field_visit\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\field_visit\app\Models\Login\LoginModel.php(16): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\field_visit\app\Controllers\Login\LoginController.php(31): App\Models\Login\LoginModel->checkUsernamePass()
+#6 C:\xampp\htdocs\field_visit\system\CodeIgniter.php(933): App\Controllers\Login\LoginController->signIn()
+#7 C:\xampp\htdocs\field_visit\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login\LoginController))
+#8 C:\xampp\htdocs\field_visit\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\field_visit\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\field_visit\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\field_visit\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'field_visit_og' in C:\xampp\htdocs\field_visit\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\xampp\htdocs\field_visit\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\field_visit\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\field_visit\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\field_visit\app\Models\Login\LoginModel.php(16): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\field_visit\app\Controllers\Login\LoginController.php(31): App\Models\Login\LoginModel->checkUsernamePass()
+#5 C:\xampp\htdocs\field_visit\system\CodeIgniter.php(933): App\Controllers\Login\LoginController->signIn()
+#6 C:\xampp\htdocs\field_visit\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login\LoginController))
+#7 C:\xampp\htdocs\field_visit\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\field_visit\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\field_visit\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\field_visit\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2025-05-22 07:31:20 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'field_visit_og'
+[Method: POST, Route: signIn]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `login_master`
+WHERE `username` = :username:
+AND `password` = :password:
+AND `isdeleted` = :isdeleted:', [...], false)
+ 3 APPPATH\Models\Login\LoginModel.php(16): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\Login\LoginController.php(31): App\Models\Login\LoginModel->checkUsernamePass()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login\LoginController->signIn()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login\LoginController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-22 07:37:29 --> ErrorException: Undefined variable $officeTypeD
+[Method: GET, Route: addOffice]
+in APPPATH\Views\Office\AddOffice.php on line 45.
+ 1 APPPATH\Views\Office\AddOffice.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $officeTypeD', 'C:\\xampp\\htdocs\\field_visit\\app\\Views\\Office\\AddOffice.php', 45)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\field_visit\\app\\Views\\Office\\AddOffice.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('Office/AddOffice', [], true)
+ 5 APPPATH\Controllers\Office\OfficeController.php(34): view('Office/AddOffice')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Office\OfficeController->AddOffice()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Office\OfficeController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-22 07:40:42 --> ErrorException: Undefined variable $officeTypeD
+[Method: POST, Route: AddOfficePro]
+in APPPATH\Views\Office\AddOffice.php on line 46.
+ 1 APPPATH\Views\Office\AddOffice.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $officeTypeD', 'C:\\xampp\\htdocs\\field_visit\\app\\Views\\Office\\AddOffice.php', 46)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\field_visit\\app\\Views\\Office\\AddOffice.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('Office/AddOffice', [], true)
+ 5 APPPATH\Controllers\Office\OfficeController.php(88): view('Office/AddOffice', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Office\OfficeController->AddOfficePro()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Office\OfficeController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-22 07:45:57 --> CodeIgniter\Database\Exceptions\DatabaseException: You must set the database table to be used with your query.
+[Method: GET, Route: updateOffice]
+in SYSTEMPATH\Database\BaseConnection.php on line 941.
+ 1 SYSTEMPATH\Model.php(714): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(920): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Office\OfficeController.php(103): CodeIgniter\Model->__call('getOfficeList', [])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Office\OfficeController->updateOffice()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Office\OfficeController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-22 07:48:28 --> CodeIgniter\Database\Exceptions\DatabaseException: You must set the database table to be used with your query.
+[Method: GET, Route: updateOffice]
+in SYSTEMPATH\Database\BaseConnection.php on line 941.
+ 1 SYSTEMPATH\Model.php(714): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(920): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Office\OfficeController.php(103): CodeIgniter\Model->__call('getOfficeList', [])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Office\OfficeController->updateOffice()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Office\OfficeController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-22 07:48:29 --> CodeIgniter\Database\Exceptions\DatabaseException: You must set the database table to be used with your query.
+[Method: GET, Route: updateOffice]
+in SYSTEMPATH\Database\BaseConnection.php on line 941.
+ 1 SYSTEMPATH\Model.php(714): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(920): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Office\OfficeController.php(103): CodeIgniter\Model->__call('getOfficeList', [])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Office\OfficeController->updateOffice()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Office\OfficeController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-22 07:48:45 --> ErrorException: Undefined variable $officeTypeD
+[Method: GET, Route: updateOffice]
+in APPPATH\Views\Office\updateOffice.php on line 47.
+ 1 APPPATH\Views\Office\updateOffice.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $officeTypeD', 'C:\\xampp\\htdocs\\field_visit\\app\\Views\\Office\\updateOffice.php', 47)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\field_visit\\app\\Views\\Office\\updateOffice.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('Office/updateOffice', [], true)
+ 5 APPPATH\Controllers\Office\OfficeController.php(104): view('Office/updateOffice', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Office\OfficeController->updateOffice()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Office\OfficeController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-22 07:54:14 --> ErrorException: Undefined array key "categoryD"
+[Method: POST, Route: updateOfficePro]
+in APPPATH\Controllers\Office\OfficeController.php on line 154.
+ 1 APPPATH\Controllers\Office\OfficeController.php(154): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "categoryD"', 'C:\\xampp\\htdocs\\field_visit\\app\\Controllers\\Office\\OfficeController.php', 154)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Office\OfficeController->updateOfficePro()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Office\OfficeController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-22 07:56:11 --> CodeIgniter\Database\Exceptions\DatabaseException: You must set the database table to be used with your query.
+[Method: POST, Route: updateOfficePro]
+in SYSTEMPATH\Database\BaseConnection.php on line 941.
+ 1 SYSTEMPATH\Model.php(714): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(920): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Office\OfficeController.php(171): CodeIgniter\Model->__call('getOfficeTypeById', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Office\OfficeController->updateOfficePro()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Office\OfficeController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-22 07:57:26 --> CodeIgniter\Database\Exceptions\DatabaseException: You must set the database table to be used with your query.
+[Method: POST, Route: updateOfficePro]
+in SYSTEMPATH\Database\BaseConnection.php on line 941.
+ 1 SYSTEMPATH\Model.php(714): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(920): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Office\OfficeController.php(171): CodeIgniter\Model->__call('getOfficeTypeById', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Office\OfficeController->updateOfficePro()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Office\OfficeController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-22 07:57:38 --> CodeIgniter\Database\Exceptions\DatabaseException: You must set the database table to be used with your query.
+[Method: POST, Route: updateOfficePro]
+in SYSTEMPATH\Database\BaseConnection.php on line 941.
+ 1 SYSTEMPATH\Model.php(714): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(920): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Office\OfficeController.php(171): CodeIgniter\Model->__call('getOfficeTypeById', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Office\OfficeController->updateOfficePro()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Office\OfficeController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-22 07:58:38 --> ErrorException: Undefined variable $officeTypeD
+[Method: POST, Route: updateOfficePro]
+in APPPATH\Views\Office\updateOffice.php on line 47.
+ 1 APPPATH\Views\Office\updateOffice.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $officeTypeD', 'C:\\xampp\\htdocs\\field_visit\\app\\Views\\Office\\updateOffice.php', 47)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\field_visit\\app\\Views\\Office\\updateOffice.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('Office/UpdateOffice', [], true)
+ 5 APPPATH\Controllers\Office\OfficeController.php(172): view('Office/UpdateOffice', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Office\OfficeController->updateOfficePro()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Office\OfficeController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-05-22 09:26:12 --> mysqli_sql_exception: Table 'field_visit.tbl_taluka' doesn't exist in C:\xampp\htdocs\field_visit\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\field_visit\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT * FROM t...', 0)
+#1 C:\xampp\htdocs\field_visit\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM t...')
+#2 C:\xampp\htdocs\field_visit\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM t...')
+#3 C:\xampp\htdocs\field_visit\app\Models\Taluka\TalukaModel.php(11): CodeIgniter\Database\BaseConnection->query('SELECT * FROM t...')
+#4 C:\xampp\htdocs\field_visit\app\Controllers\Taluka\TalukaController.php(24): App\Models\Taluka\TalukaModel->getTalukaList()
+#5 C:\xampp\htdocs\field_visit\system\CodeIgniter.php(933): App\Controllers\Taluka\TalukaController->Taluka()
+#6 C:\xampp\htdocs\field_visit\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Taluka\TalukaController))
+#7 C:\xampp\htdocs\field_visit\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\field_visit\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\field_visit\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\field_visit\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2025-05-22 09:26:12 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'field_visit.tbl_taluka' doesn't exist
+[Method: GET, Route: Taluka]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 APPPATH\Models\Taluka\TalukaModel.php(11): CodeIgniter\Database\BaseConnection->query('SELECT * FROM tbl_taluka WHERE isdeleted = 0 order by id desc')
+ 2 APPPATH\Controllers\Taluka\TalukaController.php(24): App\Models\Taluka\TalukaModel->getTalukaList()
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Taluka\TalukaController->Taluka()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Taluka\TalukaController))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-22 09:26:12 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'field_visit.tbl_taluka' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM tbl_taluka WHERE isdeleted = 0 order by id desc')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM tbl_taluka WHERE isdeleted = 0 order by id desc')
+ 3 APPPATH\Models\Taluka\TalukaModel.php(11): CodeIgniter\Database\BaseConnection->query('SELECT * FROM tbl_taluka WHERE isdeleted = 0 order by id desc')
+ 4 APPPATH\Controllers\Taluka\TalukaController.php(24): App\Models\Taluka\TalukaModel->getTalukaList()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Taluka\TalukaController->Taluka()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Taluka\TalukaController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-22 09:26:12 --> [Caused by] mysqli_sql_exception: Table 'field_visit.tbl_taluka' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT * FROM tbl_taluka WHERE isdeleted = 0 order by id desc', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM tbl_taluka WHERE isdeleted = 0 order by id desc')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM tbl_taluka WHERE isdeleted = 0 order by id desc')
+ 4 APPPATH\Models\Taluka\TalukaModel.php(11): CodeIgniter\Database\BaseConnection->query('SELECT * FROM tbl_taluka WHERE isdeleted = 0 order by id desc')
+ 5 APPPATH\Controllers\Taluka\TalukaController.php(24): App\Models\Taluka\TalukaModel->getTalukaList()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Taluka\TalukaController->Taluka()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Taluka\TalukaController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-05-22 09:27:01 --> mysqli_sql_exception: Table 'field_visit.tbl_taluka' doesn't exist in C:\xampp\htdocs\field_visit\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\field_visit\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT * FROM t...', 0)
+#1 C:\xampp\htdocs\field_visit\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM t...')
+#2 C:\xampp\htdocs\field_visit\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM t...')
+#3 C:\xampp\htdocs\field_visit\app\Models\Taluka\TalukaModel.php(11): CodeIgniter\Database\BaseConnection->query('SELECT * FROM t...')
+#4 C:\xampp\htdocs\field_visit\app\Controllers\Taluka\TalukaController.php(24): App\Models\Taluka\TalukaModel->getTalukaList()
+#5 C:\xampp\htdocs\field_visit\system\CodeIgniter.php(933): App\Controllers\Taluka\TalukaController->Taluka()
+#6 C:\xampp\htdocs\field_visit\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Taluka\TalukaController))
+#7 C:\xampp\htdocs\field_visit\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\field_visit\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\field_visit\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\field_visit\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2025-05-22 09:27:01 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'field_visit.tbl_taluka' doesn't exist
+[Method: GET, Route: Taluka]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 APPPATH\Models\Taluka\TalukaModel.php(11): CodeIgniter\Database\BaseConnection->query('SELECT * FROM tbl_taluka WHERE isdeleted = 0 order by id desc')
+ 2 APPPATH\Controllers\Taluka\TalukaController.php(24): App\Models\Taluka\TalukaModel->getTalukaList()
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Taluka\TalukaController->Taluka()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Taluka\TalukaController))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-22 09:27:01 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'field_visit.tbl_taluka' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM tbl_taluka WHERE isdeleted = 0 order by id desc')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM tbl_taluka WHERE isdeleted = 0 order by id desc')
+ 3 APPPATH\Models\Taluka\TalukaModel.php(11): CodeIgniter\Database\BaseConnection->query('SELECT * FROM tbl_taluka WHERE isdeleted = 0 order by id desc')
+ 4 APPPATH\Controllers\Taluka\TalukaController.php(24): App\Models\Taluka\TalukaModel->getTalukaList()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Taluka\TalukaController->Taluka()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Taluka\TalukaController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-22 09:27:01 --> [Caused by] mysqli_sql_exception: Table 'field_visit.tbl_taluka' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT * FROM tbl_taluka WHERE isdeleted = 0 order by id desc', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM tbl_taluka WHERE isdeleted = 0 order by id desc')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM tbl_taluka WHERE isdeleted = 0 order by id desc')
+ 4 APPPATH\Models\Taluka\TalukaModel.php(11): CodeIgniter\Database\BaseConnection->query('SELECT * FROM tbl_taluka WHERE isdeleted = 0 order by id desc')
+ 5 APPPATH\Controllers\Taluka\TalukaController.php(24): App\Models\Taluka\TalukaModel->getTalukaList()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Taluka\TalukaController->Taluka()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Taluka\TalukaController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-22 09:28:15 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "Taluka/AddTaluka.php"
+[Method: GET, Route: AddTaluka]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Taluka/AddTaluka.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('Taluka/AddTaluka', [], true)
+ 3 APPPATH\Controllers\Taluka\TalukaController.php(32): view('Taluka/AddTaluka')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Taluka\TalukaController->AddTaluka()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Taluka\TalukaController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-22 09:46:54 --> ErrorException: Undefined variable $talukaD
+[Method: GET, Route: addOffice]
+in APPPATH\Views\Office\AddOffice.php on line 47.
+ 1 APPPATH\Views\Office\AddOffice.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $talukaD', 'C:\\xampp\\htdocs\\field_visit\\app\\Views\\Office\\AddOffice.php', 47)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\field_visit\\app\\Views\\Office\\AddOffice.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('Office/AddOffice', [], true)
+ 5 APPPATH\Controllers\Office\OfficeController.php(35): view('Office/AddOffice', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Office\OfficeController->AddOffice()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Office\OfficeController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-22 09:53:38 --> ErrorException: Undefined variable $talukaD
+[Method: POST, Route: AddOfficePro]
+in APPPATH\Views\Office\AddOffice.php on line 47.
+ 1 APPPATH\Views\Office\AddOffice.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $talukaD', 'C:\\xampp\\htdocs\\field_visit\\app\\Views\\Office\\AddOffice.php', 47)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\field_visit\\app\\Views\\Office\\AddOffice.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('Office/addOffice', [], true)
+ 5 APPPATH\Controllers\Office\OfficeController.php(100): view('Office/addOffice', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Office\OfficeController->AddOfficePro()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Office\OfficeController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

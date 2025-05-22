@@ -7,7 +7,7 @@
     <meta name="description" content="Admiro admin is super flexible, powerful, clean &amp; modern responsive bootstrap 5 admin template with unlimited possibilities.">
     <meta name="keywords" content="admin template, Admiro admin template, best javascript admin, dashboard template, bootstrap admin template, responsive admin template, web app">
     <meta name="author" content="pixelstrap">
-    <title>Field Visit - कार्यालय प्रकार</title>
+    <title>Field Visit - तालुका यादी</title>
 
     <?php echo view('Include/header'); ?>
 
@@ -16,11 +16,11 @@
             <div class="page-title">
               <div class="row">
                 <div class="col-sm-6 col-12">
-                  <h2>कार्यालय प्रकार</h2>
+                  <h2>तालुका यादी</h2>
                 </div>
                 <div class="col-sm-6 col-12">
                   <ol class="breadcrumb">
-                    <a href="<?= base_url();?>addOfficeType"><button class="btn btn-primary me-2 btn-square" type="button">अ‍ॅड कार्यालय प्रकार +</button></a>
+                    <a href="<?= base_url();?>AddTaluka"><button class="btn btn-primary me-2 btn-square" type="button">अ‍ॅड तालुका +</button></a>
                   </ol>
                 </div>
               </div>
@@ -36,31 +36,31 @@
                     <div class="dt-ext table-responsive">
                       <table class="display" id="export-button">
                         <thead>
-                          <tr>
-                            <th>अ.क्र.</th>
-                            <th>कार्यालय प्रकार </th>
-                            <th>दिनांक </th>
-                            <th>क्रिया</th>
-                          </tr>
+                            <tr>
+                                <th>अ.क्र.</th>
+                                <th>तालुका </th>
+                                <th>दिनांक </th>
+                                <th>क्रिया</th>
+                            </tr>
                         </thead>
                         <tbody>
-                            <?php 
-                                $count=1;
-                                foreach($OfficeTypeList as $row){ 
-                            ?>
-                          <tr>
-                              <td><?=$count;?></td>
-                              <td><?=$row['office_type'];?></td>
-                              <td><?=date("d M Y h:i:s",strtotime($row['created_at']));?></td>
-                              <td> 
+                        <?php 
+                            $count=1;$status=''; 
+                            foreach($taluka_list as $row){ 
+                        ?>
+                        <tr>
+                            <td><?=$count;?></td>
+                            <td><?=$row['taluka'];?></td>
+                            <td><?=date("d M Y h:i:s",strtotime($row['created_at']));?></td>
+                            <td> 
                                 <ul class="action"> 
-                                  <li class="edit"> <a href="<?php echo base_url(); ?>updateOfficeType?ID=<?php echo base64_encode($row['id']); ?>"><i class="icon-pencil-alt"></i></a></li>
+                                  <li class="edit"> <a href="<?php echo base_url(); ?>UpdateTaluka?ID=<?php echo base64_encode($row['id']); ?>"><i class="icon-pencil-alt"></i></a></li>
                                   <li class="delete" onClick="deleteRec(<?=$row['id'];?>);"><i class="icon-trash"></i></li>
                                 </ul>
-                              </td>
-                          </tr>
-                          <?php $count++; } ?>
-                          </tbody>
+                            </td>
+                        </tr>
+                        <?php $count++; } ?>
+                        </tbody>
                       </table>
                     </div>
                   </div>
@@ -76,8 +76,8 @@
   <script>
         function deleteRec(id)
         {
-            var table='tbl_office_type';
-            if (confirm('तुम्हाला खात्री आहे की तुम्हाला हा कार्यालय प्रकार हटवायचा आहे ?')) {
+            var table='tbl_taluka';
+            if (confirm('तुम्हाला खात्री आहे की तुम्हाला हा तालुका हटवायचा आहे ?')) {
             $.ajax({
             url: "<?php echo base_url();?>/deleteRec",
             type: 'post',

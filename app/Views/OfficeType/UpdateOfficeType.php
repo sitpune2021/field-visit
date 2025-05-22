@@ -38,7 +38,7 @@
                        <?php echo form_open('/updateOfficeTypePro', array('autocomplete' => 'off','class' => 'p-0 row')); ?>
                        <input type="hidden" name="id" value="<?= !empty($list['id']) ? $list['id'] : '' ?>">
 
-                        <div class="mb-5 mt-3">
+                        <div class="mb-4 mt-3 col-md-6">
                           <label class="form-label" for="exampleFormControlInput1">कार्यालय प्रकार <span class="mandatory">*</span></label>
                           <input class="form-control AlphabetsOnlyWithSpace" id="office_type" name="office_type" type="text" placeholder="कार्यालय प्रकार प्रविष्ठ करा." value="<?= $list['office_type'] ?? set_value('office_type'); ?>">
                             <?php if (isset($validation) && $validation->hasError('office_type')){ ?>

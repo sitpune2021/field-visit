@@ -106,6 +106,13 @@
                   <h5 class="f-w-700 sidebar-title pt-3">मास्टर</h5>
                 </div>
               </li>
+              
+              <li class="sidebar-list"><a class="sidebar-link" href="<?= base_url();?>Taluka">
+                  <svg class="stroke-icon">
+                    <use href="https://admin.pixelstrap.net/admiro/assets/svg/iconly-sprite.svg#Paper"></use>
+                  </svg>
+                  <h6 class="f-w-600">तालुका </h6></a>
+			        </li>
               <li class="sidebar-list"><a class="sidebar-link" href="<?= base_url();?>officeTypeList">
                   <svg class="stroke-icon">
                     <use href="https://admin.pixelstrap.net/admiro/assets/svg/iconly-sprite.svg#Paper"></use>
@@ -118,7 +125,12 @@
                   </svg>
                   <h6 class="f-w-600">कार्यालय </h6></a>
 			        </li>
-              
+              <li class="sidebar-list"><a class="sidebar-link" href="<?= base_url();?>Officer">
+                  <svg class="stroke-icon">
+                    <use href="https://admin.pixelstrap.net/admiro/assets/svg/iconly-sprite.svg#Paper"></use>
+                  </svg>
+                  <h6 class="f-w-600">अधिकारी </h6></a>
+			        </li>
             </ul>
           </div>
           <div class="right-arrow" id="right-arrow"><i data-feather="arrow-right"></i></div>
