@@ -1,0 +1,1764 @@
+CRITICAL - 2025-05-12 04:25:31 --> ErrorException: Undefined array key "um_add"
+[Method: GET, Route: roleList]
+in APPPATH/Views/Role/roleList.php on line 30.
+ 1 APPPATH/Views/Role/roleList.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "um_add"', '/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Views/Role/roleList.php', 30)
+ 2 SYSTEMPATH/View/View.php(224): include('/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Views/Role/roleList.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1173): CodeIgniter\View\View->render('Role/roleList', [], true)
+ 5 APPPATH/Controllers/Role/RoleController.php(23): view('Role/roleList', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Role\RoleController->roleList()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Role\RoleController))
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-12 06:31:19 --> ParseError: Unclosed '{' on line 64
+[Method: GET, Route: subPlanList]
+in APPPATH/Views/SubscriptionPlan/subPlanList.php on line 120.
+ 1 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH/Common.php(1173): CodeIgniter\View\View->render('SubscriptionPlan/subPlanList', [], true)
+ 3 APPPATH/Controllers/SubscriptionPlan/SubscriptionPlanController.php(25): view('SubscriptionPlan/subPlanList', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\SubscriptionPlan\SubscriptionPlanController->subPlanList()
+ 5 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SubscriptionPlan\SubscriptionPlanController))
+ 6 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-12 06:31:31 --> ParseError: Unclosed '{' on line 64
+[Method: GET, Route: subPlanList]
+in APPPATH/Views/SubscriptionPlan/subPlanList.php on line 120.
+ 1 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH/Common.php(1173): CodeIgniter\View\View->render('SubscriptionPlan/subPlanList', [], true)
+ 3 APPPATH/Controllers/SubscriptionPlan/SubscriptionPlanController.php(25): view('SubscriptionPlan/subPlanList', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\SubscriptionPlan\SubscriptionPlanController->subPlanList()
+ 5 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SubscriptionPlan\SubscriptionPlanController))
+ 6 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-12 06:31:54 --> ParseError: Unclosed '{' on line 64
+[Method: GET, Route: subPlanList]
+in APPPATH/Views/SubscriptionPlan/subPlanList.php on line 120.
+ 1 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH/Common.php(1173): CodeIgniter\View\View->render('SubscriptionPlan/subPlanList', [], true)
+ 3 APPPATH/Controllers/SubscriptionPlan/SubscriptionPlanController.php(25): view('SubscriptionPlan/subPlanList', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\SubscriptionPlan\SubscriptionPlanController->subPlanList()
+ 5 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SubscriptionPlan\SubscriptionPlanController))
+ 6 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-12 06:40:50 --> ErrorException: Undefined array key "um_add"
+[Method: GET, Route: roleList]
+in APPPATH/Views/Role/roleList.php on line 30.
+ 1 APPPATH/Views/Role/roleList.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "um_add"', '/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Views/Role/roleList.php', 30)
+ 2 SYSTEMPATH/View/View.php(224): include('/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Views/Role/roleList.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1173): CodeIgniter\View\View->render('Role/roleList', [], true)
+ 5 APPPATH/Controllers/Role/RoleController.php(23): view('Role/roleList', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Role\RoleController->roleList()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Role\RoleController))
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-12 06:41:49 --> ErrorException: Undefined array key "um_edit"
+[Method: GET, Route: roleList]
+in APPPATH/Views/Role/roleList.php on line 52.
+ 1 APPPATH/Views/Role/roleList.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "um_edit"', '/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Views/Role/roleList.php', 52)
+ 2 SYSTEMPATH/View/View.php(224): include('/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Views/Role/roleList.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1173): CodeIgniter\View\View->render('Role/roleList', [], true)
+ 5 APPPATH/Controllers/Role/RoleController.php(23): view('Role/roleList', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Role\RoleController->roleList()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Role\RoleController))
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-12 06:50:54 --> Error: Class "App\Models\Subscription\SubscriptionModel" not found
+[Method: GET, Route: adminDashboard]
+in APPPATH/Controllers/Dashboard/DashboardController.php on line 22.
+ 1 SYSTEMPATH/CodeIgniter.php(903): App\Controllers\Dashboard\DashboardController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-12 06:51:35 --> Error: Class "App\Models\Subscription\SubscriptionModel" not found
+[Method: GET, Route: adminDashboard]
+in APPPATH/Controllers/Dashboard/DashboardController.php on line 22.
+ 1 SYSTEMPATH/CodeIgniter.php(903): App\Controllers\Dashboard\DashboardController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-12 06:51:36 --> ErrorException: Undefined property: App\Controllers\Dashboard\DashboardController::$SubscriptionModel
+[Method: GET, Route: adminDashboard]
+in APPPATH/Controllers/Dashboard/DashboardController.php on line 32.
+ 1 APPPATH/Controllers/Dashboard/DashboardController.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Dashboard\\DashboardController::$SubscriptionModel', '/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Controllers/Dashboard/DashboardController.php', 32)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Dashboard\DashboardController->adminDashboard()
+ 3 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard\DashboardController))
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-12 06:51:36 --> ErrorException: Undefined property: App\Controllers\Dashboard\DashboardController::$SubscriptionModel
+[Method: GET, Route: adminDashboard]
+in APPPATH/Controllers/Dashboard/DashboardController.php on line 32.
+ 1 APPPATH/Controllers/Dashboard/DashboardController.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Dashboard\\DashboardController::$SubscriptionModel', '/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Controllers/Dashboard/DashboardController.php', 32)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Dashboard\DashboardController->adminDashboard()
+ 3 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard\DashboardController))
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-12 06:51:53 --> ErrorException: Undefined property: App\Controllers\Dashboard\DashboardController::$SubscriptionPlanModel
+[Method: GET, Route: adminDashboard]
+in APPPATH/Controllers/Dashboard/DashboardController.php on line 32.
+ 1 APPPATH/Controllers/Dashboard/DashboardController.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Dashboard\\DashboardController::$SubscriptionPlanModel', '/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Controllers/Dashboard/DashboardController.php', 32)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Dashboard\DashboardController->adminDashboard()
+ 3 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard\DashboardController))
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-12 06:51:53 --> ErrorException: Undefined property: App\Controllers\Dashboard\DashboardController::$SubscriptionPlanModel
+[Method: GET, Route: adminDashboard]
+in APPPATH/Controllers/Dashboard/DashboardController.php on line 32.
+ 1 APPPATH/Controllers/Dashboard/DashboardController.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Dashboard\\DashboardController::$SubscriptionPlanModel', '/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Controllers/Dashboard/DashboardController.php', 32)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Dashboard\DashboardController->adminDashboard()
+ 3 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard\DashboardController))
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-12 06:51:54 --> ErrorException: Undefined property: App\Controllers\Dashboard\DashboardController::$SubscriptionPlanModel
+[Method: GET, Route: adminDashboard]
+in APPPATH/Controllers/Dashboard/DashboardController.php on line 32.
+ 1 APPPATH/Controllers/Dashboard/DashboardController.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Dashboard\\DashboardController::$SubscriptionPlanModel', '/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Controllers/Dashboard/DashboardController.php', 32)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Dashboard\DashboardController->adminDashboard()
+ 3 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard\DashboardController))
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-12 06:51:54 --> ErrorException: Undefined property: App\Controllers\Dashboard\DashboardController::$SubscriptionPlanModel
+[Method: GET, Route: adminDashboard]
+in APPPATH/Controllers/Dashboard/DashboardController.php on line 32.
+ 1 APPPATH/Controllers/Dashboard/DashboardController.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Dashboard\\DashboardController::$SubscriptionPlanModel', '/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Controllers/Dashboard/DashboardController.php', 32)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Dashboard\DashboardController->adminDashboard()
+ 3 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard\DashboardController))
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-12 06:51:55 --> ErrorException: Undefined property: App\Controllers\Dashboard\DashboardController::$SubscriptionPlanModel
+[Method: GET, Route: adminDashboard]
+in APPPATH/Controllers/Dashboard/DashboardController.php on line 32.
+ 1 APPPATH/Controllers/Dashboard/DashboardController.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Dashboard\\DashboardController::$SubscriptionPlanModel', '/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Controllers/Dashboard/DashboardController.php', 32)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Dashboard\DashboardController->adminDashboard()
+ 3 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard\DashboardController))
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-12 06:52:45 --> ErrorException: Undefined property: App\Controllers\Dashboard\DashboardController::$SubscriptionPlanModel
+[Method: GET, Route: adminDashboard]
+in APPPATH/Controllers/Dashboard/DashboardController.php on line 32.
+ 1 APPPATH/Controllers/Dashboard/DashboardController.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Dashboard\\DashboardController::$SubscriptionPlanModel', '/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Controllers/Dashboard/DashboardController.php', 32)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Dashboard\DashboardController->adminDashboard()
+ 3 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard\DashboardController))
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-12 06:52:46 --> ErrorException: Undefined property: App\Controllers\Dashboard\DashboardController::$SubscriptionPlanModel
+[Method: GET, Route: adminDashboard]
+in APPPATH/Controllers/Dashboard/DashboardController.php on line 32.
+ 1 APPPATH/Controllers/Dashboard/DashboardController.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Dashboard\\DashboardController::$SubscriptionPlanModel', '/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Controllers/Dashboard/DashboardController.php', 32)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Dashboard\DashboardController->adminDashboard()
+ 3 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard\DashboardController))
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-12 06:52:56 --> ErrorException: Undefined property: App\Controllers\Dashboard\DashboardController::$SubscriptionPlanModel
+[Method: GET, Route: adminDashboard]
+in APPPATH/Controllers/Dashboard/DashboardController.php on line 32.
+ 1 APPPATH/Controllers/Dashboard/DashboardController.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Dashboard\\DashboardController::$SubscriptionPlanModel', '/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Controllers/Dashboard/DashboardController.php', 32)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Dashboard\DashboardController->adminDashboard()
+ 3 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard\DashboardController))
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-12 06:52:56 --> ErrorException: Undefined property: App\Controllers\Dashboard\DashboardController::$SubscriptionPlanModel
+[Method: GET, Route: adminDashboard]
+in APPPATH/Controllers/Dashboard/DashboardController.php on line 32.
+ 1 APPPATH/Controllers/Dashboard/DashboardController.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Dashboard\\DashboardController::$SubscriptionPlanModel', '/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Controllers/Dashboard/DashboardController.php', 32)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Dashboard\DashboardController->adminDashboard()
+ 3 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard\DashboardController))
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-12 06:52:57 --> ErrorException: Undefined property: App\Controllers\Dashboard\DashboardController::$SubscriptionPlanModel
+[Method: GET, Route: adminDashboard]
+in APPPATH/Controllers/Dashboard/DashboardController.php on line 32.
+ 1 APPPATH/Controllers/Dashboard/DashboardController.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Dashboard\\DashboardController::$SubscriptionPlanModel', '/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Controllers/Dashboard/DashboardController.php', 32)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Dashboard\DashboardController->adminDashboard()
+ 3 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard\DashboardController))
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-12 06:52:57 --> ErrorException: Undefined property: App\Controllers\Dashboard\DashboardController::$SubscriptionPlanModel
+[Method: GET, Route: adminDashboard]
+in APPPATH/Controllers/Dashboard/DashboardController.php on line 32.
+ 1 APPPATH/Controllers/Dashboard/DashboardController.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Dashboard\\DashboardController::$SubscriptionPlanModel', '/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Controllers/Dashboard/DashboardController.php', 32)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Dashboard\DashboardController->adminDashboard()
+ 3 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard\DashboardController))
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-12 06:52:57 --> ErrorException: Undefined property: App\Controllers\Dashboard\DashboardController::$SubscriptionPlanModel
+[Method: GET, Route: adminDashboard]
+in APPPATH/Controllers/Dashboard/DashboardController.php on line 32.
+ 1 APPPATH/Controllers/Dashboard/DashboardController.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Dashboard\\DashboardController::$SubscriptionPlanModel', '/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Controllers/Dashboard/DashboardController.php', 32)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Dashboard\DashboardController->adminDashboard()
+ 3 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard\DashboardController))
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-12 06:53:57 --> ErrorException: Undefined property: App\Controllers\Dashboard\DashboardController::$SubscriptionPlanModel
+[Method: GET, Route: adminDashboard]
+in APPPATH/Controllers/Dashboard/DashboardController.php on line 32.
+ 1 APPPATH/Controllers/Dashboard/DashboardController.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Dashboard\\DashboardController::$SubscriptionPlanModel', '/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Controllers/Dashboard/DashboardController.php', 32)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Dashboard\DashboardController->adminDashboard()
+ 3 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard\DashboardController))
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-12 06:53:57 --> ErrorException: Undefined property: App\Controllers\Dashboard\DashboardController::$EnquiryModel
+[Method: GET, Route: adminDashboard]
+in APPPATH/Controllers/Dashboard/DashboardController.php on line 33.
+ 1 APPPATH/Controllers/Dashboard/DashboardController.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Dashboard\\DashboardController::$EnquiryModel', '/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Controllers/Dashboard/DashboardController.php', 33)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Dashboard\DashboardController->adminDashboard()
+ 3 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard\DashboardController))
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-12 06:53:58 --> ErrorException: Undefined property: App\Controllers\Dashboard\DashboardController::$EnquiryModel
+[Method: GET, Route: adminDashboard]
+in APPPATH/Controllers/Dashboard/DashboardController.php on line 33.
+ 1 APPPATH/Controllers/Dashboard/DashboardController.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Dashboard\\DashboardController::$EnquiryModel', '/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Controllers/Dashboard/DashboardController.php', 33)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Dashboard\DashboardController->adminDashboard()
+ 3 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard\DashboardController))
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-12 06:53:58 --> ErrorException: Undefined property: App\Controllers\Dashboard\DashboardController::$EnquiryModel
+[Method: GET, Route: adminDashboard]
+in APPPATH/Controllers/Dashboard/DashboardController.php on line 33.
+ 1 APPPATH/Controllers/Dashboard/DashboardController.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Dashboard\\DashboardController::$EnquiryModel', '/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Controllers/Dashboard/DashboardController.php', 33)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Dashboard\DashboardController->adminDashboard()
+ 3 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard\DashboardController))
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-12 06:53:59 --> ErrorException: Undefined property: App\Controllers\Dashboard\DashboardController::$EnquiryModel
+[Method: GET, Route: adminDashboard]
+in APPPATH/Controllers/Dashboard/DashboardController.php on line 33.
+ 1 APPPATH/Controllers/Dashboard/DashboardController.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Dashboard\\DashboardController::$EnquiryModel', '/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Controllers/Dashboard/DashboardController.php', 33)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Dashboard\DashboardController->adminDashboard()
+ 3 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard\DashboardController))
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-12 06:53:59 --> ErrorException: Undefined property: App\Controllers\Dashboard\DashboardController::$EnquiryModel
+[Method: GET, Route: adminDashboard]
+in APPPATH/Controllers/Dashboard/DashboardController.php on line 33.
+ 1 APPPATH/Controllers/Dashboard/DashboardController.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Dashboard\\DashboardController::$EnquiryModel', '/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Controllers/Dashboard/DashboardController.php', 33)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Dashboard\DashboardController->adminDashboard()
+ 3 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard\DashboardController))
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-12 06:53:59 --> ErrorException: Undefined property: App\Controllers\Dashboard\DashboardController::$EnquiryModel
+[Method: GET, Route: adminDashboard]
+in APPPATH/Controllers/Dashboard/DashboardController.php on line 33.
+ 1 APPPATH/Controllers/Dashboard/DashboardController.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Dashboard\\DashboardController::$EnquiryModel', '/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Controllers/Dashboard/DashboardController.php', 33)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Dashboard\DashboardController->adminDashboard()
+ 3 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard\DashboardController))
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-12 06:53:59 --> ErrorException: Undefined property: App\Controllers\Dashboard\DashboardController::$EnquiryModel
+[Method: GET, Route: adminDashboard]
+in APPPATH/Controllers/Dashboard/DashboardController.php on line 33.
+ 1 APPPATH/Controllers/Dashboard/DashboardController.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Dashboard\\DashboardController::$EnquiryModel', '/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Controllers/Dashboard/DashboardController.php', 33)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Dashboard\DashboardController->adminDashboard()
+ 3 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard\DashboardController))
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-12 07:17:23 --> ErrorException: Undefined array key "cm_del"
+[Method: GET, Route: viewCustomerList]
+in APPPATH/Views/User/viewCustomerList.php on line 47.
+ 1 APPPATH/Views/User/viewCustomerList.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "cm_del"', '/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Views/User/viewCustomerList.php', 47)
+ 2 SYSTEMPATH/View/View.php(224): include('/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Views/User/viewCustomerList.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1173): CodeIgniter\View\View->render('User/viewCustomerList', [], true)
+ 5 APPPATH/Controllers/User/UserController.php(23): view('User/viewCustomerList', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\User\UserController->viewCustomerList()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\UserController))
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-12 07:17:23 --> ErrorException: Undefined array key "cm_del"
+[Method: GET, Route: viewCustomerList]
+in APPPATH/Views/User/viewCustomerList.php on line 47.
+ 1 APPPATH/Views/User/viewCustomerList.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "cm_del"', '/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Views/User/viewCustomerList.php', 47)
+ 2 SYSTEMPATH/View/View.php(224): include('/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Views/User/viewCustomerList.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1173): CodeIgniter\View\View->render('User/viewCustomerList', [], true)
+ 5 APPPATH/Controllers/User/UserController.php(23): view('User/viewCustomerList', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\User\UserController->viewCustomerList()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\UserController))
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-12 07:29:43 --> ErrorException: Undefined array key "um_list"
+[Method: POST, Route: updateUserPro]
+in APPPATH/Controllers/User/UserController.php on line 256.
+ 1 APPPATH/Controllers/User/UserController.php(256): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "um_list"', '/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Controllers/User/UserController.php', 256)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\User\UserController->updateUserPro()
+ 3 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\UserController))
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-12 08:01:03 --> CodeIgniter\Database\Exceptions\DatabaseException: You must set the database table to be used with your query.
+[Method: GET, Route: adminDashboard]
+in SYSTEMPATH/Database/BaseConnection.php on line 941.
+ 1 SYSTEMPATH/Model.php(714): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH/Model.php(920): CodeIgniter\Model->builder()
+ 3 APPPATH/Controllers/Dashboard/DashboardController.php(38): CodeIgniter\Model->__call('getUserCount', [])
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Dashboard\DashboardController->adminDashboard()
+ 5 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard\DashboardController))
+ 6 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-12 08:01:05 --> CodeIgniter\Database\Exceptions\DatabaseException: You must set the database table to be used with your query.
+[Method: GET, Route: adminDashboard]
+in SYSTEMPATH/Database/BaseConnection.php on line 941.
+ 1 SYSTEMPATH/Model.php(714): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH/Model.php(920): CodeIgniter\Model->builder()
+ 3 APPPATH/Controllers/Dashboard/DashboardController.php(38): CodeIgniter\Model->__call('getUserCount', [])
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Dashboard\DashboardController->adminDashboard()
+ 5 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard\DashboardController))
+ 6 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-12 08:01:05 --> CodeIgniter\Database\Exceptions\DatabaseException: You must set the database table to be used with your query.
+[Method: GET, Route: adminDashboard]
+in SYSTEMPATH/Database/BaseConnection.php on line 941.
+ 1 SYSTEMPATH/Model.php(714): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH/Model.php(920): CodeIgniter\Model->builder()
+ 3 APPPATH/Controllers/Dashboard/DashboardController.php(38): CodeIgniter\Model->__call('getUserCount', [])
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Dashboard\DashboardController->adminDashboard()
+ 5 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard\DashboardController))
+ 6 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-12 08:01:06 --> CodeIgniter\Database\Exceptions\DatabaseException: You must set the database table to be used with your query.
+[Method: GET, Route: adminDashboard]
+in SYSTEMPATH/Database/BaseConnection.php on line 941.
+ 1 SYSTEMPATH/Model.php(714): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH/Model.php(920): CodeIgniter\Model->builder()
+ 3 APPPATH/Controllers/Dashboard/DashboardController.php(38): CodeIgniter\Model->__call('getUserCount', [])
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Dashboard\DashboardController->adminDashboard()
+ 5 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard\DashboardController))
+ 6 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-12 08:01:11 --> Error: Call to undefined method App\Controllers\Dashboard\DashboardController::getUserCount()
+[Method: GET, Route: adminDashboard]
+in APPPATH/Controllers/Dashboard/DashboardController.php on line 38.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Dashboard\DashboardController->adminDashboard()
+ 2 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard\DashboardController))
+ 3 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-12 08:01:12 --> Error: Call to undefined method App\Controllers\Dashboard\DashboardController::getUserCount()
+[Method: GET, Route: adminDashboard]
+in APPPATH/Controllers/Dashboard/DashboardController.php on line 38.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Dashboard\DashboardController->adminDashboard()
+ 2 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard\DashboardController))
+ 3 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-12 08:01:34 --> CodeIgniter\Database\Exceptions\DatabaseException: You must set the database table to be used with your query.
+[Method: GET, Route: adminDashboard]
+in SYSTEMPATH/Database/BaseConnection.php on line 941.
+ 1 SYSTEMPATH/Model.php(714): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH/Model.php(920): CodeIgniter\Model->builder()
+ 3 APPPATH/Controllers/Dashboard/DashboardController.php(38): CodeIgniter\Model->__call('getUserCount', [])
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Dashboard\DashboardController->adminDashboard()
+ 5 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard\DashboardController))
+ 6 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-12 08:02:00 --> CodeIgniter\Database\Exceptions\DatabaseException: You must set the database table to be used with your query.
+[Method: GET, Route: adminDashboard]
+in SYSTEMPATH/Database/BaseConnection.php on line 941.
+ 1 SYSTEMPATH/Model.php(714): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH/Model.php(920): CodeIgniter\Model->builder()
+ 3 APPPATH/Controllers/Dashboard/DashboardController.php(38): CodeIgniter\Model->__call('getUserCount', [])
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Dashboard\DashboardController->adminDashboard()
+ 5 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard\DashboardController))
+ 6 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-12 08:02:01 --> CodeIgniter\Database\Exceptions\DatabaseException: You must set the database table to be used with your query.
+[Method: GET, Route: adminDashboard]
+in SYSTEMPATH/Database/BaseConnection.php on line 941.
+ 1 SYSTEMPATH/Model.php(714): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH/Model.php(920): CodeIgniter\Model->builder()
+ 3 APPPATH/Controllers/Dashboard/DashboardController.php(38): CodeIgniter\Model->__call('getUserCount', [])
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Dashboard\DashboardController->adminDashboard()
+ 5 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard\DashboardController))
+ 6 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-12 08:02:02 --> CodeIgniter\Database\Exceptions\DatabaseException: You must set the database table to be used with your query.
+[Method: GET, Route: adminDashboard]
+in SYSTEMPATH/Database/BaseConnection.php on line 941.
+ 1 SYSTEMPATH/Model.php(714): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH/Model.php(920): CodeIgniter\Model->builder()
+ 3 APPPATH/Controllers/Dashboard/DashboardController.php(38): CodeIgniter\Model->__call('getUserCount', [])
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Dashboard\DashboardController->adminDashboard()
+ 5 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard\DashboardController))
+ 6 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-12 08:02:02 --> CodeIgniter\Database\Exceptions\DatabaseException: You must set the database table to be used with your query.
+[Method: GET, Route: adminDashboard]
+in SYSTEMPATH/Database/BaseConnection.php on line 941.
+ 1 SYSTEMPATH/Model.php(714): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH/Model.php(920): CodeIgniter\Model->builder()
+ 3 APPPATH/Controllers/Dashboard/DashboardController.php(38): CodeIgniter\Model->__call('getUserCount', [])
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Dashboard\DashboardController->adminDashboard()
+ 5 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard\DashboardController))
+ 6 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-12 08:02:02 --> CodeIgniter\Database\Exceptions\DatabaseException: You must set the database table to be used with your query.
+[Method: GET, Route: adminDashboard]
+in SYSTEMPATH/Database/BaseConnection.php on line 941.
+ 1 SYSTEMPATH/Model.php(714): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH/Model.php(920): CodeIgniter\Model->builder()
+ 3 APPPATH/Controllers/Dashboard/DashboardController.php(38): CodeIgniter\Model->__call('getUserCount', [])
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Dashboard\DashboardController->adminDashboard()
+ 5 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard\DashboardController))
+ 6 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-12 08:02:02 --> CodeIgniter\Database\Exceptions\DatabaseException: You must set the database table to be used with your query.
+[Method: GET, Route: adminDashboard]
+in SYSTEMPATH/Database/BaseConnection.php on line 941.
+ 1 SYSTEMPATH/Model.php(714): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH/Model.php(920): CodeIgniter\Model->builder()
+ 3 APPPATH/Controllers/Dashboard/DashboardController.php(38): CodeIgniter\Model->__call('getUserCount', [])
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Dashboard\DashboardController->adminDashboard()
+ 5 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard\DashboardController))
+ 6 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-12 08:02:24 --> CodeIgniter\Database\Exceptions\DatabaseException: You must set the database table to be used with your query.
+[Method: GET, Route: adminDashboard]
+in SYSTEMPATH/Database/BaseConnection.php on line 941.
+ 1 SYSTEMPATH/Model.php(714): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH/Model.php(920): CodeIgniter\Model->builder()
+ 3 APPPATH/Controllers/Dashboard/DashboardController.php(38): CodeIgniter\Model->__call('getUserCount', [])
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Dashboard\DashboardController->adminDashboard()
+ 5 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard\DashboardController))
+ 6 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-12 08:02:57 --> ErrorException: Attempt to read property "total" on array
+[Method: GET, Route: adminDashboard]
+in APPPATH/Models/User/UserModel.php on line 12.
+ 1 APPPATH/Models/User/UserModel.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "total" on array', '/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Models/User/UserModel.php', 12)
+ 2 APPPATH/Controllers/Dashboard/DashboardController.php(38): App\Models\User\UserModel->getUserCount()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Dashboard\DashboardController->adminDashboard()
+ 4 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard\DashboardController))
+ 5 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-12 08:02:58 --> ErrorException: Attempt to read property "total" on array
+[Method: GET, Route: adminDashboard]
+in APPPATH/Models/User/UserModel.php on line 12.
+ 1 APPPATH/Models/User/UserModel.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "total" on array', '/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Models/User/UserModel.php', 12)
+ 2 APPPATH/Controllers/Dashboard/DashboardController.php(38): App\Models\User\UserModel->getUserCount()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Dashboard\DashboardController->adminDashboard()
+ 4 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard\DashboardController))
+ 5 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-12 08:03:11 --> ErrorException: Undefined variable $userCount
+[Method: GET, Route: adminDashboard]
+in APPPATH/Views/Dashboard/adminDashboard.php on line 85.
+ 1 APPPATH/Views/Dashboard/adminDashboard.php(85): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $userCount', '/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Views/Dashboard/adminDashboard.php', 85)
+ 2 SYSTEMPATH/View/View.php(224): include('/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Views/Dashboard/adminDashboard.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1173): CodeIgniter\View\View->render('Dashboard/adminDashboard', [], true)
+ 5 APPPATH/Controllers/Dashboard/DashboardController.php(39): view('Dashboard/adminDashboard', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Dashboard\DashboardController->adminDashboard()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard\DashboardController))
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-12 08:03:12 --> ErrorException: Undefined variable $userCount
+[Method: GET, Route: adminDashboard]
+in APPPATH/Views/Dashboard/adminDashboard.php on line 85.
+ 1 APPPATH/Views/Dashboard/adminDashboard.php(85): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $userCount', '/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Views/Dashboard/adminDashboard.php', 85)
+ 2 SYSTEMPATH/View/View.php(224): include('/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Views/Dashboard/adminDashboard.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1173): CodeIgniter\View\View->render('Dashboard/adminDashboard', [], true)
+ 5 APPPATH/Controllers/Dashboard/DashboardController.php(39): view('Dashboard/adminDashboard', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Dashboard\DashboardController->adminDashboard()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard\DashboardController))
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-12 08:03:22 --> TypeError: view(): Argument #3 ($options) must be of type array, string given, called in /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Controllers/Dashboard/DashboardController.php on line 39
+[Method: GET, Route: adminDashboard]
+in SYSTEMPATH/Common.php on line 1161.
+ 1 APPPATH/Controllers/Dashboard/DashboardController.php(39): view('Dashboard/adminDashboard', [...], '1')
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Dashboard\DashboardController->adminDashboard()
+ 3 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard\DashboardController))
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-12 08:03:56 --> TypeError: view(): Argument #3 ($options) must be of type array, string given, called in /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Controllers/Dashboard/DashboardController.php on line 39
+[Method: GET, Route: adminDashboard]
+in SYSTEMPATH/Common.php on line 1161.
+ 1 APPPATH/Controllers/Dashboard/DashboardController.php(39): view('Dashboard/adminDashboard', [...], '1')
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Dashboard\DashboardController->adminDashboard()
+ 3 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard\DashboardController))
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-12 09:26:45 --> CodeIgniter\Database\Exceptions\DatabaseException: You must set the database table to be used with your query.
+[Method: GET, Route: offlineOrderList]
+in SYSTEMPATH/Database/BaseConnection.php on line 941.
+ 1 SYSTEMPATH/Model.php(714): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH/Model.php(920): CodeIgniter\Model->builder()
+ 3 APPPATH/Controllers/Order/OrderController.php(20): CodeIgniter\Model->__call('getofflineOrderList', [])
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Order\OrderController->offlineOrderList()
+ 5 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order\OrderController))
+ 6 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-12 09:27:11 --> CodeIgniter\Database\Exceptions\DatabaseException: You must set the database table to be used with your query.
+[Method: GET, Route: offlineOrderList]
+in SYSTEMPATH/Database/BaseConnection.php on line 941.
+ 1 SYSTEMPATH/Model.php(714): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH/Model.php(920): CodeIgniter\Model->builder()
+ 3 APPPATH/Controllers/Order/OrderController.php(20): CodeIgniter\Model->__call('getofflineOrderList', [])
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Order\OrderController->offlineOrderList()
+ 5 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order\OrderController))
+ 6 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-12 09:27:12 --> CodeIgniter\Database\Exceptions\DatabaseException: You must set the database table to be used with your query.
+[Method: GET, Route: offlineOrderList]
+in SYSTEMPATH/Database/BaseConnection.php on line 941.
+ 1 SYSTEMPATH/Model.php(714): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH/Model.php(920): CodeIgniter\Model->builder()
+ 3 APPPATH/Controllers/Order/OrderController.php(20): CodeIgniter\Model->__call('getofflineOrderList', [])
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Order\OrderController->offlineOrderList()
+ 5 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order\OrderController))
+ 6 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-12 09:27:12 --> CodeIgniter\Database\Exceptions\DatabaseException: You must set the database table to be used with your query.
+[Method: GET, Route: offlineOrderList]
+in SYSTEMPATH/Database/BaseConnection.php on line 941.
+ 1 SYSTEMPATH/Model.php(714): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH/Model.php(920): CodeIgniter\Model->builder()
+ 3 APPPATH/Controllers/Order/OrderController.php(20): CodeIgniter\Model->__call('getofflineOrderList', [])
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Order\OrderController->offlineOrderList()
+ 5 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order\OrderController))
+ 6 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-12 09:27:12 --> CodeIgniter\Database\Exceptions\DatabaseException: You must set the database table to be used with your query.
+[Method: GET, Route: offlineOrderList]
+in SYSTEMPATH/Database/BaseConnection.php on line 941.
+ 1 SYSTEMPATH/Model.php(714): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH/Model.php(920): CodeIgniter\Model->builder()
+ 3 APPPATH/Controllers/Order/OrderController.php(20): CodeIgniter\Model->__call('getofflineOrderList', [])
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Order\OrderController->offlineOrderList()
+ 5 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order\OrderController))
+ 6 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-12 09:27:12 --> CodeIgniter\Database\Exceptions\DatabaseException: You must set the database table to be used with your query.
+[Method: GET, Route: offlineOrderList]
+in SYSTEMPATH/Database/BaseConnection.php on line 941.
+ 1 SYSTEMPATH/Model.php(714): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH/Model.php(920): CodeIgniter\Model->builder()
+ 3 APPPATH/Controllers/Order/OrderController.php(20): CodeIgniter\Model->__call('getofflineOrderList', [])
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Order\OrderController->offlineOrderList()
+ 5 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order\OrderController))
+ 6 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-12 09:27:34 --> CodeIgniter\Database\Exceptions\DatabaseException: You must set the database table to be used with your query.
+[Method: GET, Route: offlineOrderList]
+in SYSTEMPATH/Database/BaseConnection.php on line 941.
+ 1 SYSTEMPATH/Model.php(714): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH/Model.php(920): CodeIgniter\Model->builder()
+ 3 APPPATH/Controllers/Order/OrderController.php(20): CodeIgniter\Model->__call('getofflineOrderList', [])
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Order\OrderController->offlineOrderList()
+ 5 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order\OrderController))
+ 6 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-12 09:27:35 --> CodeIgniter\Database\Exceptions\DatabaseException: You must set the database table to be used with your query.
+[Method: GET, Route: offlineOrderList]
+in SYSTEMPATH/Database/BaseConnection.php on line 941.
+ 1 SYSTEMPATH/Model.php(714): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH/Model.php(920): CodeIgniter\Model->builder()
+ 3 APPPATH/Controllers/Order/OrderController.php(20): CodeIgniter\Model->__call('getofflineOrderList', [])
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Order\OrderController->offlineOrderList()
+ 5 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order\OrderController))
+ 6 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-12 09:27:35 --> CodeIgniter\Database\Exceptions\DatabaseException: You must set the database table to be used with your query.
+[Method: GET, Route: offlineOrderList]
+in SYSTEMPATH/Database/BaseConnection.php on line 941.
+ 1 SYSTEMPATH/Model.php(714): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH/Model.php(920): CodeIgniter\Model->builder()
+ 3 APPPATH/Controllers/Order/OrderController.php(20): CodeIgniter\Model->__call('getofflineOrderList', [])
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Order\OrderController->offlineOrderList()
+ 5 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order\OrderController))
+ 6 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-12 09:27:35 --> CodeIgniter\Database\Exceptions\DatabaseException: You must set the database table to be used with your query.
+[Method: GET, Route: offlineOrderList]
+in SYSTEMPATH/Database/BaseConnection.php on line 941.
+ 1 SYSTEMPATH/Model.php(714): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH/Model.php(920): CodeIgniter\Model->builder()
+ 3 APPPATH/Controllers/Order/OrderController.php(20): CodeIgniter\Model->__call('getofflineOrderList', [])
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Order\OrderController->offlineOrderList()
+ 5 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order\OrderController))
+ 6 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-12 09:27:35 --> CodeIgniter\Database\Exceptions\DatabaseException: You must set the database table to be used with your query.
+[Method: GET, Route: offlineOrderList]
+in SYSTEMPATH/Database/BaseConnection.php on line 941.
+ 1 SYSTEMPATH/Model.php(714): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH/Model.php(920): CodeIgniter\Model->builder()
+ 3 APPPATH/Controllers/Order/OrderController.php(20): CodeIgniter\Model->__call('getofflineOrderList', [])
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Order\OrderController->offlineOrderList()
+ 5 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order\OrderController))
+ 6 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-12 09:27:40 --> CodeIgniter\Database\Exceptions\DatabaseException: You must set the database table to be used with your query.
+[Method: GET, Route: offlineOrderList]
+in SYSTEMPATH/Database/BaseConnection.php on line 941.
+ 1 SYSTEMPATH/Model.php(714): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH/Model.php(920): CodeIgniter\Model->builder()
+ 3 APPPATH/Controllers/Order/OrderController.php(20): CodeIgniter\Model->__call('getofflineOrderList', [])
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Order\OrderController->offlineOrderList()
+ 5 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order\OrderController))
+ 6 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-12 09:28:14 --> CodeIgniter\Database\Exceptions\DatabaseException: You must set the database table to be used with your query.
+[Method: GET, Route: offlineOrderList]
+in SYSTEMPATH/Database/BaseConnection.php on line 941.
+ 1 SYSTEMPATH/Model.php(714): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH/Model.php(920): CodeIgniter\Model->builder()
+ 3 APPPATH/Controllers/Order/OrderController.php(20): CodeIgniter\Model->__call('getofflineOrderList', [])
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Order\OrderController->offlineOrderList()
+ 5 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order\OrderController))
+ 6 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-12 09:28:16 --> CodeIgniter\Database\Exceptions\DatabaseException: You must set the database table to be used with your query.
+[Method: GET, Route: offlineOrderList]
+in SYSTEMPATH/Database/BaseConnection.php on line 941.
+ 1 SYSTEMPATH/Model.php(714): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH/Model.php(920): CodeIgniter\Model->builder()
+ 3 APPPATH/Controllers/Order/OrderController.php(20): CodeIgniter\Model->__call('getofflineOrderList', [])
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Order\OrderController->offlineOrderList()
+ 5 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order\OrderController))
+ 6 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-12 09:28:16 --> CodeIgniter\Database\Exceptions\DatabaseException: You must set the database table to be used with your query.
+[Method: GET, Route: offlineOrderList]
+in SYSTEMPATH/Database/BaseConnection.php on line 941.
+ 1 SYSTEMPATH/Model.php(714): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH/Model.php(920): CodeIgniter\Model->builder()
+ 3 APPPATH/Controllers/Order/OrderController.php(20): CodeIgniter\Model->__call('getofflineOrderList', [])
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Order\OrderController->offlineOrderList()
+ 5 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order\OrderController))
+ 6 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-12 09:28:16 --> CodeIgniter\Database\Exceptions\DatabaseException: You must set the database table to be used with your query.
+[Method: GET, Route: offlineOrderList]
+in SYSTEMPATH/Database/BaseConnection.php on line 941.
+ 1 SYSTEMPATH/Model.php(714): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH/Model.php(920): CodeIgniter\Model->builder()
+ 3 APPPATH/Controllers/Order/OrderController.php(20): CodeIgniter\Model->__call('getofflineOrderList', [])
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Order\OrderController->offlineOrderList()
+ 5 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order\OrderController))
+ 6 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-05-12 09:34:55 --> mysqli_sql_exception: Table 'sitsolutionsco_smart_gavali.tbl_user' doesn't exist in /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/Database/MySQLi/Connection.php:327
+Stack trace:
+#0 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/Database/MySQLi/Connection.php(327): mysqli->query('SELECT * FROM t...', 0)
+#1 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/Database/BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM t...')
+#2 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/Database/BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM t...')
+#3 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Views/Order/offlineOrderList.php(60): CodeIgniter\Database\BaseConnection->query('SELECT * FROM t...')
+#4 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/View/View.php(224): include('/home/sitsoluti...')
+#5 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#6 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/Common.php(1173): CodeIgniter\View\View->render('Order/offlineOr...', Array, true)
+#7 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Controllers/Order/OrderController.php(21): view('Order/offlineOr...', Array)
+#8 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/CodeIgniter.php(933): App\Controllers\Order\OrderController->offlineOrderList()
+#9 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order\OrderController))
+#10 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2025-05-12 09:34:55 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'sitsolutionsco_smart_gavali.tbl_user' doesn't exist
+[Method: GET, Route: offlineOrderList]
+in SYSTEMPATH/Database/BaseConnection.php on line 692.
+ 1 APPPATH/Views/Order/offlineOrderList.php(60): CodeIgniter\Database\BaseConnection->query('SELECT * FROM tbl_user WHERE id = 4')
+ 2 SYSTEMPATH/View/View.php(224): include('/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Views/Order/offlineOrderList.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1173): CodeIgniter\View\View->render('Order/offlineOrderList', [], true)
+ 5 APPPATH/Controllers/Order/OrderController.php(21): view('Order/offlineOrderList', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Order\OrderController->offlineOrderList()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order\OrderController))
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-12 09:34:55 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'sitsolutionsco_smart_gavali.tbl_user' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 332.
+ 1 SYSTEMPATH/Database/BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM tbl_user WHERE id = 4')
+ 2 SYSTEMPATH/Database/BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM tbl_user WHERE id = 4')
+ 3 APPPATH/Views/Order/offlineOrderList.php(60): CodeIgniter\Database\BaseConnection->query('SELECT * FROM tbl_user WHERE id = 4')
+ 4 SYSTEMPATH/View/View.php(224): include('/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Views/Order/offlineOrderList.php')
+ 5 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH/Common.php(1173): CodeIgniter\View\View->render('Order/offlineOrderList', [], true)
+ 7 APPPATH/Controllers/Order/OrderController.php(21): view('Order/offlineOrderList', [...])
+ 8 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Order\OrderController->offlineOrderList()
+ 9 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order\OrderController))
+10 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-12 09:34:55 --> [Caused by] mysqli_sql_exception: Table 'sitsolutionsco_smart_gavali.tbl_user' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 327.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(327): mysqli->query('SELECT * FROM tbl_user WHERE id = 4', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM tbl_user WHERE id = 4')
+ 3 SYSTEMPATH/Database/BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM tbl_user WHERE id = 4')
+ 4 APPPATH/Views/Order/offlineOrderList.php(60): CodeIgniter\Database\BaseConnection->query('SELECT * FROM tbl_user WHERE id = 4')
+ 5 SYSTEMPATH/View/View.php(224): include('/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Views/Order/offlineOrderList.php')
+ 6 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH/Common.php(1173): CodeIgniter\View\View->render('Order/offlineOrderList', [], true)
+ 8 APPPATH/Controllers/Order/OrderController.php(21): view('Order/offlineOrderList', [...])
+ 9 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Order\OrderController->offlineOrderList()
+10 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order\OrderController))
+11 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-12 09:35:07 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: offlineOrderList]
+in APPPATH/Views/Order/offlineOrderList.php on line 69.
+ 1 APPPATH/Views/Order/offlineOrderList.php(69): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Views/Order/offlineOrderList.php', 69)
+ 2 SYSTEMPATH/View/View.php(224): include('/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Views/Order/offlineOrderList.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1173): CodeIgniter\View\View->render('Order/offlineOrderList', [], true)
+ 5 APPPATH/Controllers/Order/OrderController.php(21): view('Order/offlineOrderList', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Order\OrderController->offlineOrderList()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order\OrderController))
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-12 09:35:08 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: offlineOrderList]
+in APPPATH/Views/Order/offlineOrderList.php on line 69.
+ 1 APPPATH/Views/Order/offlineOrderList.php(69): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Views/Order/offlineOrderList.php', 69)
+ 2 SYSTEMPATH/View/View.php(224): include('/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Views/Order/offlineOrderList.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1173): CodeIgniter\View\View->render('Order/offlineOrderList', [], true)
+ 5 APPPATH/Controllers/Order/OrderController.php(21): view('Order/offlineOrderList', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Order\OrderController->offlineOrderList()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order\OrderController))
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-12 09:35:58 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: offlineOrderList]
+in APPPATH/Views/Order/offlineOrderList.php on line 69.
+ 1 APPPATH/Views/Order/offlineOrderList.php(69): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Views/Order/offlineOrderList.php', 69)
+ 2 SYSTEMPATH/View/View.php(224): include('/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Views/Order/offlineOrderList.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1173): CodeIgniter\View\View->render('Order/offlineOrderList', [], true)
+ 5 APPPATH/Controllers/Order/OrderController.php(21): view('Order/offlineOrderList', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Order\OrderController->offlineOrderList()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order\OrderController))
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-12 09:35:59 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: offlineOrderList]
+in APPPATH/Views/Order/offlineOrderList.php on line 69.
+ 1 APPPATH/Views/Order/offlineOrderList.php(69): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Views/Order/offlineOrderList.php', 69)
+ 2 SYSTEMPATH/View/View.php(224): include('/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Views/Order/offlineOrderList.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1173): CodeIgniter\View\View->render('Order/offlineOrderList', [], true)
+ 5 APPPATH/Controllers/Order/OrderController.php(21): view('Order/offlineOrderList', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Order\OrderController->offlineOrderList()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order\OrderController))
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-12 09:56:59 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: orderList]
+in APPPATH/Views/Order/orderList.php on line 70.
+ 1 APPPATH/Views/Order/orderList.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Views/Order/orderList.php', 70)
+ 2 SYSTEMPATH/View/View.php(224): include('/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Views/Order/orderList.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1173): CodeIgniter\View\View->render('Order/orderList', [], true)
+ 5 APPPATH/Controllers/Order/OrderController.php(21): view('Order/orderList', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Order\OrderController->orderList()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order\OrderController))
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-12 10:06:33 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: orderList]
+in APPPATH/Views/Order/orderList.php on line 73.
+ 1 APPPATH/Views/Order/orderList.php(73): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Views/Order/orderList.php', 73)
+ 2 SYSTEMPATH/View/View.php(224): include('/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Views/Order/orderList.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1173): CodeIgniter\View\View->render('Order/orderList', [], true)
+ 5 APPPATH/Controllers/Order/OrderController.php(21): view('Order/orderList', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Order\OrderController->orderList()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order\OrderController))
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-12 10:06:35 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: orderList]
+in APPPATH/Views/Order/orderList.php on line 73.
+ 1 APPPATH/Views/Order/orderList.php(73): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Views/Order/orderList.php', 73)
+ 2 SYSTEMPATH/View/View.php(224): include('/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Views/Order/orderList.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1173): CodeIgniter\View\View->render('Order/orderList', [], true)
+ 5 APPPATH/Controllers/Order/OrderController.php(21): view('Order/orderList', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Order\OrderController->orderList()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order\OrderController))
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-12 10:12:43 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: orderList]
+in APPPATH/Views/Order/orderList.php on line 73.
+ 1 APPPATH/Views/Order/orderList.php(73): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Views/Order/orderList.php', 73)
+ 2 SYSTEMPATH/View/View.php(224): include('/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Views/Order/orderList.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1173): CodeIgniter\View\View->render('Order/orderList', [], true)
+ 5 APPPATH/Controllers/Order/OrderController.php(21): view('Order/orderList', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Order\OrderController->orderList()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order\OrderController))
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-12 10:32:25 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: orderList]
+in APPPATH/Views/Order/orderList.php on line 73.
+ 1 APPPATH/Views/Order/orderList.php(73): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Views/Order/orderList.php', 73)
+ 2 SYSTEMPATH/View/View.php(224): include('/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Views/Order/orderList.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1173): CodeIgniter\View\View->render('Order/orderList', [], true)
+ 5 APPPATH/Controllers/Order/OrderController.php(21): view('Order/orderList', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Order\OrderController->orderList()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order\OrderController))
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-12 10:32:52 --> ErrorException: Undefined array key "om_edit"
+[Method: GET, Route: orderList]
+in APPPATH/Views/Order/orderList.php on line 86.
+ 1 APPPATH/Views/Order/orderList.php(86): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "om_edit"', '/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Views/Order/orderList.php', 86)
+ 2 SYSTEMPATH/View/View.php(224): include('/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Views/Order/orderList.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1173): CodeIgniter\View\View->render('Order/orderList', [], true)
+ 5 APPPATH/Controllers/Order/OrderController.php(21): view('Order/orderList', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Order\OrderController->orderList()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order\OrderController))
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-12 10:32:55 --> ErrorException: Undefined array key "om_edit"
+[Method: GET, Route: orderList]
+in APPPATH/Views/Order/orderList.php on line 86.
+ 1 APPPATH/Views/Order/orderList.php(86): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "om_edit"', '/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Views/Order/orderList.php', 86)
+ 2 SYSTEMPATH/View/View.php(224): include('/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Views/Order/orderList.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1173): CodeIgniter\View\View->render('Order/orderList', [], true)
+ 5 APPPATH/Controllers/Order/OrderController.php(21): view('Order/orderList', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Order\OrderController->orderList()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order\OrderController))
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-12 10:33:30 --> ErrorException: Undefined array key "om_edit"
+[Method: GET, Route: orderList]
+in APPPATH/Views/Order/orderList.php on line 86.
+ 1 APPPATH/Views/Order/orderList.php(86): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "om_edit"', '/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Views/Order/orderList.php', 86)
+ 2 SYSTEMPATH/View/View.php(224): include('/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Views/Order/orderList.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1173): CodeIgniter\View\View->render('Order/orderList', [], true)
+ 5 APPPATH/Controllers/Order/OrderController.php(21): view('Order/orderList', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Order\OrderController->orderList()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order\OrderController))
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-12 10:33:30 --> ErrorException: Undefined array key "om_edit"
+[Method: GET, Route: orderList]
+in APPPATH/Views/Order/orderList.php on line 86.
+ 1 APPPATH/Views/Order/orderList.php(86): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "om_edit"', '/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Views/Order/orderList.php', 86)
+ 2 SYSTEMPATH/View/View.php(224): include('/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Views/Order/orderList.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1173): CodeIgniter\View\View->render('Order/orderList', [], true)
+ 5 APPPATH/Controllers/Order/OrderController.php(21): view('Order/orderList', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Order\OrderController->orderList()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order\OrderController))
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-12 10:33:46 --> ErrorException: Undefined array key "om_edit"
+[Method: GET, Route: orderList]
+in APPPATH/Views/Order/orderList.php on line 86.
+ 1 APPPATH/Views/Order/orderList.php(86): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "om_edit"', '/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Views/Order/orderList.php', 86)
+ 2 SYSTEMPATH/View/View.php(224): include('/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Views/Order/orderList.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1173): CodeIgniter\View\View->render('Order/orderList', [], true)
+ 5 APPPATH/Controllers/Order/OrderController.php(21): view('Order/orderList', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Order\OrderController->orderList()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order\OrderController))
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-12 10:42:55 --> ErrorException: Undefined property: App\Controllers\API\Login::$db
+[Method: POST, Route: do_login]
+in APPPATH/Controllers/API/Login.php on line 43.
+ 1 APPPATH/Controllers/API/Login.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\API\\Login::$db', '/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Controllers/API/Login.php', 43)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\API\Login->do_login()
+ 3 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\API\Login))
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-12 10:44:55 --> ErrorException: Undefined property: App\Controllers\API\Login::$db
+[Method: POST, Route: do_login]
+in APPPATH/Controllers/API/Login.php on line 43.
+ 1 APPPATH/Controllers/API/Login.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\API\\Login::$db', '/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Controllers/API/Login.php', 43)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\API\Login->do_login()
+ 3 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\API\Login))
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-12 10:45:00 --> ErrorException: Undefined property: App\Controllers\API\Login::$db
+[Method: POST, Route: do_login]
+in APPPATH/Controllers/API/Login.php on line 43.
+ 1 APPPATH/Controllers/API/Login.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\API\\Login::$db', '/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Controllers/API/Login.php', 43)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\API\Login->do_login()
+ 3 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\API\Login))
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-12 10:45:56 --> ErrorException: Undefined property: App\Controllers\API\Login::$db
+[Method: POST, Route: do_login]
+in APPPATH/Controllers/API/Login.php on line 43.
+ 1 APPPATH/Controllers/API/Login.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\API\\Login::$db', '/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Controllers/API/Login.php', 43)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\API\Login->do_login()
+ 3 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\API\Login))
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-12 10:46:16 --> ErrorException: Undefined property: App\Controllers\API\Login::$db
+[Method: POST, Route: do_login]
+in APPPATH/Controllers/API/Login.php on line 43.
+ 1 APPPATH/Controllers/API/Login.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\API\\Login::$db', '/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Controllers/API/Login.php', 43)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\API\Login->do_login()
+ 3 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\API\Login))
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-12 10:46:26 --> ErrorException: Undefined property: App\Controllers\API\Login::$db
+[Method: POST, Route: do_login]
+in APPPATH/Controllers/API/Login.php on line 43.
+ 1 APPPATH/Controllers/API/Login.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\API\\Login::$db', '/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Controllers/API/Login.php', 43)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\API\Login->do_login()
+ 3 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\API\Login))
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-12 10:46:37 --> ErrorException: Undefined property: App\Controllers\API\Login::$db
+[Method: POST, Route: do_login]
+in APPPATH/Controllers/API/Login.php on line 43.
+ 1 APPPATH/Controllers/API/Login.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\API\\Login::$db', '/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Controllers/API/Login.php', 43)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\API\Login->do_login()
+ 3 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\API\Login))
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-12 10:46:55 --> ErrorException: Undefined property: App\Controllers\API\Login::$db
+[Method: POST, Route: do_login]
+in APPPATH/Controllers/API/Login.php on line 43.
+ 1 APPPATH/Controllers/API/Login.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\API\\Login::$db', '/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Controllers/API/Login.php', 43)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\API\Login->do_login()
+ 3 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\API\Login))
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-12 10:46:57 --> ErrorException: Undefined property: App\Controllers\API\Login::$db
+[Method: POST, Route: do_login]
+in APPPATH/Controllers/API/Login.php on line 43.
+ 1 APPPATH/Controllers/API/Login.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\API\\Login::$db', '/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Controllers/API/Login.php', 43)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\API\Login->do_login()
+ 3 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\API\Login))
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-12 10:47:01 --> ErrorException: Undefined property: App\Controllers\API\Login::$db
+[Method: POST, Route: do_login]
+in APPPATH/Controllers/API/Login.php on line 43.
+ 1 APPPATH/Controllers/API/Login.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\API\\Login::$db', '/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Controllers/API/Login.php', 43)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\API\Login->do_login()
+ 3 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\API\Login))
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-12 10:47:07 --> ErrorException: Undefined property: App\Controllers\API\Login::$db
+[Method: POST, Route: do_login]
+in APPPATH/Controllers/API/Login.php on line 43.
+ 1 APPPATH/Controllers/API/Login.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\API\\Login::$db', '/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Controllers/API/Login.php', 43)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\API\Login->do_login()
+ 3 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\API\Login))
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-12 10:47:23 --> ErrorException: Undefined variable $userData
+[Method: POST, Route: do_login]
+in APPPATH/Controllers/API/Login.php on line 44.
+ 1 APPPATH/Controllers/API/Login.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $userData', '/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Controllers/API/Login.php', 44)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\API\Login->do_login()
+ 3 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\API\Login))
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-12 10:47:37 --> ErrorException: Undefined property: App\Controllers\API\Login::$db
+[Method: POST, Route: do_login]
+in APPPATH/Controllers/API/Login.php on line 44.
+ 1 APPPATH/Controllers/API/Login.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\API\\Login::$db', '/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Controllers/API/Login.php', 44)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\API\Login->do_login()
+ 3 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\API\Login))
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-12 10:47:53 --> ErrorException: Undefined property: App\Controllers\API\Login::$db
+[Method: POST, Route: do_login]
+in APPPATH/Controllers/API/Login.php on line 44.
+ 1 APPPATH/Controllers/API/Login.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\API\\Login::$db', '/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Controllers/API/Login.php', 44)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\API\Login->do_login()
+ 3 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\API\Login))
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-12 10:47:55 --> ErrorException: Undefined property: App\Controllers\API\Login::$db
+[Method: POST, Route: do_login]
+in APPPATH/Controllers/API/Login.php on line 44.
+ 1 APPPATH/Controllers/API/Login.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\API\\Login::$db', '/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Controllers/API/Login.php', 44)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\API\Login->do_login()
+ 3 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\API\Login))
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-12 10:48:11 --> Error: Object of class CodeIgniter\Database\MySQLi\Connection could not be converted to string
+[Method: POST, Route: do_login]
+in APPPATH/Controllers/API/Login.php on line 44.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\API\Login->do_login()
+ 2 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\API\Login))
+ 3 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-12 10:48:22 --> Error: Object of class CodeIgniter\Database\MySQLi\Connection could not be converted to string
+[Method: POST, Route: do_login]
+in APPPATH/Controllers/API/Login.php on line 44.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\API\Login->do_login()
+ 2 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\API\Login))
+ 3 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-12 10:48:27 --> ErrorException: Undefined property: App\Controllers\API\Login::$db
+[Method: POST, Route: do_login]
+in APPPATH/Controllers/API/Login.php on line 44.
+ 1 APPPATH/Controllers/API/Login.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\API\\Login::$db', '/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Controllers/API/Login.php', 44)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\API\Login->do_login()
+ 3 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\API\Login))
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-12 10:51:47 --> ErrorException: Undefined property: App\Controllers\API\Login::$db
+[Method: POST, Route: do_login]
+in APPPATH/Controllers/API/Login.php on line 44.
+ 1 APPPATH/Controllers/API/Login.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\API\\Login::$db', '/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Controllers/API/Login.php', 44)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\API\Login->do_login()
+ 3 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\API\Login))
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-12 10:55:17 --> ErrorException: Undefined property: App\Controllers\API\Login::$db
+[Method: POST, Route: do_login]
+in APPPATH/Controllers/API/Login.php on line 44.
+ 1 APPPATH/Controllers/API/Login.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\API\\Login::$db', '/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Controllers/API/Login.php', 44)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\API\Login->do_login()
+ 3 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\API\Login))
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-12 10:55:42 --> ErrorException: Undefined property: App\Controllers\API\Login::$db
+[Method: POST, Route: do_login]
+in APPPATH/Controllers/API/Login.php on line 44.
+ 1 APPPATH/Controllers/API/Login.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\API\\Login::$db', '/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Controllers/API/Login.php', 44)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\API\Login->do_login()
+ 3 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\API\Login))
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-12 11:03:47 --> CodeIgniter\Database\Exceptions\DatabaseException: You must set the database table to be used with your query.
+[Method: GET, Route: updateOrderStatus]
+in SYSTEMPATH/Database/BaseConnection.php on line 941.
+ 1 SYSTEMPATH/Model.php(714): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH/Model.php(920): CodeIgniter\Model->builder()
+ 3 APPPATH/Controllers/Order/OrderController.php(27): CodeIgniter\Model->__call('getOrderById', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Order\OrderController->updateOrderStatus()
+ 5 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order\OrderController))
+ 6 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-12 11:09:21 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "Order/updateOrderStatus.php"
+[Method: GET, Route: updateOrderStatus]
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Order/updateOrderStatus.php')
+ 2 SYSTEMPATH/Common.php(1173): CodeIgniter\View\View->render('Order/updateOrderStatus', [], true)
+ 3 APPPATH/Controllers/Order/OrderController.php(28): view('Order/updateOrderStatus', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Order\OrderController->updateOrderStatus()
+ 5 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order\OrderController))
+ 6 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-12 11:09:22 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "Order/updateOrderStatus.php"
+[Method: GET, Route: updateOrderStatus]
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Order/updateOrderStatus.php')
+ 2 SYSTEMPATH/Common.php(1173): CodeIgniter\View\View->render('Order/updateOrderStatus', [], true)
+ 3 APPPATH/Controllers/Order/OrderController.php(28): view('Order/updateOrderStatus', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Order\OrderController->updateOrderStatus()
+ 5 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order\OrderController))
+ 6 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-12 11:10:22 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "Order/updateOrderStatus.php"
+[Method: GET, Route: updateOrderStatus]
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Order/updateOrderStatus.php')
+ 2 SYSTEMPATH/Common.php(1173): CodeIgniter\View\View->render('Order/updateOrderStatus', [], true)
+ 3 APPPATH/Controllers/Order/OrderController.php(28): view('Order/updateOrderStatus', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Order\OrderController->updateOrderStatus()
+ 5 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order\OrderController))
+ 6 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-12 11:15:30 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: orderList]
+in APPPATH/Views/Order/orderList.php on line 73.
+ 1 APPPATH/Views/Order/orderList.php(73): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Views/Order/orderList.php', 73)
+ 2 SYSTEMPATH/View/View.php(224): include('/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Views/Order/orderList.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1173): CodeIgniter\View\View->render('Order/orderList', [], true)
+ 5 APPPATH/Controllers/Order/OrderController.php(21): view('Order/orderList', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Order\OrderController->orderList()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order\OrderController))
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-12 11:15:32 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: orderList]
+in APPPATH/Views/Order/orderList.php on line 73.
+ 1 APPPATH/Views/Order/orderList.php(73): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Views/Order/orderList.php', 73)
+ 2 SYSTEMPATH/View/View.php(224): include('/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Views/Order/orderList.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1173): CodeIgniter\View\View->render('Order/orderList', [], true)
+ 5 APPPATH/Controllers/Order/OrderController.php(21): view('Order/orderList', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Order\OrderController->orderList()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order\OrderController))
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-12 11:15:33 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: orderList]
+in APPPATH/Views/Order/orderList.php on line 73.
+ 1 APPPATH/Views/Order/orderList.php(73): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Views/Order/orderList.php', 73)
+ 2 SYSTEMPATH/View/View.php(224): include('/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Views/Order/orderList.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1173): CodeIgniter\View\View->render('Order/orderList', [], true)
+ 5 APPPATH/Controllers/Order/OrderController.php(21): view('Order/orderList', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Order\OrderController->orderList()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order\OrderController))
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-12 11:15:33 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: orderList]
+in APPPATH/Views/Order/orderList.php on line 73.
+ 1 APPPATH/Views/Order/orderList.php(73): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Views/Order/orderList.php', 73)
+ 2 SYSTEMPATH/View/View.php(224): include('/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Views/Order/orderList.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1173): CodeIgniter\View\View->render('Order/orderList', [], true)
+ 5 APPPATH/Controllers/Order/OrderController.php(21): view('Order/orderList', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Order\OrderController->orderList()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order\OrderController))
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-12 11:15:34 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: orderList]
+in APPPATH/Views/Order/orderList.php on line 73.
+ 1 APPPATH/Views/Order/orderList.php(73): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Views/Order/orderList.php', 73)
+ 2 SYSTEMPATH/View/View.php(224): include('/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Views/Order/orderList.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1173): CodeIgniter\View\View->render('Order/orderList', [], true)
+ 5 APPPATH/Controllers/Order/OrderController.php(21): view('Order/orderList', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Order\OrderController->orderList()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order\OrderController))
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-05-12 11:15:54 --> mysqli_sql_exception: Table 'sitsolutionsco_smart_gavali.users' doesn't exist in /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/Database/MySQLi/Connection.php:327
+Stack trace:
+#0 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/Database/MySQLi/Connection.php(327): mysqli->query('SELECT * FROM u...', 0)
+#1 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/Database/BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM u...')
+#2 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/Database/BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM u...')
+#3 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Views/Order/orderList.php(64): CodeIgniter\Database\BaseConnection->query('SELECT * FROM u...')
+#4 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/View/View.php(224): include('/home/sitsoluti...')
+#5 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#6 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/Common.php(1173): CodeIgniter\View\View->render('Order/orderList', Array, true)
+#7 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Controllers/Order/OrderController.php(21): view('Order/orderList', Array)
+#8 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/CodeIgniter.php(933): App\Controllers\Order\OrderController->orderList()
+#9 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order\OrderController))
+#10 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2025-05-12 11:15:54 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'sitsolutionsco_smart_gavali.users' doesn't exist
+[Method: GET, Route: orderList]
+in SYSTEMPATH/Database/BaseConnection.php on line 692.
+ 1 APPPATH/Views/Order/orderList.php(64): CodeIgniter\Database\BaseConnection->query('SELECT * FROM users WHERE id = 18')
+ 2 SYSTEMPATH/View/View.php(224): include('/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Views/Order/orderList.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1173): CodeIgniter\View\View->render('Order/orderList', [], true)
+ 5 APPPATH/Controllers/Order/OrderController.php(21): view('Order/orderList', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Order\OrderController->orderList()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order\OrderController))
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-12 11:15:54 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'sitsolutionsco_smart_gavali.users' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 332.
+ 1 SYSTEMPATH/Database/BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM users WHERE id = 18')
+ 2 SYSTEMPATH/Database/BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM users WHERE id = 18')
+ 3 APPPATH/Views/Order/orderList.php(64): CodeIgniter\Database\BaseConnection->query('SELECT * FROM users WHERE id = 18')
+ 4 SYSTEMPATH/View/View.php(224): include('/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Views/Order/orderList.php')
+ 5 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH/Common.php(1173): CodeIgniter\View\View->render('Order/orderList', [], true)
+ 7 APPPATH/Controllers/Order/OrderController.php(21): view('Order/orderList', [...])
+ 8 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Order\OrderController->orderList()
+ 9 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order\OrderController))
+10 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-12 11:15:54 --> [Caused by] mysqli_sql_exception: Table 'sitsolutionsco_smart_gavali.users' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 327.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(327): mysqli->query('SELECT * FROM users WHERE id = 18', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM users WHERE id = 18')
+ 3 SYSTEMPATH/Database/BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM users WHERE id = 18')
+ 4 APPPATH/Views/Order/orderList.php(64): CodeIgniter\Database\BaseConnection->query('SELECT * FROM users WHERE id = 18')
+ 5 SYSTEMPATH/View/View.php(224): include('/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Views/Order/orderList.php')
+ 6 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH/Common.php(1173): CodeIgniter\View\View->render('Order/orderList', [], true)
+ 8 APPPATH/Controllers/Order/OrderController.php(21): view('Order/orderList', [...])
+ 9 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Order\OrderController->orderList()
+10 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order\OrderController))
+11 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-05-12 11:15:55 --> mysqli_sql_exception: Table 'sitsolutionsco_smart_gavali.users' doesn't exist in /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/Database/MySQLi/Connection.php:327
+Stack trace:
+#0 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/Database/MySQLi/Connection.php(327): mysqli->query('SELECT * FROM u...', 0)
+#1 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/Database/BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM u...')
+#2 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/Database/BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM u...')
+#3 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Views/Order/orderList.php(64): CodeIgniter\Database\BaseConnection->query('SELECT * FROM u...')
+#4 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/View/View.php(224): include('/home/sitsoluti...')
+#5 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#6 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/Common.php(1173): CodeIgniter\View\View->render('Order/orderList', Array, true)
+#7 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Controllers/Order/OrderController.php(21): view('Order/orderList', Array)
+#8 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/CodeIgniter.php(933): App\Controllers\Order\OrderController->orderList()
+#9 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order\OrderController))
+#10 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2025-05-12 11:15:55 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'sitsolutionsco_smart_gavali.users' doesn't exist
+[Method: GET, Route: orderList]
+in SYSTEMPATH/Database/BaseConnection.php on line 692.
+ 1 APPPATH/Views/Order/orderList.php(64): CodeIgniter\Database\BaseConnection->query('SELECT * FROM users WHERE id = 18')
+ 2 SYSTEMPATH/View/View.php(224): include('/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Views/Order/orderList.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1173): CodeIgniter\View\View->render('Order/orderList', [], true)
+ 5 APPPATH/Controllers/Order/OrderController.php(21): view('Order/orderList', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Order\OrderController->orderList()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order\OrderController))
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-12 11:15:55 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'sitsolutionsco_smart_gavali.users' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 332.
+ 1 SYSTEMPATH/Database/BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM users WHERE id = 18')
+ 2 SYSTEMPATH/Database/BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM users WHERE id = 18')
+ 3 APPPATH/Views/Order/orderList.php(64): CodeIgniter\Database\BaseConnection->query('SELECT * FROM users WHERE id = 18')
+ 4 SYSTEMPATH/View/View.php(224): include('/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Views/Order/orderList.php')
+ 5 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH/Common.php(1173): CodeIgniter\View\View->render('Order/orderList', [], true)
+ 7 APPPATH/Controllers/Order/OrderController.php(21): view('Order/orderList', [...])
+ 8 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Order\OrderController->orderList()
+ 9 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order\OrderController))
+10 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-12 11:15:55 --> [Caused by] mysqli_sql_exception: Table 'sitsolutionsco_smart_gavali.users' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 327.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(327): mysqli->query('SELECT * FROM users WHERE id = 18', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM users WHERE id = 18')
+ 3 SYSTEMPATH/Database/BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM users WHERE id = 18')
+ 4 APPPATH/Views/Order/orderList.php(64): CodeIgniter\Database\BaseConnection->query('SELECT * FROM users WHERE id = 18')
+ 5 SYSTEMPATH/View/View.php(224): include('/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Views/Order/orderList.php')
+ 6 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH/Common.php(1173): CodeIgniter\View\View->render('Order/orderList', [], true)
+ 8 APPPATH/Controllers/Order/OrderController.php(21): view('Order/orderList', [...])
+ 9 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Order\OrderController->orderList()
+10 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order\OrderController))
+11 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-12 11:22:52 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: orderList]
+in APPPATH/Views/Order/orderList.php on line 73.
+ 1 APPPATH/Views/Order/orderList.php(73): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Views/Order/orderList.php', 73)
+ 2 SYSTEMPATH/View/View.php(224): include('/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Views/Order/orderList.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1173): CodeIgniter\View\View->render('Order/orderList', [], true)
+ 5 APPPATH/Controllers/Order/OrderController.php(21): view('Order/orderList', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Order\OrderController->orderList()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order\OrderController))
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-05-12 11:27:54 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'order by id desc' at line 1 in /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/Database/MySQLi/Connection.php:327
+Stack trace:
+#0 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/Database/MySQLi/Connection.php(327): mysqli->query('SELECT * FROM t...', 0)
+#1 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/Database/BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM t...')
+#2 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/Database/BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM t...')
+#3 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Models/Order/OrderModel.php(59): CodeIgniter\Database\BaseConnection->query('SELECT * FROM t...')
+#4 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Controllers/Order/OrderController.php(60): App\Models\Order\OrderModel->getOrderById('')
+#5 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/CodeIgniter.php(933): App\Controllers\Order\OrderController->updateOrderStatusPro()
+#6 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order\OrderController))
+#7 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2025-05-12 11:27:54 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'order by id desc' at line 1
+[Method: POST, Route: updateOrderStatusPro]
+in SYSTEMPATH/Database/BaseConnection.php on line 692.
+ 1 APPPATH/Models/Order/OrderModel.php(59): CodeIgniter\Database\BaseConnection->query('SELECT * FROM tbl_order where id= order by id desc')
+ 2 APPPATH/Controllers/Order/OrderController.php(60): App\Models\Order\OrderModel->getOrderById('')
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Order\OrderController->updateOrderStatusPro()
+ 4 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order\OrderController))
+ 5 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-12 11:27:54 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'order by id desc' at line 1
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 332.
+ 1 SYSTEMPATH/Database/BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM tbl_order where id= order by id desc')
+ 2 SYSTEMPATH/Database/BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM tbl_order where id= order by id desc')
+ 3 APPPATH/Models/Order/OrderModel.php(59): CodeIgniter\Database\BaseConnection->query('SELECT * FROM tbl_order where id= order by id desc')
+ 4 APPPATH/Controllers/Order/OrderController.php(60): App\Models\Order\OrderModel->getOrderById('')
+ 5 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Order\OrderController->updateOrderStatusPro()
+ 6 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order\OrderController))
+ 7 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-12 11:27:54 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'order by id desc' at line 1
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 327.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(327): mysqli->query('SELECT * FROM tbl_order where id= order by id desc', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM tbl_order where id= order by id desc')
+ 3 SYSTEMPATH/Database/BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM tbl_order where id= order by id desc')
+ 4 APPPATH/Models/Order/OrderModel.php(59): CodeIgniter\Database\BaseConnection->query('SELECT * FROM tbl_order where id= order by id desc')
+ 5 APPPATH/Controllers/Order/OrderController.php(60): App\Models\Order\OrderModel->getOrderById('')
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Order\OrderController->updateOrderStatusPro()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order\OrderController))
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-05-12 11:38:03 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'order by id desc' at line 1 in /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/Database/MySQLi/Connection.php:327
+Stack trace:
+#0 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/Database/MySQLi/Connection.php(327): mysqli->query('SELECT * FROM t...', 0)
+#1 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/Database/BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM t...')
+#2 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/Database/BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM t...')
+#3 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Models/Order/OrderModel.php(59): CodeIgniter\Database\BaseConnection->query('SELECT * FROM t...')
+#4 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Controllers/Order/OrderController.php(60): App\Models\Order\OrderModel->getOrderById('')
+#5 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/CodeIgniter.php(933): App\Controllers\Order\OrderController->updateOrderStatusPro()
+#6 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order\OrderController))
+#7 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2025-05-12 11:38:03 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'order by id desc' at line 1
+[Method: POST, Route: updateOrderStatusPro]
+in SYSTEMPATH/Database/BaseConnection.php on line 692.
+ 1 APPPATH/Models/Order/OrderModel.php(59): CodeIgniter\Database\BaseConnection->query('SELECT * FROM tbl_order where id= order by id desc')
+ 2 APPPATH/Controllers/Order/OrderController.php(60): App\Models\Order\OrderModel->getOrderById('')
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Order\OrderController->updateOrderStatusPro()
+ 4 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order\OrderController))
+ 5 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-12 11:38:03 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'order by id desc' at line 1
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 332.
+ 1 SYSTEMPATH/Database/BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM tbl_order where id= order by id desc')
+ 2 SYSTEMPATH/Database/BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM tbl_order where id= order by id desc')
+ 3 APPPATH/Models/Order/OrderModel.php(59): CodeIgniter\Database\BaseConnection->query('SELECT * FROM tbl_order where id= order by id desc')
+ 4 APPPATH/Controllers/Order/OrderController.php(60): App\Models\Order\OrderModel->getOrderById('')
+ 5 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Order\OrderController->updateOrderStatusPro()
+ 6 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order\OrderController))
+ 7 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-12 11:38:03 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'order by id desc' at line 1
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 327.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(327): mysqli->query('SELECT * FROM tbl_order where id= order by id desc', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM tbl_order where id= order by id desc')
+ 3 SYSTEMPATH/Database/BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM tbl_order where id= order by id desc')
+ 4 APPPATH/Models/Order/OrderModel.php(59): CodeIgniter\Database\BaseConnection->query('SELECT * FROM tbl_order where id= order by id desc')
+ 5 APPPATH/Controllers/Order/OrderController.php(60): App\Models\Order\OrderModel->getOrderById('')
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Order\OrderController->updateOrderStatusPro()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order\OrderController))
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-05-12 11:43:09 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'order by id desc' at line 1 in /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/Database/MySQLi/Connection.php:327
+Stack trace:
+#0 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/Database/MySQLi/Connection.php(327): mysqli->query('SELECT * FROM t...', 0)
+#1 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/Database/BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM t...')
+#2 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/Database/BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM t...')
+#3 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Models/Order/OrderModel.php(59): CodeIgniter\Database\BaseConnection->query('SELECT * FROM t...')
+#4 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Controllers/Order/OrderController.php(61): App\Models\Order\OrderModel->getOrderById('')
+#5 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/CodeIgniter.php(933): App\Controllers\Order\OrderController->updateOrderStatusPro()
+#6 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order\OrderController))
+#7 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2025-05-12 11:43:09 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'order by id desc' at line 1
+[Method: POST, Route: updateOrderStatusPro]
+in SYSTEMPATH/Database/BaseConnection.php on line 692.
+ 1 APPPATH/Models/Order/OrderModel.php(59): CodeIgniter\Database\BaseConnection->query('SELECT * FROM tbl_order where id= order by id desc')
+ 2 APPPATH/Controllers/Order/OrderController.php(61): App\Models\Order\OrderModel->getOrderById('')
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Order\OrderController->updateOrderStatusPro()
+ 4 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order\OrderController))
+ 5 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-12 11:43:09 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'order by id desc' at line 1
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 332.
+ 1 SYSTEMPATH/Database/BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM tbl_order where id= order by id desc')
+ 2 SYSTEMPATH/Database/BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM tbl_order where id= order by id desc')
+ 3 APPPATH/Models/Order/OrderModel.php(59): CodeIgniter\Database\BaseConnection->query('SELECT * FROM tbl_order where id= order by id desc')
+ 4 APPPATH/Controllers/Order/OrderController.php(61): App\Models\Order\OrderModel->getOrderById('')
+ 5 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Order\OrderController->updateOrderStatusPro()
+ 6 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order\OrderController))
+ 7 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-12 11:43:09 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'order by id desc' at line 1
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 327.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(327): mysqli->query('SELECT * FROM tbl_order where id= order by id desc', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM tbl_order where id= order by id desc')
+ 3 SYSTEMPATH/Database/BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM tbl_order where id= order by id desc')
+ 4 APPPATH/Models/Order/OrderModel.php(59): CodeIgniter\Database\BaseConnection->query('SELECT * FROM tbl_order where id= order by id desc')
+ 5 APPPATH/Controllers/Order/OrderController.php(61): App\Models\Order\OrderModel->getOrderById('')
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Order\OrderController->updateOrderStatusPro()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order\OrderController))
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-05-12 11:43:12 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'order by id desc' at line 1 in /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/Database/MySQLi/Connection.php:327
+Stack trace:
+#0 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/Database/MySQLi/Connection.php(327): mysqli->query('SELECT * FROM t...', 0)
+#1 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/Database/BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM t...')
+#2 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/Database/BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM t...')
+#3 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Models/Order/OrderModel.php(59): CodeIgniter\Database\BaseConnection->query('SELECT * FROM t...')
+#4 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Controllers/Order/OrderController.php(61): App\Models\Order\OrderModel->getOrderById('')
+#5 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/CodeIgniter.php(933): App\Controllers\Order\OrderController->updateOrderStatusPro()
+#6 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order\OrderController))
+#7 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2025-05-12 11:43:12 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'order by id desc' at line 1
+[Method: POST, Route: updateOrderStatusPro]
+in SYSTEMPATH/Database/BaseConnection.php on line 692.
+ 1 APPPATH/Models/Order/OrderModel.php(59): CodeIgniter\Database\BaseConnection->query('SELECT * FROM tbl_order where id= order by id desc')
+ 2 APPPATH/Controllers/Order/OrderController.php(61): App\Models\Order\OrderModel->getOrderById('')
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Order\OrderController->updateOrderStatusPro()
+ 4 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order\OrderController))
+ 5 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-12 11:43:12 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'order by id desc' at line 1
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 332.
+ 1 SYSTEMPATH/Database/BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM tbl_order where id= order by id desc')
+ 2 SYSTEMPATH/Database/BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM tbl_order where id= order by id desc')
+ 3 APPPATH/Models/Order/OrderModel.php(59): CodeIgniter\Database\BaseConnection->query('SELECT * FROM tbl_order where id= order by id desc')
+ 4 APPPATH/Controllers/Order/OrderController.php(61): App\Models\Order\OrderModel->getOrderById('')
+ 5 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Order\OrderController->updateOrderStatusPro()
+ 6 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order\OrderController))
+ 7 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-12 11:43:12 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'order by id desc' at line 1
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 327.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(327): mysqli->query('SELECT * FROM tbl_order where id= order by id desc', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM tbl_order where id= order by id desc')
+ 3 SYSTEMPATH/Database/BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM tbl_order where id= order by id desc')
+ 4 APPPATH/Models/Order/OrderModel.php(59): CodeIgniter\Database\BaseConnection->query('SELECT * FROM tbl_order where id= order by id desc')
+ 5 APPPATH/Controllers/Order/OrderController.php(61): App\Models\Order\OrderModel->getOrderById('')
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Order\OrderController->updateOrderStatusPro()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order\OrderController))
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-05-12 12:00:40 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'order by id desc' at line 1 in /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/Database/MySQLi/Connection.php:327
+Stack trace:
+#0 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/Database/MySQLi/Connection.php(327): mysqli->query('SELECT * FROM t...', 0)
+#1 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/Database/BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM t...')
+#2 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/Database/BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM t...')
+#3 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Models/Order/OrderModel.php(59): CodeIgniter\Database\BaseConnection->query('SELECT * FROM t...')
+#4 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Controllers/Order/OrderController.php(60): App\Models\Order\OrderModel->getOrderById('')
+#5 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/CodeIgniter.php(933): App\Controllers\Order\OrderController->updateOrderStatusPro()
+#6 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order\OrderController))
+#7 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2025-05-12 12:00:40 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'order by id desc' at line 1
+[Method: POST, Route: updateOrderStatusPro]
+in SYSTEMPATH/Database/BaseConnection.php on line 692.
+ 1 APPPATH/Models/Order/OrderModel.php(59): CodeIgniter\Database\BaseConnection->query('SELECT * FROM tbl_order where id= order by id desc')
+ 2 APPPATH/Controllers/Order/OrderController.php(60): App\Models\Order\OrderModel->getOrderById('')
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Order\OrderController->updateOrderStatusPro()
+ 4 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order\OrderController))
+ 5 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-12 12:00:40 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'order by id desc' at line 1
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 332.
+ 1 SYSTEMPATH/Database/BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM tbl_order where id= order by id desc')
+ 2 SYSTEMPATH/Database/BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM tbl_order where id= order by id desc')
+ 3 APPPATH/Models/Order/OrderModel.php(59): CodeIgniter\Database\BaseConnection->query('SELECT * FROM tbl_order where id= order by id desc')
+ 4 APPPATH/Controllers/Order/OrderController.php(60): App\Models\Order\OrderModel->getOrderById('')
+ 5 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Order\OrderController->updateOrderStatusPro()
+ 6 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order\OrderController))
+ 7 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-12 12:00:40 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'order by id desc' at line 1
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 327.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(327): mysqli->query('SELECT * FROM tbl_order where id= order by id desc', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM tbl_order where id= order by id desc')
+ 3 SYSTEMPATH/Database/BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM tbl_order where id= order by id desc')
+ 4 APPPATH/Models/Order/OrderModel.php(59): CodeIgniter\Database\BaseConnection->query('SELECT * FROM tbl_order where id= order by id desc')
+ 5 APPPATH/Controllers/Order/OrderController.php(60): App\Models\Order\OrderModel->getOrderById('')
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Order\OrderController->updateOrderStatusPro()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order\OrderController))
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-12 12:21:55 --> ErrorException: Undefined array key "complete"
+[Method: GET, Route: adminDashboard]
+in APPPATH/Views/Dashboard/adminDashboard.php on line 236.
+ 1 APPPATH/Views/Dashboard/adminDashboard.php(236): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "complete"', '/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Views/Dashboard/adminDashboard.php', 236)
+ 2 SYSTEMPATH/View/View.php(224): include('/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Views/Dashboard/adminDashboard.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1173): CodeIgniter\View\View->render('Dashboard/adminDashboard', [], true)
+ 5 APPPATH/Controllers/Dashboard/DashboardController.php(40): view('Dashboard/adminDashboard', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Dashboard\DashboardController->adminDashboard()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard\DashboardController))
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

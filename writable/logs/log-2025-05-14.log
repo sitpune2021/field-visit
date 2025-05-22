@@ -1,0 +1,830 @@
+ERROR - 2025-05-14 05:25:31 --> mysqli_sql_exception: Table 'sitsolutionsco_smart_gavali.tbl_products' doesn't exist in /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/Database/MySQLi/Connection.php:327
+Stack trace:
+#0 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/Database/MySQLi/Connection.php(327): mysqli->query('SELECT * FROM t...', 0)
+#1 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/Database/BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM t...')
+#2 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/Database/BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM t...')
+#3 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Models/Order/OrderModel.php(65): CodeIgniter\Database\BaseConnection->query('SELECT * FROM t...')
+#4 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Controllers/API/Order.php(94): App\Models\Order\OrderModel->getProductImageById('1')
+#5 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/CodeIgniter.php(933): App\Controllers\API\Order->order_list()
+#6 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\API\Order))
+#7 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2025-05-14 05:25:31 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'sitsolutionsco_smart_gavali.tbl_products' doesn't exist
+[Method: POST, Route: order_list]
+in SYSTEMPATH/Database/BaseConnection.php on line 692.
+ 1 APPPATH/Models/Order/OrderModel.php(65): CodeIgniter\Database\BaseConnection->query('SELECT * FROM tbl_products where id=1 order by id desc')
+ 2 APPPATH/Controllers/API/Order.php(94): App\Models\Order\OrderModel->getProductImageById('1')
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\API\Order->order_list()
+ 4 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\API\Order))
+ 5 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-14 05:25:31 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'sitsolutionsco_smart_gavali.tbl_products' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 332.
+ 1 SYSTEMPATH/Database/BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM tbl_products where id=1 order by id desc')
+ 2 SYSTEMPATH/Database/BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM tbl_products where id=1 order by id desc')
+ 3 APPPATH/Models/Order/OrderModel.php(65): CodeIgniter\Database\BaseConnection->query('SELECT * FROM tbl_products where id=1 order by id desc')
+ 4 APPPATH/Controllers/API/Order.php(94): App\Models\Order\OrderModel->getProductImageById('1')
+ 5 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\API\Order->order_list()
+ 6 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\API\Order))
+ 7 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-14 05:25:31 --> [Caused by] mysqli_sql_exception: Table 'sitsolutionsco_smart_gavali.tbl_products' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 327.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(327): mysqli->query('SELECT * FROM tbl_products where id=1 order by id desc', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM tbl_products where id=1 order by id desc')
+ 3 SYSTEMPATH/Database/BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM tbl_products where id=1 order by id desc')
+ 4 APPPATH/Models/Order/OrderModel.php(65): CodeIgniter\Database\BaseConnection->query('SELECT * FROM tbl_products where id=1 order by id desc')
+ 5 APPPATH/Controllers/API/Order.php(94): App\Models\Order\OrderModel->getProductImageById('1')
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\API\Order->order_list()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\API\Order))
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-14 05:28:07 --> ErrorException: Undefined variable $productData
+[Method: POST, Route: order_list]
+in APPPATH/Controllers/API/Order.php on line 95.
+ 1 APPPATH/Controllers/API/Order.php(95): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $productData', '/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Controllers/API/Order.php', 95)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\API\Order->order_list()
+ 3 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\API\Order))
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-14 07:14:18 --> ErrorException: Undefined array key "lable"
+[Method: POST, Route: updateAttributePro]
+in APPPATH/Controllers/Attribute/AttributeController.php on line 143.
+ 1 APPPATH/Controllers/Attribute/AttributeController.php(143): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "lable"', '/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Controllers/Attribute/AttributeController.php', 143)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Attribute\AttributeController->updateAttributePro()
+ 3 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Attribute\AttributeController))
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-14 09:28:19 --> ErrorException: Undefined array key "id"
+[Method: GET, Route: attributeList]
+in APPPATH/Views/Attribute/attributeList.php on line 2.
+ 1 APPPATH/Views/Attribute/attributeList.php(2): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', '/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Views/Attribute/attributeList.php', 2)
+ 2 SYSTEMPATH/View/View.php(224): include('/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Views/Attribute/attributeList.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1173): CodeIgniter\View\View->render('Attribute/attributeList', [], true)
+ 5 APPPATH/Controllers/Attribute/AttributeController.php(25): view('Attribute/attributeList', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Attribute\AttributeController->attributeList()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Attribute\AttributeController))
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-14 09:28:24 --> ErrorException: Undefined array key "id"
+[Method: GET, Route: updateAttribute]
+in APPPATH/Views/Include/header.php on line 3.
+ 1 APPPATH/Views/Include/header.php(3): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', '/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Views/Include/header.php', 3)
+ 2 SYSTEMPATH/View/View.php(224): include('/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Views/Include/header.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1173): CodeIgniter\View\View->render('Include/header', [], true)
+ 5 APPPATH/Views/Attribute/updateAttribute.php(12): view('Include/header')
+ 6 SYSTEMPATH/View/View.php(224): include('/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Views/Attribute/updateAttribute.php')
+ 7 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH/Common.php(1173): CodeIgniter\View\View->render('Attribute/updateAttribute', [], true)
+ 9 APPPATH/Controllers/Attribute/AttributeController.php(42): view('Attribute/updateAttribute', [...])
+10 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Attribute\AttributeController->updateAttribute()
+11 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Attribute\AttributeController))
+12 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-14 09:28:25 --> ErrorException: Undefined array key "id"
+[Method: GET, Route: attributeList]
+in APPPATH/Views/Attribute/attributeList.php on line 2.
+ 1 APPPATH/Views/Attribute/attributeList.php(2): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', '/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Views/Attribute/attributeList.php', 2)
+ 2 SYSTEMPATH/View/View.php(224): include('/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Views/Attribute/attributeList.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1173): CodeIgniter\View\View->render('Attribute/attributeList', [], true)
+ 5 APPPATH/Controllers/Attribute/AttributeController.php(25): view('Attribute/attributeList', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Attribute\AttributeController->attributeList()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Attribute\AttributeController))
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-05-14 10:52:22 --> mysqli_sql_exception: Unknown column 'dropdown_value' in 'field list' in /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/Database/MySQLi/Connection.php:327
+Stack trace:
+#0 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/Database/MySQLi/Connection.php(327): mysqli->query('INSERT INTO `tb...', 0)
+#1 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/Database/BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/Database/BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/Database/BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Controllers/Attribute/AttributeController.php(93): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/CodeIgniter.php(933): App\Controllers\Attribute\AttributeController->addAttributePro()
+#6 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Attribute\AttributeController))
+#7 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2025-05-14 10:52:22 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'dropdown_value' in 'field list'
+[Method: POST, Route: addAttributePro]
+in SYSTEMPATH/Database/BaseConnection.php on line 692.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_attribute` (`cat_id`, `type`, `label`, `attribute`, `required`, `dropdown_value`) VALUES (:cat_id:, :type:, :label:, :attribute:, :required:, :dropdown_value:)', [...], false)
+ 2 APPPATH/Controllers/Attribute/AttributeController.php(93): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Attribute\AttributeController->addAttributePro()
+ 4 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Attribute\AttributeController))
+ 5 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-14 10:52:22 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'dropdown_value' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 332.
+ 1 SYSTEMPATH/Database/BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tbl_attribute` (`cat_id`, `type`, `label`, `attribute`, `required`, `dropdown_value`) VALUES (\'1\', \'dropdown\', \'a\', \'a\', \'yes\', \'a,b,c\')')
+ 2 SYSTEMPATH/Database/BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tbl_attribute` (`cat_id`, `type`, `label`, `attribute`, `required`, `dropdown_value`) VALUES (\'1\', \'dropdown\', \'a\', \'a\', \'yes\', \'a,b,c\')')
+ 3 SYSTEMPATH/Database/BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_attribute` (`cat_id`, `type`, `label`, `attribute`, `required`, `dropdown_value`) VALUES (:cat_id:, :type:, :label:, :attribute:, :required:, :dropdown_value:)', [...], false)
+ 4 APPPATH/Controllers/Attribute/AttributeController.php(93): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Attribute\AttributeController->addAttributePro()
+ 6 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Attribute\AttributeController))
+ 7 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-14 10:52:22 --> [Caused by] mysqli_sql_exception: Unknown column 'dropdown_value' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 327.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(327): mysqli->query('INSERT INTO `tbl_attribute` (`cat_id`, `type`, `label`, `attribute`, `required`, `dropdown_value`) VALUES (\'1\', \'dropdown\', \'a\', \'a\', \'yes\', \'a,b,c\')', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tbl_attribute` (`cat_id`, `type`, `label`, `attribute`, `required`, `dropdown_value`) VALUES (\'1\', \'dropdown\', \'a\', \'a\', \'yes\', \'a,b,c\')')
+ 3 SYSTEMPATH/Database/BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tbl_attribute` (`cat_id`, `type`, `label`, `attribute`, `required`, `dropdown_value`) VALUES (\'1\', \'dropdown\', \'a\', \'a\', \'yes\', \'a,b,c\')')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_attribute` (`cat_id`, `type`, `label`, `attribute`, `required`, `dropdown_value`) VALUES (:cat_id:, :type:, :label:, :attribute:, :required:, :dropdown_value:)', [...], false)
+ 5 APPPATH/Controllers/Attribute/AttributeController.php(93): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Attribute\AttributeController->addAttributePro()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Attribute\AttributeController))
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-14 11:02:06 --> ErrorException: Undefined property: App\Controllers\Attribute\AttributeController::$attributeModel
+[Method: POST, Route: addAttributePro]
+in APPPATH/Controllers/Attribute/AttributeController.php on line 90.
+ 1 APPPATH/Controllers/Attribute/AttributeController.php(90): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Attribute\\AttributeController::$attributeModel', '/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Controllers/Attribute/AttributeController.php', 90)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Attribute\AttributeController->addAttributePro()
+ 3 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Attribute\AttributeController))
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-14 11:03:04 --> ErrorException: Undefined variable $db
+[Method: POST, Route: addAttributePro]
+in APPPATH/Controllers/Attribute/AttributeController.php on line 89.
+ 1 APPPATH/Controllers/Attribute/AttributeController.php(89): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $db', '/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Controllers/Attribute/AttributeController.php', 89)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Attribute\AttributeController->addAttributePro()
+ 3 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Attribute\AttributeController))
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-05-14 11:03:21 --> mysqli_sql_exception: Unknown column 'category_id' in 'field list' in /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/Database/MySQLi/Connection.php:327
+Stack trace:
+#0 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/Database/MySQLi/Connection.php(327): mysqli->query('INSERT INTO `tb...', 0)
+#1 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/Database/BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/Database/BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/Database/BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Controllers/Attribute/AttributeController.php(92): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/CodeIgniter.php(933): App\Controllers\Attribute\AttributeController->addAttributePro()
+#6 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Attribute\AttributeController))
+#7 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2025-05-14 11:03:21 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'category_id' in 'field list'
+[Method: POST, Route: addAttributePro]
+in SYSTEMPATH/Database/BaseConnection.php on line 692.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_attribute` (`category_id`, `type`, `label`, `attribute`, `required`, `is_dynamic`, `dynamic_table`, `dynamic_value_field`, `dynamic_key_field`, `dropdown_values`, `created_by`, `created_at`) VALUES (:category_id:, :type:, :label:, :attribute:, :required:, :is_dynamic:, :dynamic_table:, :dynamic_value_field:, :dynamic_key_field:, :dropdown_values:, :created_by:, :created_at:)', [...], false)
+ 2 APPPATH/Controllers/Attribute/AttributeController.php(92): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Attribute\AttributeController->addAttributePro()
+ 4 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Attribute\AttributeController))
+ 5 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-14 11:03:21 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'category_id' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 332.
+ 1 SYSTEMPATH/Database/BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tbl_attribute` (`category_id`, `type`, `label`, `attribute`, `required`, `is_dynamic`, `dynamic_table`, `dynamic_value_field`, `dynamic_key_field`, `dropdown_values`, `created_by`, `created_at`) VALUES (\'1\', \'dropdown\', \'Subcategory\', \'Subcategory\', \'yes\', \'1\', \'tbl_subcategory\', \'subcategory\', \'id\', NULL, \'1\', \'2025-05-14 11:03:21\')')
+ 2 SYSTEMPATH/Database/BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tbl_attribute` (`category_id`, `type`, `label`, `attribute`, `required`, `is_dynamic`, `dynamic_table`, `dynamic_value_field`, `dynamic_key_field`, `dropdown_values`, `created_by`, `created_at`) VALUES (\'1\', \'dropdown\', \'Subcategory\', \'Subcategory\', \'yes\', \'1\', \'tbl_subcategory\', \'subcategory\', \'id\', NULL, \'1\', \'2025-05-14 11:03:21\')')
+ 3 SYSTEMPATH/Database/BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_attribute` (`category_id`, `type`, `label`, `attribute`, `required`, `is_dynamic`, `dynamic_table`, `dynamic_value_field`, `dynamic_key_field`, `dropdown_values`, `created_by`, `created_at`) VALUES (:category_id:, :type:, :label:, :attribute:, :required:, :is_dynamic:, :dynamic_table:, :dynamic_value_field:, :dynamic_key_field:, :dropdown_values:, :created_by:, :created_at:)', [...], false)
+ 4 APPPATH/Controllers/Attribute/AttributeController.php(92): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Attribute\AttributeController->addAttributePro()
+ 6 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Attribute\AttributeController))
+ 7 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-14 11:03:21 --> [Caused by] mysqli_sql_exception: Unknown column 'category_id' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 327.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(327): mysqli->query('INSERT INTO `tbl_attribute` (`category_id`, `type`, `label`, `attribute`, `required`, `is_dynamic`, `dynamic_table`, `dynamic_value_field`, `dynamic_key_field`, `dropdown_values`, `created_by`, `created_at`) VALUES (\'1\', \'dropdown\', \'Subcategory\', \'Subcategory\', \'yes\', \'1\', \'tbl_subcategory\', \'subcategory\', \'id\', NULL, \'1\', \'2025-05-14 11:03:21\')', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tbl_attribute` (`category_id`, `type`, `label`, `attribute`, `required`, `is_dynamic`, `dynamic_table`, `dynamic_value_field`, `dynamic_key_field`, `dropdown_values`, `created_by`, `created_at`) VALUES (\'1\', \'dropdown\', \'Subcategory\', \'Subcategory\', \'yes\', \'1\', \'tbl_subcategory\', \'subcategory\', \'id\', NULL, \'1\', \'2025-05-14 11:03:21\')')
+ 3 SYSTEMPATH/Database/BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tbl_attribute` (`category_id`, `type`, `label`, `attribute`, `required`, `is_dynamic`, `dynamic_table`, `dynamic_value_field`, `dynamic_key_field`, `dropdown_values`, `created_by`, `created_at`) VALUES (\'1\', \'dropdown\', \'Subcategory\', \'Subcategory\', \'yes\', \'1\', \'tbl_subcategory\', \'subcategory\', \'id\', NULL, \'1\', \'2025-05-14 11:03:21\')')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_attribute` (`category_id`, `type`, `label`, `attribute`, `required`, `is_dynamic`, `dynamic_table`, `dynamic_value_field`, `dynamic_key_field`, `dropdown_values`, `created_by`, `created_at`) VALUES (:category_id:, :type:, :label:, :attribute:, :required:, :is_dynamic:, :dynamic_table:, :dynamic_value_field:, :dynamic_key_field:, :dropdown_values:, :created_by:, :created_at:)', [...], false)
+ 5 APPPATH/Controllers/Attribute/AttributeController.php(92): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Attribute\AttributeController->addAttributePro()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Attribute\AttributeController))
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-05-14 11:03:35 --> mysqli_sql_exception: Unknown column 'created_by' in 'field list' in /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/Database/MySQLi/Connection.php:327
+Stack trace:
+#0 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/Database/MySQLi/Connection.php(327): mysqli->query('INSERT INTO `tb...', 0)
+#1 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/Database/BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/Database/BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/Database/BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Controllers/Attribute/AttributeController.php(92): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/CodeIgniter.php(933): App\Controllers\Attribute\AttributeController->addAttributePro()
+#6 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Attribute\AttributeController))
+#7 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2025-05-14 11:03:35 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'created_by' in 'field list'
+[Method: POST, Route: addAttributePro]
+in SYSTEMPATH/Database/BaseConnection.php on line 692.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_attribute` (`cat_id`, `type`, `label`, `attribute`, `required`, `is_dynamic`, `dynamic_table`, `dynamic_value_field`, `dynamic_key_field`, `dropdown_values`, `created_by`, `created_at`) VALUES (:cat_id:, :type:, :label:, :attribute:, :required:, :is_dynamic:, :dynamic_table:, :dynamic_value_field:, :dynamic_key_field:, :dropdown_values:, :created_by:, :created_at:)', [...], false)
+ 2 APPPATH/Controllers/Attribute/AttributeController.php(92): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Attribute\AttributeController->addAttributePro()
+ 4 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Attribute\AttributeController))
+ 5 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-14 11:03:35 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'created_by' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 332.
+ 1 SYSTEMPATH/Database/BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tbl_attribute` (`cat_id`, `type`, `label`, `attribute`, `required`, `is_dynamic`, `dynamic_table`, `dynamic_value_field`, `dynamic_key_field`, `dropdown_values`, `created_by`, `created_at`) VALUES (\'1\', \'dropdown\', \'Subcategory\', \'Subcategory\', \'yes\', \'1\', \'tbl_subcategory\', \'subcategory\', \'id\', NULL, \'1\', \'2025-05-14 11:03:35\')')
+ 2 SYSTEMPATH/Database/BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tbl_attribute` (`cat_id`, `type`, `label`, `attribute`, `required`, `is_dynamic`, `dynamic_table`, `dynamic_value_field`, `dynamic_key_field`, `dropdown_values`, `created_by`, `created_at`) VALUES (\'1\', \'dropdown\', \'Subcategory\', \'Subcategory\', \'yes\', \'1\', \'tbl_subcategory\', \'subcategory\', \'id\', NULL, \'1\', \'2025-05-14 11:03:35\')')
+ 3 SYSTEMPATH/Database/BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_attribute` (`cat_id`, `type`, `label`, `attribute`, `required`, `is_dynamic`, `dynamic_table`, `dynamic_value_field`, `dynamic_key_field`, `dropdown_values`, `created_by`, `created_at`) VALUES (:cat_id:, :type:, :label:, :attribute:, :required:, :is_dynamic:, :dynamic_table:, :dynamic_value_field:, :dynamic_key_field:, :dropdown_values:, :created_by:, :created_at:)', [...], false)
+ 4 APPPATH/Controllers/Attribute/AttributeController.php(92): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Attribute\AttributeController->addAttributePro()
+ 6 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Attribute\AttributeController))
+ 7 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-14 11:03:35 --> [Caused by] mysqli_sql_exception: Unknown column 'created_by' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 327.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(327): mysqli->query('INSERT INTO `tbl_attribute` (`cat_id`, `type`, `label`, `attribute`, `required`, `is_dynamic`, `dynamic_table`, `dynamic_value_field`, `dynamic_key_field`, `dropdown_values`, `created_by`, `created_at`) VALUES (\'1\', \'dropdown\', \'Subcategory\', \'Subcategory\', \'yes\', \'1\', \'tbl_subcategory\', \'subcategory\', \'id\', NULL, \'1\', \'2025-05-14 11:03:35\')', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tbl_attribute` (`cat_id`, `type`, `label`, `attribute`, `required`, `is_dynamic`, `dynamic_table`, `dynamic_value_field`, `dynamic_key_field`, `dropdown_values`, `created_by`, `created_at`) VALUES (\'1\', \'dropdown\', \'Subcategory\', \'Subcategory\', \'yes\', \'1\', \'tbl_subcategory\', \'subcategory\', \'id\', NULL, \'1\', \'2025-05-14 11:03:35\')')
+ 3 SYSTEMPATH/Database/BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tbl_attribute` (`cat_id`, `type`, `label`, `attribute`, `required`, `is_dynamic`, `dynamic_table`, `dynamic_value_field`, `dynamic_key_field`, `dropdown_values`, `created_by`, `created_at`) VALUES (\'1\', \'dropdown\', \'Subcategory\', \'Subcategory\', \'yes\', \'1\', \'tbl_subcategory\', \'subcategory\', \'id\', NULL, \'1\', \'2025-05-14 11:03:35\')')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_attribute` (`cat_id`, `type`, `label`, `attribute`, `required`, `is_dynamic`, `dynamic_table`, `dynamic_value_field`, `dynamic_key_field`, `dropdown_values`, `created_by`, `created_at`) VALUES (:cat_id:, :type:, :label:, :attribute:, :required:, :is_dynamic:, :dynamic_table:, :dynamic_value_field:, :dynamic_key_field:, :dropdown_values:, :created_by:, :created_at:)', [...], false)
+ 5 APPPATH/Controllers/Attribute/AttributeController.php(92): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Attribute\AttributeController->addAttributePro()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Attribute\AttributeController))
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-14 12:23:58 --> ErrorException: Undefined property: App\Controllers\API\Attribute::$SubcategoryModel
+[Method: POST, Route: attribute_list]
+in APPPATH/Controllers/API/Attribute.php on line 24.
+ 1 APPPATH/Controllers/API/Attribute.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\API\\Attribute::$SubcategoryModel', '/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Controllers/API/Attribute.php', 24)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\API\Attribute->attribute_list()
+ 3 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\API\Attribute))
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-14 12:24:23 --> ErrorException: Undefined property: App\Controllers\API\Attribute::$SubcategoryModel
+[Method: POST, Route: attribute_list]
+in APPPATH/Controllers/API/Attribute.php on line 24.
+ 1 APPPATH/Controllers/API/Attribute.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\API\\Attribute::$SubcategoryModel', '/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Controllers/API/Attribute.php', 24)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\API\Attribute->attribute_list()
+ 3 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\API\Attribute))
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-14 12:26:14 --> ErrorException: Undefined property: App\Controllers\API\Attribute::$SubcategoryModel
+[Method: POST, Route: attribute_list]
+in APPPATH/Controllers/API/Attribute.php on line 24.
+ 1 APPPATH/Controllers/API/Attribute.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\API\\Attribute::$SubcategoryModel', '/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Controllers/API/Attribute.php', 24)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\API\Attribute->attribute_list()
+ 3 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\API\Attribute))
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-14 12:27:26 --> ErrorException: Undefined property: App\Controllers\API\Attribute::$SubcategoryModel
+[Method: POST, Route: attribute_list]
+in APPPATH/Controllers/API/Attribute.php on line 24.
+ 1 APPPATH/Controllers/API/Attribute.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\API\\Attribute::$SubcategoryModel', '/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Controllers/API/Attribute.php', 24)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\API\Attribute->attribute_list()
+ 3 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\API\Attribute))
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-14 12:28:27 --> ErrorException: Undefined variable $subcat_id
+[Method: POST, Route: attribute_list]
+in APPPATH/Controllers/API/Attribute.php on line 31.
+ 1 APPPATH/Controllers/API/Attribute.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $subcat_id', '/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Controllers/API/Attribute.php', 31)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\API\Attribute->attribute_list()
+ 3 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\API\Attribute))
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-14 12:29:16 --> ErrorException: Undefined variable $childSubcatData
+[Method: POST, Route: attribute_list]
+in APPPATH/Controllers/API/Attribute.php on line 44.
+ 1 APPPATH/Controllers/API/Attribute.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $childSubcatData', '/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Controllers/API/Attribute.php', 44)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\API\Attribute->attribute_list()
+ 3 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\API\Attribute))
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-14 12:37:49 --> ParseError: syntax error, unexpected token "else", expecting "function" or "const"
+[Method: POST, Route: attribute_list]
+in APPPATH/Controllers/API/Attribute.php on line 71.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(295): CodeIgniter\Autoloader\Autoloader->includeFile('/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Controllers/API/Attribute.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(271): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\API\\Attribute')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\API\\Attribute')
+ 4 SYSTEMPATH/CodeIgniter.php(885): class_exists('\\App\\Controllers\\API\\Attribute', true)
+ 5 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-05-14 13:04:18 --> mysqli_sql_exception: Unknown column 'dropdown_value' in 'field list' in /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/Database/MySQLi/Connection.php:327
+Stack trace:
+#0 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/Database/MySQLi/Connection.php(327): mysqli->query('INSERT INTO `tb...', 0)
+#1 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/Database/BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/Database/BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/Database/BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Controllers/Attribute/AttributeController.php(93): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/CodeIgniter.php(933): App\Controllers\Attribute\AttributeController->addAttributePro()
+#6 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Attribute\AttributeController))
+#7 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2025-05-14 13:04:18 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'dropdown_value' in 'field list'
+[Method: POST, Route: addAttributePro]
+in SYSTEMPATH/Database/BaseConnection.php on line 692.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_attribute` (`cat_id`, `type`, `label`, `attribute`, `required`, `dropdown_value`) VALUES (:cat_id:, :type:, :label:, :attribute:, :required:, :dropdown_value:)', [...], false)
+ 2 APPPATH/Controllers/Attribute/AttributeController.php(93): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Attribute\AttributeController->addAttributePro()
+ 4 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Attribute\AttributeController))
+ 5 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-14 13:04:18 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'dropdown_value' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 332.
+ 1 SYSTEMPATH/Database/BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tbl_attribute` (`cat_id`, `type`, `label`, `attribute`, `required`, `dropdown_value`) VALUES (\'1\', \'dropdown\', \'a\', \'a\', \'yes\', \'a,b\')')
+ 2 SYSTEMPATH/Database/BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tbl_attribute` (`cat_id`, `type`, `label`, `attribute`, `required`, `dropdown_value`) VALUES (\'1\', \'dropdown\', \'a\', \'a\', \'yes\', \'a,b\')')
+ 3 SYSTEMPATH/Database/BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_attribute` (`cat_id`, `type`, `label`, `attribute`, `required`, `dropdown_value`) VALUES (:cat_id:, :type:, :label:, :attribute:, :required:, :dropdown_value:)', [...], false)
+ 4 APPPATH/Controllers/Attribute/AttributeController.php(93): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Attribute\AttributeController->addAttributePro()
+ 6 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Attribute\AttributeController))
+ 7 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-14 13:04:18 --> [Caused by] mysqli_sql_exception: Unknown column 'dropdown_value' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 327.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(327): mysqli->query('INSERT INTO `tbl_attribute` (`cat_id`, `type`, `label`, `attribute`, `required`, `dropdown_value`) VALUES (\'1\', \'dropdown\', \'a\', \'a\', \'yes\', \'a,b\')', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tbl_attribute` (`cat_id`, `type`, `label`, `attribute`, `required`, `dropdown_value`) VALUES (\'1\', \'dropdown\', \'a\', \'a\', \'yes\', \'a,b\')')
+ 3 SYSTEMPATH/Database/BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tbl_attribute` (`cat_id`, `type`, `label`, `attribute`, `required`, `dropdown_value`) VALUES (\'1\', \'dropdown\', \'a\', \'a\', \'yes\', \'a,b\')')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_attribute` (`cat_id`, `type`, `label`, `attribute`, `required`, `dropdown_value`) VALUES (:cat_id:, :type:, :label:, :attribute:, :required:, :dropdown_value:)', [...], false)
+ 5 APPPATH/Controllers/Attribute/AttributeController.php(93): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Attribute\AttributeController->addAttributePro()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Attribute\AttributeController))
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-05-14 13:04:58 --> mysqli_sql_exception: Unknown column 'dropdown_value' in 'field list' in /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/Database/MySQLi/Connection.php:327
+Stack trace:
+#0 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/Database/MySQLi/Connection.php(327): mysqli->query('INSERT INTO `tb...', 0)
+#1 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/Database/BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/Database/BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/Database/BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Controllers/Attribute/AttributeController.php(93): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/CodeIgniter.php(933): App\Controllers\Attribute\AttributeController->addAttributePro()
+#6 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Attribute\AttributeController))
+#7 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2025-05-14 13:04:58 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'dropdown_value' in 'field list'
+[Method: POST, Route: addAttributePro]
+in SYSTEMPATH/Database/BaseConnection.php on line 692.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_attribute` (`cat_id`, `type`, `label`, `attribute`, `required`, `dropdown_value`) VALUES (:cat_id:, :type:, :label:, :attribute:, :required:, :dropdown_value:)', [...], false)
+ 2 APPPATH/Controllers/Attribute/AttributeController.php(93): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Attribute\AttributeController->addAttributePro()
+ 4 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Attribute\AttributeController))
+ 5 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-14 13:04:58 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'dropdown_value' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 332.
+ 1 SYSTEMPATH/Database/BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tbl_attribute` (`cat_id`, `type`, `label`, `attribute`, `required`, `dropdown_value`) VALUES (\'1\', \'dropdown\', \'a\', \'a\', \'yes\', \'a,b\')')
+ 2 SYSTEMPATH/Database/BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tbl_attribute` (`cat_id`, `type`, `label`, `attribute`, `required`, `dropdown_value`) VALUES (\'1\', \'dropdown\', \'a\', \'a\', \'yes\', \'a,b\')')
+ 3 SYSTEMPATH/Database/BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_attribute` (`cat_id`, `type`, `label`, `attribute`, `required`, `dropdown_value`) VALUES (:cat_id:, :type:, :label:, :attribute:, :required:, :dropdown_value:)', [...], false)
+ 4 APPPATH/Controllers/Attribute/AttributeController.php(93): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Attribute\AttributeController->addAttributePro()
+ 6 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Attribute\AttributeController))
+ 7 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-14 13:04:58 --> [Caused by] mysqli_sql_exception: Unknown column 'dropdown_value' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 327.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(327): mysqli->query('INSERT INTO `tbl_attribute` (`cat_id`, `type`, `label`, `attribute`, `required`, `dropdown_value`) VALUES (\'1\', \'dropdown\', \'a\', \'a\', \'yes\', \'a,b\')', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tbl_attribute` (`cat_id`, `type`, `label`, `attribute`, `required`, `dropdown_value`) VALUES (\'1\', \'dropdown\', \'a\', \'a\', \'yes\', \'a,b\')')
+ 3 SYSTEMPATH/Database/BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tbl_attribute` (`cat_id`, `type`, `label`, `attribute`, `required`, `dropdown_value`) VALUES (\'1\', \'dropdown\', \'a\', \'a\', \'yes\', \'a,b\')')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_attribute` (`cat_id`, `type`, `label`, `attribute`, `required`, `dropdown_value`) VALUES (:cat_id:, :type:, :label:, :attribute:, :required:, :dropdown_value:)', [...], false)
+ 5 APPPATH/Controllers/Attribute/AttributeController.php(93): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Attribute\AttributeController->addAttributePro()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Attribute\AttributeController))
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-05-14 13:05:00 --> mysqli_sql_exception: Unknown column 'dropdown_value' in 'field list' in /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/Database/MySQLi/Connection.php:327
+Stack trace:
+#0 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/Database/MySQLi/Connection.php(327): mysqli->query('INSERT INTO `tb...', 0)
+#1 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/Database/BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/Database/BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/Database/BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Controllers/Attribute/AttributeController.php(93): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/CodeIgniter.php(933): App\Controllers\Attribute\AttributeController->addAttributePro()
+#6 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Attribute\AttributeController))
+#7 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2025-05-14 13:05:00 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'dropdown_value' in 'field list'
+[Method: POST, Route: addAttributePro]
+in SYSTEMPATH/Database/BaseConnection.php on line 692.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_attribute` (`cat_id`, `type`, `label`, `attribute`, `required`, `dropdown_value`) VALUES (:cat_id:, :type:, :label:, :attribute:, :required:, :dropdown_value:)', [...], false)
+ 2 APPPATH/Controllers/Attribute/AttributeController.php(93): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Attribute\AttributeController->addAttributePro()
+ 4 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Attribute\AttributeController))
+ 5 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-14 13:05:00 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'dropdown_value' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 332.
+ 1 SYSTEMPATH/Database/BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tbl_attribute` (`cat_id`, `type`, `label`, `attribute`, `required`, `dropdown_value`) VALUES (\'1\', \'dropdown\', \'a\', \'a\', \'yes\', \'a,b\')')
+ 2 SYSTEMPATH/Database/BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tbl_attribute` (`cat_id`, `type`, `label`, `attribute`, `required`, `dropdown_value`) VALUES (\'1\', \'dropdown\', \'a\', \'a\', \'yes\', \'a,b\')')
+ 3 SYSTEMPATH/Database/BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_attribute` (`cat_id`, `type`, `label`, `attribute`, `required`, `dropdown_value`) VALUES (:cat_id:, :type:, :label:, :attribute:, :required:, :dropdown_value:)', [...], false)
+ 4 APPPATH/Controllers/Attribute/AttributeController.php(93): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Attribute\AttributeController->addAttributePro()
+ 6 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Attribute\AttributeController))
+ 7 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-14 13:05:00 --> [Caused by] mysqli_sql_exception: Unknown column 'dropdown_value' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 327.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(327): mysqli->query('INSERT INTO `tbl_attribute` (`cat_id`, `type`, `label`, `attribute`, `required`, `dropdown_value`) VALUES (\'1\', \'dropdown\', \'a\', \'a\', \'yes\', \'a,b\')', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tbl_attribute` (`cat_id`, `type`, `label`, `attribute`, `required`, `dropdown_value`) VALUES (\'1\', \'dropdown\', \'a\', \'a\', \'yes\', \'a,b\')')
+ 3 SYSTEMPATH/Database/BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tbl_attribute` (`cat_id`, `type`, `label`, `attribute`, `required`, `dropdown_value`) VALUES (\'1\', \'dropdown\', \'a\', \'a\', \'yes\', \'a,b\')')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_attribute` (`cat_id`, `type`, `label`, `attribute`, `required`, `dropdown_value`) VALUES (:cat_id:, :type:, :label:, :attribute:, :required:, :dropdown_value:)', [...], false)
+ 5 APPPATH/Controllers/Attribute/AttributeController.php(93): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Attribute\AttributeController->addAttributePro()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Attribute\AttributeController))
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-14 14:15:23 --> ParseError: syntax error, unexpected string content "error"
+[Method: GET, Route: child_subcat_list]
+in APPPATH/Controllers/API/Attribute.php on line 119.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(295): CodeIgniter\Autoloader\Autoloader->includeFile('/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Controllers/API/Attribute.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(271): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\API\\Attribute')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\API\\Attribute')
+ 4 SYSTEMPATH/CodeIgniter.php(885): class_exists('\\App\\Controllers\\API\\Attribute', true)
+ 5 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-14 14:53:03 --> Error: Class "App\Models\Post\PostModel" not found
+[Method: GET, Route: add_post]
+in APPPATH/Controllers/API/Post.php on line 12.
+ 1 SYSTEMPATH/CodeIgniter.php(903): App\Controllers\API\Post->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-05-14 14:53:21 --> mysqli_sql_exception: Table 'sitsolutionsco_smart_gavali.tbl_animals' doesn't exist in /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/Database/MySQLi/Connection.php:327
+Stack trace:
+#0 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/Database/MySQLi/Connection.php(327): mysqli->query('SHOW COLUMNS FR...', 0)
+#1 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/Database/BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SHOW COLUMNS FR...')
+#2 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/Database/BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SHOW COLUMNS FR...')
+#3 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Controllers/API/Post.php(82): CodeIgniter\Database\BaseConnection->query('SHOW COLUMNS FR...')
+#4 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/CodeIgniter.php(933): App\Controllers\API\Post->add_post()
+#5 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\API\Post))
+#6 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/Boot.php(334): CodeIgniter\CodeIgniter->run()
+#8 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#9 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#10 {main}
+CRITICAL - 2025-05-14 14:53:21 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'sitsolutionsco_smart_gavali.tbl_animals' doesn't exist
+[Method: GET, Route: add_post]
+in SYSTEMPATH/Database/BaseConnection.php on line 692.
+ 1 APPPATH/Controllers/API/Post.php(82): CodeIgniter\Database\BaseConnection->query('SHOW COLUMNS FROM tbl_animals')
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\API\Post->add_post()
+ 3 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\API\Post))
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-14 14:53:21 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'sitsolutionsco_smart_gavali.tbl_animals' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 332.
+ 1 SYSTEMPATH/Database/BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SHOW COLUMNS FROM tbl_animals')
+ 2 SYSTEMPATH/Database/BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SHOW COLUMNS FROM tbl_animals')
+ 3 APPPATH/Controllers/API/Post.php(82): CodeIgniter\Database\BaseConnection->query('SHOW COLUMNS FROM tbl_animals')
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\API\Post->add_post()
+ 5 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\API\Post))
+ 6 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-14 14:53:21 --> [Caused by] mysqli_sql_exception: Table 'sitsolutionsco_smart_gavali.tbl_animals' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 327.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(327): mysqli->query('SHOW COLUMNS FROM tbl_animals', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SHOW COLUMNS FROM tbl_animals')
+ 3 SYSTEMPATH/Database/BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SHOW COLUMNS FROM tbl_animals')
+ 4 APPPATH/Controllers/API/Post.php(82): CodeIgniter\Database\BaseConnection->query('SHOW COLUMNS FROM tbl_animals')
+ 5 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\API\Post->add_post()
+ 6 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\API\Post))
+ 7 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-14 14:53:41 --> ErrorException: foreach() argument must be of type array|object, null given
+[Method: GET, Route: add_post]
+in APPPATH/Controllers/API/Post.php on line 87.
+ 1 APPPATH/Controllers/API/Post.php(87): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', '/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Controllers/API/Post.php', 87)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\API\Post->add_post()
+ 3 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\API\Post))
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-14 15:06:28 --> ErrorException: foreach() argument must be of type array|object, null given
+[Method: GET, Route: add_post]
+in APPPATH/Controllers/API/Post.php on line 28.
+ 1 APPPATH/Controllers/API/Post.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', '/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Controllers/API/Post.php', 28)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\API\Post->add_post()
+ 3 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\API\Post))
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-14 15:06:38 --> ErrorException: foreach() argument must be of type array|object, null given
+[Method: GET, Route: add_post]
+in APPPATH/Controllers/API/Post.php on line 28.
+ 1 APPPATH/Controllers/API/Post.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', '/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Controllers/API/Post.php', 28)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\API\Post->add_post()
+ 3 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\API\Post))
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-14 15:06:58 --> ErrorException: foreach() argument must be of type array|object, null given
+[Method: GET, Route: add_post]
+in APPPATH/Controllers/API/Post.php on line 28.
+ 1 APPPATH/Controllers/API/Post.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', '/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Controllers/API/Post.php', 28)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\API\Post->add_post()
+ 3 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\API\Post))
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-14 15:07:30 --> ErrorException: foreach() argument must be of type array|object, null given
+[Method: GET, Route: add_post]
+in APPPATH/Controllers/API/Post.php on line 28.
+ 1 APPPATH/Controllers/API/Post.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', '/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Controllers/API/Post.php', 28)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\API\Post->add_post()
+ 3 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\API\Post))
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-14 15:09:01 --> CodeIgniter\Database\Exceptions\DatabaseException: You must use the "set" method to insert an entry.
+[Method: GET, Route: add_post]
+in SYSTEMPATH/Database/BaseBuilder.php on line 2387.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2327): CodeIgniter\Database\BaseBuilder->validateInsert()
+ 2 APPPATH/Controllers/API/Post.php(58): CodeIgniter\Database\BaseBuilder->insert([])
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\API\Post->add_post()
+ 4 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\API\Post))
+ 5 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-14 15:09:02 --> CodeIgniter\Database\Exceptions\DatabaseException: You must use the "set" method to insert an entry.
+[Method: GET, Route: add_post]
+in SYSTEMPATH/Database/BaseBuilder.php on line 2387.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2327): CodeIgniter\Database\BaseBuilder->validateInsert()
+ 2 APPPATH/Controllers/API/Post.php(58): CodeIgniter\Database\BaseBuilder->insert([])
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\API\Post->add_post()
+ 4 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\API\Post))
+ 5 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-14 15:09:32 --> CodeIgniter\Database\Exceptions\DatabaseException: You must use the "set" method to insert an entry.
+[Method: GET, Route: add_post]
+in SYSTEMPATH/Database/BaseBuilder.php on line 2387.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2327): CodeIgniter\Database\BaseBuilder->validateInsert()
+ 2 APPPATH/Controllers/API/Post.php(57): CodeIgniter\Database\BaseBuilder->insert([])
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\API\Post->add_post()
+ 4 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\API\Post))
+ 5 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-14 15:09:36 --> CodeIgniter\Database\Exceptions\DatabaseException: You must use the "set" method to insert an entry.
+[Method: GET, Route: add_post]
+in SYSTEMPATH/Database/BaseBuilder.php on line 2387.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2327): CodeIgniter\Database\BaseBuilder->validateInsert()
+ 2 APPPATH/Controllers/API/Post.php(57): CodeIgniter\Database\BaseBuilder->insert([])
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\API\Post->add_post()
+ 4 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\API\Post))
+ 5 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-14 15:10:22 --> CodeIgniter\Database\Exceptions\DatabaseException: You must use the "set" method to insert an entry.
+[Method: GET, Route: add_post]
+in SYSTEMPATH/Database/BaseBuilder.php on line 2387.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2327): CodeIgniter\Database\BaseBuilder->validateInsert()
+ 2 APPPATH/Controllers/API/Post.php(57): CodeIgniter\Database\BaseBuilder->insert([])
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\API\Post->add_post()
+ 4 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\API\Post))
+ 5 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-14 15:10:25 --> CodeIgniter\Database\Exceptions\DatabaseException: You must use the "set" method to insert an entry.
+[Method: GET, Route: add_post]
+in SYSTEMPATH/Database/BaseBuilder.php on line 2387.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2327): CodeIgniter\Database\BaseBuilder->validateInsert()
+ 2 APPPATH/Controllers/API/Post.php(57): CodeIgniter\Database\BaseBuilder->insert([])
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\API\Post->add_post()
+ 4 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\API\Post))
+ 5 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-14 15:16:50 --> ErrorException: foreach() argument must be of type array|object, null given
+[Method: GET, Route: add_post]
+in APPPATH/Controllers/API/Post.php on line 28.
+ 1 APPPATH/Controllers/API/Post.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', '/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Controllers/API/Post.php', 28)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\API\Post->add_post()
+ 3 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\API\Post))
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-14 15:20:43 --> ErrorException: foreach() argument must be of type array|object, null given
+[Method: GET, Route: add_post]
+in APPPATH/Controllers/API/Post.php on line 28.
+ 1 APPPATH/Controllers/API/Post.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', '/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Controllers/API/Post.php', 28)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\API\Post->add_post()
+ 3 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\API\Post))
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-14 15:21:09 --> ErrorException: foreach() argument must be of type array|object, null given
+[Method: GET, Route: add_post]
+in APPPATH/Controllers/API/Post.php on line 28.
+ 1 APPPATH/Controllers/API/Post.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', '/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Controllers/API/Post.php', 28)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\API\Post->add_post()
+ 3 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\API\Post))
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-14 15:21:34 --> ErrorException: foreach() argument must be of type array|object, null given
+[Method: GET, Route: add_post]
+in APPPATH/Controllers/API/Post.php on line 28.
+ 1 APPPATH/Controllers/API/Post.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', '/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Controllers/API/Post.php', 28)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\API\Post->add_post()
+ 3 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\API\Post))
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-14 15:23:13 --> CodeIgniter\Database\Exceptions\DatabaseException: You must use the "set" method to insert an entry.
+[Method: GET, Route: add_post]
+in SYSTEMPATH/Database/BaseBuilder.php on line 2387.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2327): CodeIgniter\Database\BaseBuilder->validateInsert()
+ 2 APPPATH/Controllers/API/Post.php(72): CodeIgniter\Database\BaseBuilder->insert([])
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\API\Post->add_post()
+ 4 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\API\Post))
+ 5 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-14 15:23:51 --> ErrorException: foreach() argument must be of type array|object, null given
+[Method: GET, Route: add_post]
+in APPPATH/Controllers/API/Post.php on line 28.
+ 1 APPPATH/Controllers/API/Post.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', '/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Controllers/API/Post.php', 28)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\API\Post->add_post()
+ 3 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\API\Post))
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-14 15:24:03 --> ErrorException: foreach() argument must be of type array|object, null given
+[Method: GET, Route: add_post]
+in APPPATH/Controllers/API/Post.php on line 28.
+ 1 APPPATH/Controllers/API/Post.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', '/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Controllers/API/Post.php', 28)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\API\Post->add_post()
+ 3 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\API\Post))
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-14 15:25:24 --> ParseError: syntax error, unexpected variable "$builder", expecting "function" or "const"
+[Method: GET, Route: add_post]
+in APPPATH/Controllers/API/Post.php on line 57.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(295): CodeIgniter\Autoloader\Autoloader->includeFile('/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Controllers/API/Post.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(271): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\API\\Post')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\API\\Post')
+ 4 SYSTEMPATH/CodeIgniter.php(885): class_exists('\\App\\Controllers\\API\\Post', true)
+ 5 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-14 15:25:33 --> ParseError: syntax error, unexpected variable "$builder", expecting "function" or "const"
+[Method: GET, Route: add_post]
+in APPPATH/Controllers/API/Post.php on line 57.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(295): CodeIgniter\Autoloader\Autoloader->includeFile('/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Controllers/API/Post.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(271): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\API\\Post')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\API\\Post')
+ 4 SYSTEMPATH/CodeIgniter.php(885): class_exists('\\App\\Controllers\\API\\Post', true)
+ 5 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-14 15:25:50 --> ParseError: syntax error, unexpected variable "$builder", expecting "function" or "const"
+[Method: GET, Route: add_post]
+in APPPATH/Controllers/API/Post.php on line 57.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(295): CodeIgniter\Autoloader\Autoloader->includeFile('/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Controllers/API/Post.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(271): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\API\\Post')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\API\\Post')
+ 4 SYSTEMPATH/CodeIgniter.php(885): class_exists('\\App\\Controllers\\API\\Post', true)
+ 5 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-14 15:29:41 --> CodeIgniter\Database\Exceptions\DatabaseException: You must use the "set" method to insert an entry.
+[Method: GET, Route: add_post]
+in SYSTEMPATH/Database/BaseBuilder.php on line 2387.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2327): CodeIgniter\Database\BaseBuilder->validateInsert()
+ 2 APPPATH/Controllers/API/Post.php(66): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\API\Post->add_post()
+ 4 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\API\Post))
+ 5 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-14 15:29:58 --> CodeIgniter\Database\Exceptions\DatabaseException: You must use the "set" method to insert an entry.
+[Method: GET, Route: add_post]
+in SYSTEMPATH/Database/BaseBuilder.php on line 2387.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2327): CodeIgniter\Database\BaseBuilder->validateInsert()
+ 2 APPPATH/Controllers/API/Post.php(66): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\API\Post->add_post()
+ 4 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\API\Post))
+ 5 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-14 15:32:03 --> ErrorException: foreach() argument must be of type array|object, null given
+[Method: GET, Route: add_post]
+in APPPATH/Controllers/API/Post.php on line 28.
+ 1 APPPATH/Controllers/API/Post.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', '/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Controllers/API/Post.php', 28)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\API\Post->add_post()
+ 3 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\API\Post))
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

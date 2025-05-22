@@ -1,0 +1,126 @@
+CRITICAL - 2025-05-19 04:37:19 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: postList]
+in APPPATH/Views/Post/postList.php on line 67.
+ 1 APPPATH/Views/Post/postList.php(67): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Views/Post/postList.php', 67)
+ 2 SYSTEMPATH/View/View.php(224): include('/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Views/Post/postList.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1173): CodeIgniter\View\View->render('Post/postList', [], true)
+ 5 APPPATH/Controllers/Post/PostController.php(22): view('Post/postList', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Post\PostController->postList()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Post\PostController))
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-19 04:37:26 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: postList]
+in APPPATH/Views/Post/postList.php on line 67.
+ 1 APPPATH/Views/Post/postList.php(67): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Views/Post/postList.php', 67)
+ 2 SYSTEMPATH/View/View.php(224): include('/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Views/Post/postList.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1173): CodeIgniter\View\View->render('Post/postList', [], true)
+ 5 APPPATH/Controllers/Post/PostController.php(22): view('Post/postList', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Post\PostController->postList()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Post\PostController))
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-19 05:43:25 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: postList]
+in APPPATH/Views/Post/postList.php on line 67.
+ 1 APPPATH/Views/Post/postList.php(67): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Views/Post/postList.php', 67)
+ 2 SYSTEMPATH/View/View.php(224): include('/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Views/Post/postList.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1173): CodeIgniter\View\View->render('Post/postList', [], true)
+ 5 APPPATH/Controllers/Post/PostController.php(22): view('Post/postList', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Post\PostController->postList()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Post\PostController))
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-19 08:03:13 --> ErrorException: Undefined array key "id"
+[Method: GET, Route: attributeList]
+in APPPATH/Views/Attribute/attributeList.php on line 2.
+ 1 APPPATH/Views/Attribute/attributeList.php(2): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', '/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Views/Attribute/attributeList.php', 2)
+ 2 SYSTEMPATH/View/View.php(224): include('/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Views/Attribute/attributeList.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1173): CodeIgniter\View\View->render('Attribute/attributeList', [], true)
+ 5 APPPATH/Controllers/Attribute/AttributeController.php(25): view('Attribute/attributeList', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Attribute\AttributeController->attributeList()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Attribute\AttributeController))
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-19 08:03:16 --> ErrorException: Undefined array key "id"
+[Method: GET, Route: adminDashboard]
+in APPPATH/Views/Dashboard/adminDashboard.php on line 2.
+ 1 APPPATH/Views/Dashboard/adminDashboard.php(2): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', '/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Views/Dashboard/adminDashboard.php', 2)
+ 2 SYSTEMPATH/View/View.php(224): include('/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Views/Dashboard/adminDashboard.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1173): CodeIgniter\View\View->render('Dashboard/adminDashboard', [], true)
+ 5 APPPATH/Controllers/Dashboard/DashboardController.php(40): view('Dashboard/adminDashboard', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Dashboard\DashboardController->adminDashboard()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard\DashboardController))
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-19 08:03:17 --> ErrorException: Undefined array key "id"
+[Method: GET, Route: subcategoryList]
+in APPPATH/Views/Subcategory/subcategoryList.php on line 2.
+ 1 APPPATH/Views/Subcategory/subcategoryList.php(2): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', '/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Views/Subcategory/subcategoryList.php', 2)
+ 2 SYSTEMPATH/View/View.php(224): include('/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Views/Subcategory/subcategoryList.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1173): CodeIgniter\View\View->render('Subcategory/subcategoryList', [], true)
+ 5 APPPATH/Controllers/Subcategory/SubcategoryController.php(25): view('Subcategory/subcategoryList', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Subcategory\SubcategoryController->subcategoryList()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Subcategory\SubcategoryController))
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-19 08:31:33 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: postList]
+in APPPATH/Views/Post/postList.php on line 67.
+ 1 APPPATH/Views/Post/postList.php(67): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Views/Post/postList.php', 67)
+ 2 SYSTEMPATH/View/View.php(224): include('/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Views/Post/postList.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1173): CodeIgniter\View\View->render('Post/postList', [], true)
+ 5 APPPATH/Controllers/Post/PostController.php(22): view('Post/postList', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Post\PostController->postList()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Post\PostController))
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-19 12:32:06 --> ErrorException: Undefined array key "id"
+[Method: GET, Route: postList]
+in APPPATH/Views/Post/postList.php on line 2.
+ 1 APPPATH/Views/Post/postList.php(2): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', '/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Views/Post/postList.php', 2)
+ 2 SYSTEMPATH/View/View.php(224): include('/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Views/Post/postList.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1173): CodeIgniter\View\View->render('Post/postList', [], true)
+ 5 APPPATH/Controllers/Post/PostController.php(22): view('Post/postList', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Post\PostController->postList()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Post\PostController))
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-19 12:32:10 --> ErrorException: Undefined array key "id"
+[Method: GET, Route: enquiryList]
+in APPPATH/Views/Enquiry/enquiryList.php on line 2.
+ 1 APPPATH/Views/Enquiry/enquiryList.php(2): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', '/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Views/Enquiry/enquiryList.php', 2)
+ 2 SYSTEMPATH/View/View.php(224): include('/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Views/Enquiry/enquiryList.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1173): CodeIgniter\View\View->render('Enquiry/enquiryList', [], true)
+ 5 APPPATH/Controllers/Enquiry/EnquiryController.php(21): view('Enquiry/enquiryList', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Enquiry\EnquiryController->enquiryList()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Enquiry\EnquiryController))
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

@@ -1,0 +1,23 @@
+CRITICAL - 2025-05-22 04:28:58 --> ErrorException: Undefined variable $officeTypeList
+[Method: GET, Route: officeTypeList]
+in APPPATH\Views\OfficeType\officeTypeList.php on line 48.
+ 1 APPPATH\Views\OfficeType\officeTypeList.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $officeTypeList', 'C:\\xampp\\htdocs\\field_visit\\app\\Views\\OfficeType\\officeTypeList.php', 48)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\field_visit\\app\\Views\\OfficeType\\officeTypeList.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('OfficeType/officeTypeList', [], true)
+ 5 APPPATH\Controllers\OfficeType\OfficeTypeController.php(25): view('OfficeType/officeTypeList', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\OfficeType\OfficeTypeController->officeTypeList()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OfficeType\OfficeTypeController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-22 06:40:24 --> Error: Class "App\Models\Office\OfficeModel" not found
+[Method: GET, Route: officeList]
+in APPPATH\Controllers\Office\OfficeController.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Office\OfficeController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

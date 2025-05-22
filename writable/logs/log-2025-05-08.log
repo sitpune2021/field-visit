@@ -1,0 +1,468 @@
+CRITICAL - 2025-05-08 09:20:12 --> ErrorException: Undefined array key "id"
+[Method: GET, Route: adminDashboard]
+in APPPATH/Views/Include/header.php on line 3.
+ 1 APPPATH/Views/Include/header.php(3): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', '/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Views/Include/header.php', 3)
+ 2 SYSTEMPATH/View/View.php(224): include('/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Views/Include/header.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1173): CodeIgniter\View\View->render('Include/header', [], true)
+ 5 APPPATH/Views/Dashboard/adminDashboard.php(11): view('Include/header')
+ 6 SYSTEMPATH/View/View.php(224): include('/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Views/Dashboard/adminDashboard.php')
+ 7 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH/Common.php(1173): CodeIgniter\View\View->render('Dashboard/adminDashboard', [], true)
+ 9 APPPATH/Controllers/Dashboard/DashboardController.php(20): view('Dashboard/adminDashboard')
+10 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Dashboard\DashboardController->adminDashboard()
+11 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard\DashboardController))
+12 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-08 09:37:15 --> Error: Class "App\Controllers\SubscriptionPlan\ProductModel" not found
+[Method: GET, Route: subPlanList]
+in APPPATH/Controllers/SubscriptionPlan/SubscriptionPlanController.php on line 15.
+ 1 SYSTEMPATH/CodeIgniter.php(903): App\Controllers\SubscriptionPlan\SubscriptionPlanController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-08 09:37:50 --> Error: Class "App\Models\SubscriptionPlan\SubscriptionPlanModel" not found
+[Method: GET, Route: subPlanList]
+in APPPATH/Controllers/SubscriptionPlan/SubscriptionPlanController.php on line 15.
+ 1 SYSTEMPATH/CodeIgniter.php(903): App\Controllers\SubscriptionPlan\SubscriptionPlanController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-08 09:37:51 --> Error: Class "App\Models\SubscriptionPlan\SubscriptionPlanModel" not found
+[Method: GET, Route: subPlanList]
+in APPPATH/Controllers/SubscriptionPlan/SubscriptionPlanController.php on line 15.
+ 1 SYSTEMPATH/CodeIgniter.php(903): App\Controllers\SubscriptionPlan\SubscriptionPlanController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-08 09:42:40 --> Error: Class "App\Models\SubscriptionPlan\SubscriptionPlanModel" not found
+[Method: GET, Route: subPlanList]
+in APPPATH/Controllers/SubscriptionPlan/SubscriptionPlanController.php on line 15.
+ 1 SYSTEMPATH/CodeIgniter.php(903): App\Controllers\SubscriptionPlan\SubscriptionPlanController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-08 09:42:40 --> Error: Class "App\Models\SubscriptionPlan\SubscriptionPlanModel" not found
+[Method: GET, Route: subPlanList]
+in APPPATH/Controllers/SubscriptionPlan/SubscriptionPlanController.php on line 15.
+ 1 SYSTEMPATH/CodeIgniter.php(903): App\Controllers\SubscriptionPlan\SubscriptionPlanController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-08 09:42:41 --> Error: Class "App\Models\SubscriptionPlan\SubscriptionPlanModel" not found
+[Method: GET, Route: subPlanList]
+in APPPATH/Controllers/SubscriptionPlan/SubscriptionPlanController.php on line 15.
+ 1 SYSTEMPATH/CodeIgniter.php(903): App\Controllers\SubscriptionPlan\SubscriptionPlanController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-08 09:42:41 --> Error: Class "App\Models\SubscriptionPlan\SubscriptionPlanModel" not found
+[Method: GET, Route: subPlanList]
+in APPPATH/Controllers/SubscriptionPlan/SubscriptionPlanController.php on line 15.
+ 1 SYSTEMPATH/CodeIgniter.php(903): App\Controllers\SubscriptionPlan\SubscriptionPlanController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-08 09:44:03 --> Error: Class "App\Models\SubscriptionPlan\SubscriptionPlanModel" not found
+[Method: GET, Route: subPlanList]
+in APPPATH/Controllers/SubscriptionPlan/SubscriptionPlanController.php on line 15.
+ 1 SYSTEMPATH/CodeIgniter.php(903): App\Controllers\SubscriptionPlan\SubscriptionPlanController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-08 09:44:04 --> ErrorException: Undefined property: App\Controllers\SubscriptionPlan\SubscriptionPlanController::$SubscriptionPlanModel
+[Method: GET, Route: subPlanList]
+in APPPATH/Controllers/SubscriptionPlan/SubscriptionPlanController.php on line 24.
+ 1 APPPATH/Controllers/SubscriptionPlan/SubscriptionPlanController.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\SubscriptionPlan\\SubscriptionPlanController::$SubscriptionPlanModel', '/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Controllers/SubscriptionPlan/SubscriptionPlanController.php', 24)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\SubscriptionPlan\SubscriptionPlanController->SubPlanList()
+ 3 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SubscriptionPlan\SubscriptionPlanController))
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-08 09:44:04 --> ErrorException: Undefined property: App\Controllers\SubscriptionPlan\SubscriptionPlanController::$SubscriptionPlanModel
+[Method: GET, Route: subPlanList]
+in APPPATH/Controllers/SubscriptionPlan/SubscriptionPlanController.php on line 24.
+ 1 APPPATH/Controllers/SubscriptionPlan/SubscriptionPlanController.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\SubscriptionPlan\\SubscriptionPlanController::$SubscriptionPlanModel', '/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Controllers/SubscriptionPlan/SubscriptionPlanController.php', 24)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\SubscriptionPlan\SubscriptionPlanController->SubPlanList()
+ 3 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SubscriptionPlan\SubscriptionPlanController))
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-08 09:44:04 --> ErrorException: Undefined property: App\Controllers\SubscriptionPlan\SubscriptionPlanController::$SubscriptionPlanModel
+[Method: GET, Route: subPlanList]
+in APPPATH/Controllers/SubscriptionPlan/SubscriptionPlanController.php on line 24.
+ 1 APPPATH/Controllers/SubscriptionPlan/SubscriptionPlanController.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\SubscriptionPlan\\SubscriptionPlanController::$SubscriptionPlanModel', '/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Controllers/SubscriptionPlan/SubscriptionPlanController.php', 24)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\SubscriptionPlan\SubscriptionPlanController->SubPlanList()
+ 3 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SubscriptionPlan\SubscriptionPlanController))
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-08 09:44:43 --> ErrorException: Undefined property: App\Controllers\SubscriptionPlan\SubscriptionPlanController::$SubscriptionPlanModel
+[Method: GET, Route: subPlanList]
+in APPPATH/Controllers/SubscriptionPlan/SubscriptionPlanController.php on line 24.
+ 1 APPPATH/Controllers/SubscriptionPlan/SubscriptionPlanController.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\SubscriptionPlan\\SubscriptionPlanController::$SubscriptionPlanModel', '/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Controllers/SubscriptionPlan/SubscriptionPlanController.php', 24)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\SubscriptionPlan\SubscriptionPlanController->SubPlanList()
+ 3 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SubscriptionPlan\SubscriptionPlanController))
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-08 09:44:44 --> ErrorException: Undefined property: App\Controllers\SubscriptionPlan\SubscriptionPlanController::$SubscriptionPlanModel
+[Method: GET, Route: subPlanList]
+in APPPATH/Controllers/SubscriptionPlan/SubscriptionPlanController.php on line 24.
+ 1 APPPATH/Controllers/SubscriptionPlan/SubscriptionPlanController.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\SubscriptionPlan\\SubscriptionPlanController::$SubscriptionPlanModel', '/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Controllers/SubscriptionPlan/SubscriptionPlanController.php', 24)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\SubscriptionPlan\SubscriptionPlanController->SubPlanList()
+ 3 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SubscriptionPlan\SubscriptionPlanController))
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-08 09:44:45 --> ErrorException: Undefined property: App\Controllers\SubscriptionPlan\SubscriptionPlanController::$SubscriptionPlanModel
+[Method: GET, Route: subPlanList]
+in APPPATH/Controllers/SubscriptionPlan/SubscriptionPlanController.php on line 24.
+ 1 APPPATH/Controllers/SubscriptionPlan/SubscriptionPlanController.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\SubscriptionPlan\\SubscriptionPlanController::$SubscriptionPlanModel', '/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Controllers/SubscriptionPlan/SubscriptionPlanController.php', 24)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\SubscriptionPlan\SubscriptionPlanController->SubPlanList()
+ 3 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SubscriptionPlan\SubscriptionPlanController))
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-08 09:44:49 --> CodeIgniter\Database\Exceptions\DatabaseException: You must set the database table to be used with your query.
+[Method: GET, Route: subPlanList]
+in SYSTEMPATH/Database/BaseConnection.php on line 941.
+ 1 SYSTEMPATH/Model.php(714): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH/Model.php(920): CodeIgniter\Model->builder()
+ 3 APPPATH/Controllers/SubscriptionPlan/SubscriptionPlanController.php(24): CodeIgniter\Model->__call('getSubPlanList', [])
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\SubscriptionPlan\SubscriptionPlanController->SubPlanList()
+ 5 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SubscriptionPlan\SubscriptionPlanController))
+ 6 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-08 09:44:50 --> CodeIgniter\Database\Exceptions\DatabaseException: You must set the database table to be used with your query.
+[Method: GET, Route: subPlanList]
+in SYSTEMPATH/Database/BaseConnection.php on line 941.
+ 1 SYSTEMPATH/Model.php(714): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH/Model.php(920): CodeIgniter\Model->builder()
+ 3 APPPATH/Controllers/SubscriptionPlan/SubscriptionPlanController.php(24): CodeIgniter\Model->__call('getSubPlanList', [])
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\SubscriptionPlan\SubscriptionPlanController->SubPlanList()
+ 5 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SubscriptionPlan\SubscriptionPlanController))
+ 6 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-08 09:44:51 --> CodeIgniter\Database\Exceptions\DatabaseException: You must set the database table to be used with your query.
+[Method: GET, Route: subPlanList]
+in SYSTEMPATH/Database/BaseConnection.php on line 941.
+ 1 SYSTEMPATH/Model.php(714): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH/Model.php(920): CodeIgniter\Model->builder()
+ 3 APPPATH/Controllers/SubscriptionPlan/SubscriptionPlanController.php(24): CodeIgniter\Model->__call('getSubPlanList', [])
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\SubscriptionPlan\SubscriptionPlanController->SubPlanList()
+ 5 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SubscriptionPlan\SubscriptionPlanController))
+ 6 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-08 09:44:51 --> CodeIgniter\Database\Exceptions\DatabaseException: You must set the database table to be used with your query.
+[Method: GET, Route: subPlanList]
+in SYSTEMPATH/Database/BaseConnection.php on line 941.
+ 1 SYSTEMPATH/Model.php(714): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH/Model.php(920): CodeIgniter\Model->builder()
+ 3 APPPATH/Controllers/SubscriptionPlan/SubscriptionPlanController.php(24): CodeIgniter\Model->__call('getSubPlanList', [])
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\SubscriptionPlan\SubscriptionPlanController->SubPlanList()
+ 5 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SubscriptionPlan\SubscriptionPlanController))
+ 6 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-08 09:44:51 --> CodeIgniter\Database\Exceptions\DatabaseException: You must set the database table to be used with your query.
+[Method: GET, Route: subPlanList]
+in SYSTEMPATH/Database/BaseConnection.php on line 941.
+ 1 SYSTEMPATH/Model.php(714): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH/Model.php(920): CodeIgniter\Model->builder()
+ 3 APPPATH/Controllers/SubscriptionPlan/SubscriptionPlanController.php(24): CodeIgniter\Model->__call('getSubPlanList', [])
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\SubscriptionPlan\SubscriptionPlanController->SubPlanList()
+ 5 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SubscriptionPlan\SubscriptionPlanController))
+ 6 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-08 09:44:51 --> CodeIgniter\Database\Exceptions\DatabaseException: You must set the database table to be used with your query.
+[Method: GET, Route: subPlanList]
+in SYSTEMPATH/Database/BaseConnection.php on line 941.
+ 1 SYSTEMPATH/Model.php(714): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH/Model.php(920): CodeIgniter\Model->builder()
+ 3 APPPATH/Controllers/SubscriptionPlan/SubscriptionPlanController.php(24): CodeIgniter\Model->__call('getSubPlanList', [])
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\SubscriptionPlan\SubscriptionPlanController->SubPlanList()
+ 5 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SubscriptionPlan\SubscriptionPlanController))
+ 6 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-08 09:44:52 --> CodeIgniter\Database\Exceptions\DatabaseException: You must set the database table to be used with your query.
+[Method: GET, Route: subPlanList]
+in SYSTEMPATH/Database/BaseConnection.php on line 941.
+ 1 SYSTEMPATH/Model.php(714): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH/Model.php(920): CodeIgniter\Model->builder()
+ 3 APPPATH/Controllers/SubscriptionPlan/SubscriptionPlanController.php(24): CodeIgniter\Model->__call('getSubPlanList', [])
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\SubscriptionPlan\SubscriptionPlanController->SubPlanList()
+ 5 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SubscriptionPlan\SubscriptionPlanController))
+ 6 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-05-08 09:46:56 --> mysqli_sql_exception: Table 'sitsolutionsco_smart_gavali.tbl_subscription_plan' doesn't exist in /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/Database/MySQLi/Connection.php:327
+Stack trace:
+#0 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/Database/MySQLi/Connection.php(327): mysqli->query('SELECT * FROM t...', 0)
+#1 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/Database/BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM t...')
+#2 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/Database/BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM t...')
+#3 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Models/SubscriptionPlan/SubscriptionPlanModel.php(11): CodeIgniter\Database\BaseConnection->query('SELECT * FROM t...')
+#4 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Controllers/SubscriptionPlan/SubscriptionPlanController.php(24): App\Models\SubscriptionPlan\SubscriptionPlanModel->getSubPlanList()
+#5 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/CodeIgniter.php(933): App\Controllers\SubscriptionPlan\SubscriptionPlanController->SubPlanList()
+#6 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SubscriptionPlan\SubscriptionPlanController))
+#7 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2025-05-08 09:46:56 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'sitsolutionsco_smart_gavali.tbl_subscription_plan' doesn't exist
+[Method: GET, Route: subPlanList]
+in SYSTEMPATH/Database/BaseConnection.php on line 692.
+ 1 APPPATH/Models/SubscriptionPlan/SubscriptionPlanModel.php(11): CodeIgniter\Database\BaseConnection->query('SELECT * FROM tbl_subscription_plan WHERE isdeleted = 0 order by id desc')
+ 2 APPPATH/Controllers/SubscriptionPlan/SubscriptionPlanController.php(24): App\Models\SubscriptionPlan\SubscriptionPlanModel->getSubPlanList()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\SubscriptionPlan\SubscriptionPlanController->SubPlanList()
+ 4 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SubscriptionPlan\SubscriptionPlanController))
+ 5 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-08 09:46:56 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'sitsolutionsco_smart_gavali.tbl_subscription_plan' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 332.
+ 1 SYSTEMPATH/Database/BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM tbl_subscription_plan WHERE isdeleted = 0 order by id desc')
+ 2 SYSTEMPATH/Database/BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM tbl_subscription_plan WHERE isdeleted = 0 order by id desc')
+ 3 APPPATH/Models/SubscriptionPlan/SubscriptionPlanModel.php(11): CodeIgniter\Database\BaseConnection->query('SELECT * FROM tbl_subscription_plan WHERE isdeleted = 0 order by id desc')
+ 4 APPPATH/Controllers/SubscriptionPlan/SubscriptionPlanController.php(24): App\Models\SubscriptionPlan\SubscriptionPlanModel->getSubPlanList()
+ 5 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\SubscriptionPlan\SubscriptionPlanController->SubPlanList()
+ 6 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SubscriptionPlan\SubscriptionPlanController))
+ 7 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-08 09:46:56 --> [Caused by] mysqli_sql_exception: Table 'sitsolutionsco_smart_gavali.tbl_subscription_plan' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 327.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(327): mysqli->query('SELECT * FROM tbl_subscription_plan WHERE isdeleted = 0 order by id desc', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM tbl_subscription_plan WHERE isdeleted = 0 order by id desc')
+ 3 SYSTEMPATH/Database/BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM tbl_subscription_plan WHERE isdeleted = 0 order by id desc')
+ 4 APPPATH/Models/SubscriptionPlan/SubscriptionPlanModel.php(11): CodeIgniter\Database\BaseConnection->query('SELECT * FROM tbl_subscription_plan WHERE isdeleted = 0 order by id desc')
+ 5 APPPATH/Controllers/SubscriptionPlan/SubscriptionPlanController.php(24): App\Models\SubscriptionPlan\SubscriptionPlanModel->getSubPlanList()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\SubscriptionPlan\SubscriptionPlanController->SubPlanList()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SubscriptionPlan\SubscriptionPlanController))
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-05-08 09:46:57 --> mysqli_sql_exception: Table 'sitsolutionsco_smart_gavali.tbl_subscription_plan' doesn't exist in /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/Database/MySQLi/Connection.php:327
+Stack trace:
+#0 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/Database/MySQLi/Connection.php(327): mysqli->query('SELECT * FROM t...', 0)
+#1 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/Database/BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM t...')
+#2 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/Database/BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM t...')
+#3 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Models/SubscriptionPlan/SubscriptionPlanModel.php(11): CodeIgniter\Database\BaseConnection->query('SELECT * FROM t...')
+#4 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Controllers/SubscriptionPlan/SubscriptionPlanController.php(24): App\Models\SubscriptionPlan\SubscriptionPlanModel->getSubPlanList()
+#5 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/CodeIgniter.php(933): App\Controllers\SubscriptionPlan\SubscriptionPlanController->SubPlanList()
+#6 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SubscriptionPlan\SubscriptionPlanController))
+#7 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2025-05-08 09:46:57 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'sitsolutionsco_smart_gavali.tbl_subscription_plan' doesn't exist
+[Method: GET, Route: subPlanList]
+in SYSTEMPATH/Database/BaseConnection.php on line 692.
+ 1 APPPATH/Models/SubscriptionPlan/SubscriptionPlanModel.php(11): CodeIgniter\Database\BaseConnection->query('SELECT * FROM tbl_subscription_plan WHERE isdeleted = 0 order by id desc')
+ 2 APPPATH/Controllers/SubscriptionPlan/SubscriptionPlanController.php(24): App\Models\SubscriptionPlan\SubscriptionPlanModel->getSubPlanList()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\SubscriptionPlan\SubscriptionPlanController->SubPlanList()
+ 4 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SubscriptionPlan\SubscriptionPlanController))
+ 5 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-08 09:46:57 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'sitsolutionsco_smart_gavali.tbl_subscription_plan' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 332.
+ 1 SYSTEMPATH/Database/BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM tbl_subscription_plan WHERE isdeleted = 0 order by id desc')
+ 2 SYSTEMPATH/Database/BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM tbl_subscription_plan WHERE isdeleted = 0 order by id desc')
+ 3 APPPATH/Models/SubscriptionPlan/SubscriptionPlanModel.php(11): CodeIgniter\Database\BaseConnection->query('SELECT * FROM tbl_subscription_plan WHERE isdeleted = 0 order by id desc')
+ 4 APPPATH/Controllers/SubscriptionPlan/SubscriptionPlanController.php(24): App\Models\SubscriptionPlan\SubscriptionPlanModel->getSubPlanList()
+ 5 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\SubscriptionPlan\SubscriptionPlanController->SubPlanList()
+ 6 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SubscriptionPlan\SubscriptionPlanController))
+ 7 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-08 09:46:57 --> [Caused by] mysqli_sql_exception: Table 'sitsolutionsco_smart_gavali.tbl_subscription_plan' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 327.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(327): mysqli->query('SELECT * FROM tbl_subscription_plan WHERE isdeleted = 0 order by id desc', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM tbl_subscription_plan WHERE isdeleted = 0 order by id desc')
+ 3 SYSTEMPATH/Database/BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM tbl_subscription_plan WHERE isdeleted = 0 order by id desc')
+ 4 APPPATH/Models/SubscriptionPlan/SubscriptionPlanModel.php(11): CodeIgniter\Database\BaseConnection->query('SELECT * FROM tbl_subscription_plan WHERE isdeleted = 0 order by id desc')
+ 5 APPPATH/Controllers/SubscriptionPlan/SubscriptionPlanController.php(24): App\Models\SubscriptionPlan\SubscriptionPlanModel->getSubPlanList()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\SubscriptionPlan\SubscriptionPlanController->SubPlanList()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SubscriptionPlan\SubscriptionPlanController))
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-05-08 09:46:57 --> mysqli_sql_exception: Table 'sitsolutionsco_smart_gavali.tbl_subscription_plan' doesn't exist in /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/Database/MySQLi/Connection.php:327
+Stack trace:
+#0 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/Database/MySQLi/Connection.php(327): mysqli->query('SELECT * FROM t...', 0)
+#1 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/Database/BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM t...')
+#2 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/Database/BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM t...')
+#3 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Models/SubscriptionPlan/SubscriptionPlanModel.php(11): CodeIgniter\Database\BaseConnection->query('SELECT * FROM t...')
+#4 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Controllers/SubscriptionPlan/SubscriptionPlanController.php(24): App\Models\SubscriptionPlan\SubscriptionPlanModel->getSubPlanList()
+#5 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/CodeIgniter.php(933): App\Controllers\SubscriptionPlan\SubscriptionPlanController->SubPlanList()
+#6 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SubscriptionPlan\SubscriptionPlanController))
+#7 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2025-05-08 09:46:57 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'sitsolutionsco_smart_gavali.tbl_subscription_plan' doesn't exist
+[Method: GET, Route: subPlanList]
+in SYSTEMPATH/Database/BaseConnection.php on line 692.
+ 1 APPPATH/Models/SubscriptionPlan/SubscriptionPlanModel.php(11): CodeIgniter\Database\BaseConnection->query('SELECT * FROM tbl_subscription_plan WHERE isdeleted = 0 order by id desc')
+ 2 APPPATH/Controllers/SubscriptionPlan/SubscriptionPlanController.php(24): App\Models\SubscriptionPlan\SubscriptionPlanModel->getSubPlanList()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\SubscriptionPlan\SubscriptionPlanController->SubPlanList()
+ 4 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SubscriptionPlan\SubscriptionPlanController))
+ 5 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-08 09:46:57 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'sitsolutionsco_smart_gavali.tbl_subscription_plan' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 332.
+ 1 SYSTEMPATH/Database/BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM tbl_subscription_plan WHERE isdeleted = 0 order by id desc')
+ 2 SYSTEMPATH/Database/BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM tbl_subscription_plan WHERE isdeleted = 0 order by id desc')
+ 3 APPPATH/Models/SubscriptionPlan/SubscriptionPlanModel.php(11): CodeIgniter\Database\BaseConnection->query('SELECT * FROM tbl_subscription_plan WHERE isdeleted = 0 order by id desc')
+ 4 APPPATH/Controllers/SubscriptionPlan/SubscriptionPlanController.php(24): App\Models\SubscriptionPlan\SubscriptionPlanModel->getSubPlanList()
+ 5 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\SubscriptionPlan\SubscriptionPlanController->SubPlanList()
+ 6 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SubscriptionPlan\SubscriptionPlanController))
+ 7 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-08 09:46:57 --> [Caused by] mysqli_sql_exception: Table 'sitsolutionsco_smart_gavali.tbl_subscription_plan' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 327.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(327): mysqli->query('SELECT * FROM tbl_subscription_plan WHERE isdeleted = 0 order by id desc', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM tbl_subscription_plan WHERE isdeleted = 0 order by id desc')
+ 3 SYSTEMPATH/Database/BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM tbl_subscription_plan WHERE isdeleted = 0 order by id desc')
+ 4 APPPATH/Models/SubscriptionPlan/SubscriptionPlanModel.php(11): CodeIgniter\Database\BaseConnection->query('SELECT * FROM tbl_subscription_plan WHERE isdeleted = 0 order by id desc')
+ 5 APPPATH/Controllers/SubscriptionPlan/SubscriptionPlanController.php(24): App\Models\SubscriptionPlan\SubscriptionPlanModel->getSubPlanList()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\SubscriptionPlan\SubscriptionPlanController->SubPlanList()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SubscriptionPlan\SubscriptionPlanController))
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-08 09:47:16 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "SubscriptionPlan/SubPlanList.php"
+[Method: GET, Route: subPlanList]
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('SubscriptionPlan/SubPlanList.php')
+ 2 SYSTEMPATH/Common.php(1173): CodeIgniter\View\View->render('SubscriptionPlan/SubPlanList', [], true)
+ 3 APPPATH/Controllers/SubscriptionPlan/SubscriptionPlanController.php(25): view('SubscriptionPlan/SubPlanList', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\SubscriptionPlan\SubscriptionPlanController->SubPlanList()
+ 5 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SubscriptionPlan\SubscriptionPlanController))
+ 6 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-08 09:47:17 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "SubscriptionPlan/SubPlanList.php"
+[Method: GET, Route: subPlanList]
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('SubscriptionPlan/SubPlanList.php')
+ 2 SYSTEMPATH/Common.php(1173): CodeIgniter\View\View->render('SubscriptionPlan/SubPlanList', [], true)
+ 3 APPPATH/Controllers/SubscriptionPlan/SubscriptionPlanController.php(25): view('SubscriptionPlan/SubPlanList', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\SubscriptionPlan\SubscriptionPlanController->SubPlanList()
+ 5 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SubscriptionPlan\SubscriptionPlanController))
+ 6 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-08 09:53:11 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "SubscriptionPlan/SubPlanList.php"
+[Method: GET, Route: subPlanList]
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('SubscriptionPlan/SubPlanList.php')
+ 2 SYSTEMPATH/Common.php(1173): CodeIgniter\View\View->render('SubscriptionPlan/SubPlanList', [], true)
+ 3 APPPATH/Controllers/SubscriptionPlan/SubscriptionPlanController.php(25): view('SubscriptionPlan/SubPlanList', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\SubscriptionPlan\SubscriptionPlanController->SubPlanList()
+ 5 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SubscriptionPlan\SubscriptionPlanController))
+ 6 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-08 09:53:12 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "SubscriptionPlan/SubPlanList.php"
+[Method: GET, Route: subPlanList]
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('SubscriptionPlan/SubPlanList.php')
+ 2 SYSTEMPATH/Common.php(1173): CodeIgniter\View\View->render('SubscriptionPlan/SubPlanList', [], true)
+ 3 APPPATH/Controllers/SubscriptionPlan/SubscriptionPlanController.php(25): view('SubscriptionPlan/SubPlanList', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\SubscriptionPlan\SubscriptionPlanController->SubPlanList()
+ 5 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SubscriptionPlan\SubscriptionPlanController))
+ 6 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-08 09:53:41 --> ErrorException: Undefined variable $bannerList
+[Method: GET, Route: subPlanList]
+in APPPATH/Views/SubscriptionPlan/subPlanList.php on line 63.
+ 1 APPPATH/Views/SubscriptionPlan/subPlanList.php(63): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $bannerList', '/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Views/SubscriptionPlan/subPlanList.php', 63)
+ 2 SYSTEMPATH/View/View.php(224): include('/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Views/SubscriptionPlan/subPlanList.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1173): CodeIgniter\View\View->render('SubscriptionPlan/subPlanList', [], true)
+ 5 APPPATH/Controllers/SubscriptionPlan/SubscriptionPlanController.php(25): view('SubscriptionPlan/subPlanList', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\SubscriptionPlan\SubscriptionPlanController->subPlanList()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SubscriptionPlan\SubscriptionPlanController))
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-08 09:55:29 --> ErrorException: Undefined property: App\Controllers\SubscriptionPlan\SubscriptionPlanController::$CategoryModel
+[Method: GET, Route: addSubPlan]
+in APPPATH/Controllers/SubscriptionPlan/SubscriptionPlanController.php on line 32.
+ 1 APPPATH/Controllers/SubscriptionPlan/SubscriptionPlanController.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\SubscriptionPlan\\SubscriptionPlanController::$CategoryModel', '/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Controllers/SubscriptionPlan/SubscriptionPlanController.php', 32)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\SubscriptionPlan\SubscriptionPlanController->addSubPlan()
+ 3 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SubscriptionPlan\SubscriptionPlanController))
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-08 10:12:14 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "SubscriptionPlan/SubPlan.php"
+[Method: GET, Route: updateSubPlan]
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('SubscriptionPlan/SubPlan.php')
+ 2 SYSTEMPATH/Common.php(1173): CodeIgniter\View\View->render('SubscriptionPlan/SubPlan', [], true)
+ 3 APPPATH/Controllers/SubscriptionPlan/SubscriptionPlanController.php(101): view('SubscriptionPlan/SubPlan', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\SubscriptionPlan\SubscriptionPlanController->updateSubPlan()
+ 5 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SubscriptionPlan\SubscriptionPlanController))
+ 6 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

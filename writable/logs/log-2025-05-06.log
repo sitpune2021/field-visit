@@ -1,0 +1,425 @@
+CRITICAL - 2025-05-06 04:30:40 --> ErrorException: Undefined variable $categoryList
+[Method: GET, Route: enquiryList]
+in APPPATH/Views/Enquiry/enquiryList.php on line 51.
+ 1 APPPATH/Views/Enquiry/enquiryList.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $categoryList', '/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Views/Enquiry/enquiryList.php', 51)
+ 2 SYSTEMPATH/View/View.php(224): include('/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Views/Enquiry/enquiryList.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1173): CodeIgniter\View\View->render('Enquiry/enquiryList', [], true)
+ 5 APPPATH/Controllers/Enquiry/EnquiryController.php(21): view('Enquiry/enquiryList', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Enquiry\EnquiryController->enquiryList()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Enquiry\EnquiryController))
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-06 04:31:44 --> Error: Undefined constant "php"
+[Method: GET, Route: enquiryList]
+in APPPATH/Views/Enquiry/enquiryList.php on line 68.
+ 1 SYSTEMPATH/View/View.php(224): include()
+ 2 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1173): CodeIgniter\View\View->render('Enquiry/enquiryList', [], true)
+ 4 APPPATH/Controllers/Enquiry/EnquiryController.php(21): view('Enquiry/enquiryList', [...])
+ 5 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Enquiry\EnquiryController->enquiryList()
+ 6 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Enquiry\EnquiryController))
+ 7 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-06 04:31:54 --> Error: Undefined constant "php"
+[Method: GET, Route: enquiryList]
+in APPPATH/Views/Enquiry/enquiryList.php on line 68.
+ 1 SYSTEMPATH/View/View.php(224): include()
+ 2 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1173): CodeIgniter\View\View->render('Enquiry/enquiryList', [], true)
+ 4 APPPATH/Controllers/Enquiry/EnquiryController.php(21): view('Enquiry/enquiryList', [...])
+ 5 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Enquiry\EnquiryController->enquiryList()
+ 6 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Enquiry\EnquiryController))
+ 7 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-06 08:52:12 --> ErrorException: Undefined array key "id"
+[Method: GET, Route: calciumMineralList]
+in APPPATH/Views/Product/calciumMineralList.php on line 2.
+ 1 APPPATH/Views/Product/calciumMineralList.php(2): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', '/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Views/Product/calciumMineralList.php', 2)
+ 2 SYSTEMPATH/View/View.php(224): include('/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Views/Product/calciumMineralList.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1173): CodeIgniter\View\View->render('Product/calciumMineralList', [], true)
+ 5 APPPATH/Controllers/Product/ProductController.php(29): view('Product/calciumMineralList', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Product\ProductController->calciumMineralList()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product\ProductController))
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-06 08:52:15 --> ErrorException: Undefined array key "id"
+[Method: GET, Route: subcategoryList]
+in APPPATH/Views/Subcategory/subcategoryList.php on line 2.
+ 1 APPPATH/Views/Subcategory/subcategoryList.php(2): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', '/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Views/Subcategory/subcategoryList.php', 2)
+ 2 SYSTEMPATH/View/View.php(224): include('/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Views/Subcategory/subcategoryList.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1173): CodeIgniter\View\View->render('Subcategory/subcategoryList', [], true)
+ 5 APPPATH/Controllers/Subcategory/SubcategoryController.php(25): view('Subcategory/subcategoryList', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Subcategory\SubcategoryController->subcategoryList()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Subcategory\SubcategoryController))
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-06 08:52:16 --> ErrorException: Undefined array key "id"
+[Method: GET, Route: updateSubcategory]
+in APPPATH/Views/Include/header.php on line 3.
+ 1 APPPATH/Views/Include/header.php(3): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', '/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Views/Include/header.php', 3)
+ 2 SYSTEMPATH/View/View.php(224): include('/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Views/Include/header.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1173): CodeIgniter\View\View->render('Include/header', [], true)
+ 5 APPPATH/Views/Subcategory/updateSubcategory.php(12): view('Include/header')
+ 6 SYSTEMPATH/View/View.php(224): include('/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Views/Subcategory/updateSubcategory.php')
+ 7 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH/Common.php(1173): CodeIgniter\View\View->render('Subcategory/updateSubcategory', [], true)
+ 9 APPPATH/Controllers/Subcategory/SubcategoryController.php(42): view('Subcategory/updateSubcategory', [...])
+10 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Subcategory\SubcategoryController->updateSubcategory()
+11 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Subcategory\SubcategoryController))
+12 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-06 08:56:52 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: calciumMineralList]
+in APPPATH/Views/Product/calciumMineralList.php on line 84.
+ 1 APPPATH/Views/Product/calciumMineralList.php(84): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Views/Product/calciumMineralList.php', 84)
+ 2 SYSTEMPATH/View/View.php(224): include('/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Views/Product/calciumMineralList.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1173): CodeIgniter\View\View->render('Product/calciumMineralList', [], true)
+ 5 APPPATH/Controllers/Product/ProductController.php(29): view('Product/calciumMineralList', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Product\ProductController->calciumMineralList()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product\ProductController))
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-05-06 09:27:38 --> mysqli_sql_exception: Table 'sitsolutionsco_smart_gavali.tbl_attribute' doesn't exist in /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/Database/MySQLi/Connection.php:327
+Stack trace:
+#0 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/Database/MySQLi/Connection.php(327): mysqli->query('SELECT * FROM t...', 0)
+#1 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/Database/BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM t...')
+#2 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/Database/BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM t...')
+#3 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Models/Attribute/AttributeModel.php(11): CodeIgniter\Database\BaseConnection->query('SELECT * FROM t...')
+#4 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Controllers/Attribute/AttributeController.php(24): App\Models\Attribute\AttributeModel->getAttributeList()
+#5 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/CodeIgniter.php(933): App\Controllers\Attribute\AttributeController->attributeList()
+#6 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Attribute\AttributeController))
+#7 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2025-05-06 09:27:38 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'sitsolutionsco_smart_gavali.tbl_attribute' doesn't exist
+[Method: GET, Route: attributeList]
+in SYSTEMPATH/Database/BaseConnection.php on line 692.
+ 1 APPPATH/Models/Attribute/AttributeModel.php(11): CodeIgniter\Database\BaseConnection->query('SELECT * FROM tbl_attribute WHERE isdeleted = 0 order by id desc')
+ 2 APPPATH/Controllers/Attribute/AttributeController.php(24): App\Models\Attribute\AttributeModel->getAttributeList()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Attribute\AttributeController->attributeList()
+ 4 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Attribute\AttributeController))
+ 5 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-06 09:27:38 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'sitsolutionsco_smart_gavali.tbl_attribute' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 332.
+ 1 SYSTEMPATH/Database/BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM tbl_attribute WHERE isdeleted = 0 order by id desc')
+ 2 SYSTEMPATH/Database/BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM tbl_attribute WHERE isdeleted = 0 order by id desc')
+ 3 APPPATH/Models/Attribute/AttributeModel.php(11): CodeIgniter\Database\BaseConnection->query('SELECT * FROM tbl_attribute WHERE isdeleted = 0 order by id desc')
+ 4 APPPATH/Controllers/Attribute/AttributeController.php(24): App\Models\Attribute\AttributeModel->getAttributeList()
+ 5 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Attribute\AttributeController->attributeList()
+ 6 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Attribute\AttributeController))
+ 7 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-06 09:27:38 --> [Caused by] mysqli_sql_exception: Table 'sitsolutionsco_smart_gavali.tbl_attribute' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 327.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(327): mysqli->query('SELECT * FROM tbl_attribute WHERE isdeleted = 0 order by id desc', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM tbl_attribute WHERE isdeleted = 0 order by id desc')
+ 3 SYSTEMPATH/Database/BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM tbl_attribute WHERE isdeleted = 0 order by id desc')
+ 4 APPPATH/Models/Attribute/AttributeModel.php(11): CodeIgniter\Database\BaseConnection->query('SELECT * FROM tbl_attribute WHERE isdeleted = 0 order by id desc')
+ 5 APPPATH/Controllers/Attribute/AttributeController.php(24): App\Models\Attribute\AttributeModel->getAttributeList()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Attribute\AttributeController->attributeList()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Attribute\AttributeController))
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-06 09:29:01 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "Attribute/attributeList.php"
+[Method: GET, Route: attributeList]
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Attribute/attributeList.php')
+ 2 SYSTEMPATH/Common.php(1173): CodeIgniter\View\View->render('Attribute/attributeList', [], true)
+ 3 APPPATH/Controllers/Attribute/AttributeController.php(25): view('Attribute/attributeList', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Attribute\AttributeController->attributeList()
+ 5 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Attribute\AttributeController))
+ 6 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-06 09:29:02 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "Attribute/attributeList.php"
+[Method: GET, Route: attributeList]
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Attribute/attributeList.php')
+ 2 SYSTEMPATH/Common.php(1173): CodeIgniter\View\View->render('Attribute/attributeList', [], true)
+ 3 APPPATH/Controllers/Attribute/AttributeController.php(25): view('Attribute/attributeList', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Attribute\AttributeController->attributeList()
+ 5 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Attribute\AttributeController))
+ 6 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-06 09:29:03 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "Attribute/attributeList.php"
+[Method: GET, Route: attributeList]
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Attribute/attributeList.php')
+ 2 SYSTEMPATH/Common.php(1173): CodeIgniter\View\View->render('Attribute/attributeList', [], true)
+ 3 APPPATH/Controllers/Attribute/AttributeController.php(25): view('Attribute/attributeList', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Attribute\AttributeController->attributeList()
+ 5 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Attribute\AttributeController))
+ 6 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-05-06 09:45:43 --> mysqli_sql_exception: Unknown column 'attribute' in 'field list' in /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/Database/MySQLi/Connection.php:327
+Stack trace:
+#0 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/Database/MySQLi/Connection.php(327): mysqli->query('INSERT INTO `tb...', 0)
+#1 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/Database/BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/Database/BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/Database/BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Controllers/Attribute/AttributeController.php(77): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/CodeIgniter.php(933): App\Controllers\Attribute\AttributeController->addAttributePro()
+#6 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Attribute\AttributeController))
+#7 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2025-05-06 09:45:43 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'attribute' in 'field list'
+[Method: POST, Route: addAttributePro]
+in SYSTEMPATH/Database/BaseConnection.php on line 692.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_subcategory` (`cat_id`, `attribute`) VALUES (:cat_id:, :attribute:)', [...], false)
+ 2 APPPATH/Controllers/Attribute/AttributeController.php(77): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Attribute\AttributeController->addAttributePro()
+ 4 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Attribute\AttributeController))
+ 5 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-06 09:45:43 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'attribute' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 332.
+ 1 SYSTEMPATH/Database/BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tbl_subcategory` (`cat_id`, `attribute`) VALUES (\'5\', (\'\'))')
+ 2 SYSTEMPATH/Database/BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tbl_subcategory` (`cat_id`, `attribute`) VALUES (\'5\', (\'\'))')
+ 3 SYSTEMPATH/Database/BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_subcategory` (`cat_id`, `attribute`) VALUES (:cat_id:, :attribute:)', [...], false)
+ 4 APPPATH/Controllers/Attribute/AttributeController.php(77): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Attribute\AttributeController->addAttributePro()
+ 6 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Attribute\AttributeController))
+ 7 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-06 09:45:43 --> [Caused by] mysqli_sql_exception: Unknown column 'attribute' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 327.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(327): mysqli->query('INSERT INTO `tbl_subcategory` (`cat_id`, `attribute`) VALUES (\'5\', (\'\'))', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tbl_subcategory` (`cat_id`, `attribute`) VALUES (\'5\', (\'\'))')
+ 3 SYSTEMPATH/Database/BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tbl_subcategory` (`cat_id`, `attribute`) VALUES (\'5\', (\'\'))')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_subcategory` (`cat_id`, `attribute`) VALUES (:cat_id:, :attribute:)', [...], false)
+ 5 APPPATH/Controllers/Attribute/AttributeController.php(77): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Attribute\AttributeController->addAttributePro()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Attribute\AttributeController))
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-05-06 09:46:45 --> mysqli_sql_exception: Unknown column 'attribute' in 'field list' in /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/Database/MySQLi/Connection.php:327
+Stack trace:
+#0 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/Database/MySQLi/Connection.php(327): mysqli->query('INSERT INTO `tb...', 0)
+#1 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/Database/BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/Database/BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/Database/BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Controllers/Attribute/AttributeController.php(78): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/CodeIgniter.php(933): App\Controllers\Attribute\AttributeController->addAttributePro()
+#6 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Attribute\AttributeController))
+#7 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2025-05-06 09:46:45 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'attribute' in 'field list'
+[Method: POST, Route: addAttributePro]
+in SYSTEMPATH/Database/BaseConnection.php on line 692.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_subcategory` (`cat_id`, `attribute`) VALUES (:cat_id:, :attribute:)', [...], false)
+ 2 APPPATH/Controllers/Attribute/AttributeController.php(78): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Attribute\AttributeController->addAttributePro()
+ 4 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Attribute\AttributeController))
+ 5 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-06 09:46:45 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'attribute' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 332.
+ 1 SYSTEMPATH/Database/BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tbl_subcategory` (`cat_id`, `attribute`) VALUES (\'5\', (\'\'))')
+ 2 SYSTEMPATH/Database/BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tbl_subcategory` (`cat_id`, `attribute`) VALUES (\'5\', (\'\'))')
+ 3 SYSTEMPATH/Database/BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_subcategory` (`cat_id`, `attribute`) VALUES (:cat_id:, :attribute:)', [...], false)
+ 4 APPPATH/Controllers/Attribute/AttributeController.php(78): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Attribute\AttributeController->addAttributePro()
+ 6 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Attribute\AttributeController))
+ 7 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-06 09:46:45 --> [Caused by] mysqli_sql_exception: Unknown column 'attribute' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 327.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(327): mysqli->query('INSERT INTO `tbl_subcategory` (`cat_id`, `attribute`) VALUES (\'5\', (\'\'))', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tbl_subcategory` (`cat_id`, `attribute`) VALUES (\'5\', (\'\'))')
+ 3 SYSTEMPATH/Database/BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tbl_subcategory` (`cat_id`, `attribute`) VALUES (\'5\', (\'\'))')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_subcategory` (`cat_id`, `attribute`) VALUES (:cat_id:, :attribute:)', [...], false)
+ 5 APPPATH/Controllers/Attribute/AttributeController.php(78): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Attribute\AttributeController->addAttributePro()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Attribute\AttributeController))
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-05-06 09:47:02 --> mysqli_sql_exception: Unknown column 'attribute' in 'field list' in /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/Database/MySQLi/Connection.php:327
+Stack trace:
+#0 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/Database/MySQLi/Connection.php(327): mysqli->query('INSERT INTO `tb...', 0)
+#1 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/Database/BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/Database/BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/Database/BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Controllers/Attribute/AttributeController.php(78): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/CodeIgniter.php(933): App\Controllers\Attribute\AttributeController->addAttributePro()
+#6 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Attribute\AttributeController))
+#7 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 /home/sitsolutionsco/public_html/sks.sitsolutions.co.in/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2025-05-06 09:47:02 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'attribute' in 'field list'
+[Method: POST, Route: addAttributePro]
+in SYSTEMPATH/Database/BaseConnection.php on line 692.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_subcategory` (`cat_id`, `attribute`) VALUES (:cat_id:, :attribute:)', [...], false)
+ 2 APPPATH/Controllers/Attribute/AttributeController.php(78): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Attribute\AttributeController->addAttributePro()
+ 4 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Attribute\AttributeController))
+ 5 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-06 09:47:02 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'attribute' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 332.
+ 1 SYSTEMPATH/Database/BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tbl_subcategory` (`cat_id`, `attribute`) VALUES (\'5\', (\'\'))')
+ 2 SYSTEMPATH/Database/BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tbl_subcategory` (`cat_id`, `attribute`) VALUES (\'5\', (\'\'))')
+ 3 SYSTEMPATH/Database/BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_subcategory` (`cat_id`, `attribute`) VALUES (:cat_id:, :attribute:)', [...], false)
+ 4 APPPATH/Controllers/Attribute/AttributeController.php(78): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Attribute\AttributeController->addAttributePro()
+ 6 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Attribute\AttributeController))
+ 7 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-06 09:47:02 --> [Caused by] mysqli_sql_exception: Unknown column 'attribute' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 327.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(327): mysqli->query('INSERT INTO `tbl_subcategory` (`cat_id`, `attribute`) VALUES (\'5\', (\'\'))', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tbl_subcategory` (`cat_id`, `attribute`) VALUES (\'5\', (\'\'))')
+ 3 SYSTEMPATH/Database/BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tbl_subcategory` (`cat_id`, `attribute`) VALUES (\'5\', (\'\'))')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_subcategory` (`cat_id`, `attribute`) VALUES (:cat_id:, :attribute:)', [...], false)
+ 5 APPPATH/Controllers/Attribute/AttributeController.php(78): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Attribute\AttributeController->addAttributePro()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Attribute\AttributeController))
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-06 09:48:45 --> ErrorException: Undefined variable $attributes
+[Method: POST, Route: addAttributePro]
+in APPPATH/Controllers/Attribute/AttributeController.php on line 73.
+ 1 APPPATH/Controllers/Attribute/AttributeController.php(73): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $attributes', '/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Controllers/Attribute/AttributeController.php', 73)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Attribute\AttributeController->addAttributePro()
+ 3 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Attribute\AttributeController))
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-06 09:49:04 --> ErrorException: Undefined variable $attributeData
+[Method: POST, Route: addAttributePro]
+in APPPATH/Controllers/Attribute/AttributeController.php on line 85.
+ 1 APPPATH/Controllers/Attribute/AttributeController.php(85): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $attributeData', '/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Controllers/Attribute/AttributeController.php', 85)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Attribute\AttributeController->addAttributePro()
+ 3 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Attribute\AttributeController))
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-06 09:56:47 --> ErrorException: unserialize(): Error at offset 0 of 1 bytes
+[Method: GET, Route: attributeList]
+in APPPATH/Views/Attribute/attributeList.php on line 73.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8, 'unserialize(): Error at offset 0 of 1 bytes', '/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Views/Attribute/attributeList.php', 73)
+ 2 APPPATH/Views/Attribute/attributeList.php(73): unserialize('b')
+ 3 SYSTEMPATH/View/View.php(224): include('/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Views/Attribute/attributeList.php')
+ 4 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1173): CodeIgniter\View\View->render('Attribute/attributeList', [], true)
+ 6 APPPATH/Controllers/Attribute/AttributeController.php(25): view('Attribute/attributeList', [...])
+ 7 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Attribute\AttributeController->attributeList()
+ 8 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Attribute\AttributeController))
+ 9 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-06 10:00:23 --> ErrorException: unserialize(): Error at offset 0 of 1 bytes
+[Method: GET, Route: attributeList]
+in APPPATH/Views/Attribute/attributeList.php on line 73.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8, 'unserialize(): Error at offset 0 of 1 bytes', '/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Views/Attribute/attributeList.php', 73)
+ 2 APPPATH/Views/Attribute/attributeList.php(73): unserialize('b')
+ 3 SYSTEMPATH/View/View.php(224): include('/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Views/Attribute/attributeList.php')
+ 4 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1173): CodeIgniter\View\View->render('Attribute/attributeList', [], true)
+ 6 APPPATH/Controllers/Attribute/AttributeController.php(25): view('Attribute/attributeList', [...])
+ 7 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Attribute\AttributeController->attributeList()
+ 8 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Attribute\AttributeController))
+ 9 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-06 10:38:17 --> ErrorException: Cannot redeclare App\Controllers\Attribute\AttributeController::updateAttribute()
+[Method: GET, Route: attributeList]
+in APPPATH/Controllers/Attribute/AttributeController.php on line 97.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-05-06 12:47:04 --> CodeIgniter\Database\Exceptions\DatabaseException: You must set the database table to be used with your query.
+[Method: POST, Route: do_login]
+in SYSTEMPATH/Database/BaseConnection.php on line 941.
+ 1 SYSTEMPATH/Model.php(714): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH/Model.php(920): CodeIgniter\Model->builder()
+ 3 APPPATH/Controllers/API/Login.php(24): CodeIgniter\Model->__call('checkUsernamePassword', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\API\Login->do_login()
+ 5 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\API\Login))
+ 6 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-06 12:47:09 --> CodeIgniter\Database\Exceptions\DatabaseException: You must set the database table to be used with your query.
+[Method: POST, Route: do_login]
+in SYSTEMPATH/Database/BaseConnection.php on line 941.
+ 1 SYSTEMPATH/Model.php(714): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH/Model.php(920): CodeIgniter\Model->builder()
+ 3 APPPATH/Controllers/API/Login.php(24): CodeIgniter\Model->__call('checkUsernamePassword', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\API\Login->do_login()
+ 5 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\API\Login))
+ 6 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-06 12:47:27 --> ErrorException: Undefined array key "username"
+[Method: POST, Route: do_login]
+in APPPATH/Models/Login/LoginModel.php on line 9.
+ 1 APPPATH/Models/Login/LoginModel.php(9): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "username"', '/home/sitsolutionsco/public_html/sks.sitsolutions.co.in/app/Models/Login/LoginModel.php', 9)
+ 2 APPPATH/Controllers/API/Login.php(24): App\Models\Login\LoginModel->checkUsernamePass('', '')
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\API\Login->do_login()
+ 4 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\API\Login))
+ 5 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
