@@ -51,7 +51,7 @@
   .pswp--svg .pswp__button,
   .pswp--svg .pswp__button--arrow--left:before,
   .pswp--svg .pswp__button--arrow--right:before {
-    background-image: url(https://admin.pixelstrap.net/admiro/assets/images/lightgallry/default-skin.svg);
+    background-image: url(../images/lightgallry/default-skin.svg);
   }
   .pswp--svg .pswp__button--arrow--left,
   .pswp--svg .pswp__button--arrow--right {

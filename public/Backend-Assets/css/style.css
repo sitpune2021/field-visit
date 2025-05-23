@@ -4648,7 +4648,7 @@ textarea.form-control-lg {
   float: left;
   padding-right: var(--bs-breadcrumb-item-padding-x);
   color: var(--bs-breadcrumb-divider-color);
-  content: var(--bs-breadcrumb-divider, "https://admin.pixelstrap.net/") /* rtl: var(--bs-breadcrumb-divider, "/") */;
+  content: var(--bs-breadcrumb-divider, "/") /* rtl: var(--bs-breadcrumb-divider, "/") */;
 }
 .breadcrumb-item.active {
   color: var(--bs-breadcrumb-item-active-color);
@@ -21860,7 +21860,7 @@ th {
 }
 
 #range-slider-4 {
-  background: url(https://admin.pixelstrap.net/admiro/assets/images/logo/range.svg);
+  background: url(../images/logo/range.svg);
 }
 
 #range-slider-4 .range-slider__thumb {
@@ -21872,11 +21872,11 @@ th {
 }
 
 #range-slider-5 .range-slider__thumb[data-lower] {
-  background: url(https://admin.pixelstrap.net/admiro/assets/images/logo/range2.svg) #338e87;
+  background: url(../images/logo/range2.svg) #338e87;
   background-repeat: no-repeat;
 }
 #range-slider-5 .range-slider__thumb[data-upper] {
-  background: url(https://admin.pixelstrap.net/admiro/assets/images/logo/range5.svg) #338e87;
+  background: url(../images/logo/range5.svg) #338e87;
   background-repeat: no-repeat;
 }
 #range-slider-5 .range-slider__thumb {
@@ -21921,7 +21921,7 @@ th {
   width: 18px;
   height: 38px;
   border-radius: 4px;
-  background: url(https://admin.pixelstrap.net/admiro/assets/images/logo/range4.svg);
+  background: url(../images/logo/range4.svg);
   background-color: var(--white);
   background-repeat: no-repeat;
   background-position: center;
@@ -23740,7 +23740,7 @@ input::-webkit-inner-spin-button {
   background-image: url(../images/switch/square-gray.png);
 }
 .default-square .form-switch .form-check-input:checked {
-  background-image: url(https://admin.pixelstrap.net/admiro/assets/images/switch/square.svg);
+  background-image: url(../images/switch/square.svg);
 }
 
 .switch-state {

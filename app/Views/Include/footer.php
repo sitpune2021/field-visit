@@ -7,7 +7,7 @@
               <div class="col-md-6">
                 <!-- <p class="float-end mb-0">Hand crafted &amp; made with
                   <svg class="svg-color footer-icon">
-                    <use href="https://admin.pixelstrap.net/admiro/assets/svg/iconly-sprite.svg#heart"></use>
+                    <use href="<?= base_url(); ?>/public/Backend-Assets/svg/iconly-sprite.svg#heart"></use>
                   </svg>
                 </p> -->
               </div>

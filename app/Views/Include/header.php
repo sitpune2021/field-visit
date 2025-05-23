@@ -47,7 +47,7 @@
       <header class="page-header row">
         <div class="logo-wrapper d-flex align-items-center col-auto"><a href="<?= base_url();?>adminDashboard"><img class="light-logo img-fluid text-center" src="<?= base_url(); ?>/public/Backend-Assets/images/zp_logo.png" alt="logo"  style="max-height:50px;max-width:50px;"/><img class="dark-logo img-fluid" src="<?= base_url(); ?>/public/Backend-Assets/images/zp_logo.png" alt="logo"/></a><a class="close-btn toggle-sidebar" href="javascript:void(0)">
             <svg class="svg-color">
-              <use href="https://admin.pixelstrap.net/admiro/assets/svg/iconly-sprite.svg#Category"></use>
+              <use href="<?= base_url(); ?>/public/Backend-Assets/svg/iconly-sprite.svg#Category"></use>
             </svg></a></div>
         <div class="page-main-header col">
           <div class="header-left">
@@ -96,7 +96,7 @@
               </li>
               <li class="sidebar-list"><a class="sidebar-link" href="<?= base_url(); ?>adminDashboard"> 
                   <svg class="stroke-icon">
-                    <use href="https://admin.pixelstrap.net/admiro/assets/svg/iconly-sprite.svg#Home-dashboard"></use>
+                    <use href="<?= base_url(); ?>/public/Backend-Assets/svg/iconly-sprite.svg#Home-dashboard"></use>
                   </svg>
                  <h6>डॅशबोर्ड</h6></a>
               </li>
@@ -109,25 +109,25 @@
               
               <li class="sidebar-list"><a class="sidebar-link" href="<?= base_url();?>Taluka">
                   <svg class="stroke-icon">
-                    <use href="https://admin.pixelstrap.net/admiro/assets/svg/iconly-sprite.svg#Paper"></use>
+                    <use href="<?= base_url(); ?>/public/Backend-Assets/svg/iconly-sprite.svg#Paper"></use>
                   </svg>
                   <h6 class="f-w-600">तालुका </h6></a>
 			        </li>
               <li class="sidebar-list"><a class="sidebar-link" href="<?= base_url();?>officeTypeList">
                   <svg class="stroke-icon">
-                    <use href="https://admin.pixelstrap.net/admiro/assets/svg/iconly-sprite.svg#Paper"></use>
+                    <use href="<?= base_url(); ?>/public/Backend-Assets/svg/iconly-sprite.svg#Paper"></use>
                   </svg>
                   <h6 class="f-w-600">कार्यालय प्रकार  </h6></a>
 			        </li>
               <li class="sidebar-list"><a class="sidebar-link" href="<?= base_url();?>officeList">
                   <svg class="stroke-icon">
-                    <use href="https://admin.pixelstrap.net/admiro/assets/svg/iconly-sprite.svg#Paper"></use>
+                    <use href="<?= base_url(); ?>/public/Backend-Assets/svg/iconly-sprite.svg#Paper"></use>
                   </svg>
                   <h6 class="f-w-600">कार्यालय </h6></a>
 			        </li>
               <li class="sidebar-list"><a class="sidebar-link" href="<?= base_url();?>Officer">
                   <svg class="stroke-icon">
-                    <use href="https://admin.pixelstrap.net/admiro/assets/svg/iconly-sprite.svg#Paper"></use>
+                    <use href="<?= base_url(); ?>/public/Backend-Assets/svg/iconly-sprite.svg#Paper"></use>
                   </svg>
                   <h6 class="f-w-600">अधिकारी </h6></a>
 			        </li>
@@ -140,7 +140,7 @@
               
               <li class="sidebar-list"><a class="sidebar-link" href="<?= base_url();?>Questionset">
                   <svg class="stroke-icon">
-                    <use href="https://admin.pixelstrap.net/admiro/assets/svg/iconly-sprite.svg#Paper"></use>
+                    <use href="<?= base_url(); ?>/public/Backend-Assets/svg/iconly-sprite.svg#Paper"></use>
                   </svg>
                   <h6 class="f-w-600">प्रश्न संच </h6></a>
 			        </li>
