@@ -1,0 +1,609 @@
+ERROR - 2025-05-23 04:12:16 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\field_visit\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\xampp\htdocs\field_visit\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'field_visit', 3306, '', 0)
+#1 C:\xampp\htdocs\field_visit\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\field_visit\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\field_visit\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\field_visit\app\Models\Login\LoginModel.php(16): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\field_visit\app\Controllers\Login\LoginController.php(31): App\Models\Login\LoginModel->checkUsernamePass()
+#6 C:\xampp\htdocs\field_visit\system\CodeIgniter.php(933): App\Controllers\Login\LoginController->signIn()
+#7 C:\xampp\htdocs\field_visit\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login\LoginController))
+#8 C:\xampp\htdocs\field_visit\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\field_visit\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\field_visit\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\field_visit\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\field_visit\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\xampp\htdocs\field_visit\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\field_visit\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\field_visit\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\field_visit\app\Models\Login\LoginModel.php(16): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\field_visit\app\Controllers\Login\LoginController.php(31): App\Models\Login\LoginModel->checkUsernamePass()
+#5 C:\xampp\htdocs\field_visit\system\CodeIgniter.php(933): App\Controllers\Login\LoginController->signIn()
+#6 C:\xampp\htdocs\field_visit\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login\LoginController))
+#7 C:\xampp\htdocs\field_visit\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\field_visit\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\field_visit\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\field_visit\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2025-05-23 04:12:16 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+[Method: POST, Route: signIn]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `login_master`
+WHERE `username` = :username:
+AND `password` = :password:
+AND `isdeleted` = :isdeleted:', [...], false)
+ 3 APPPATH\Models\Login\LoginModel.php(16): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\Login\LoginController.php(31): App\Models\Login\LoginModel->checkUsernamePass()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login\LoginController->signIn()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login\LoginController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-05-23 04:14:41 --> mysqli_sql_exception: Table 'field_visit.tbl_question_set' doesn't exist in C:\xampp\htdocs\field_visit\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\field_visit\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT * FROM t...', 0)
+#1 C:\xampp\htdocs\field_visit\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM t...')
+#2 C:\xampp\htdocs\field_visit\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM t...')
+#3 C:\xampp\htdocs\field_visit\app\Models\Questionset\QuestionsetModel.php(11): CodeIgniter\Database\BaseConnection->query('SELECT * FROM t...')
+#4 C:\xampp\htdocs\field_visit\app\Controllers\Questionset\QuestionsetController.php(24): App\Models\Questionset\QuestionsetModel->getQuestionsetList()
+#5 C:\xampp\htdocs\field_visit\system\CodeIgniter.php(933): App\Controllers\Questionset\QuestionsetController->Questionset()
+#6 C:\xampp\htdocs\field_visit\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Questionset\QuestionsetController))
+#7 C:\xampp\htdocs\field_visit\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\field_visit\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\field_visit\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\field_visit\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2025-05-23 04:14:41 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'field_visit.tbl_question_set' doesn't exist
+[Method: GET, Route: Questionset]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 APPPATH\Models\Questionset\QuestionsetModel.php(11): CodeIgniter\Database\BaseConnection->query('SELECT * FROM tbl_question_set WHERE isdeleted = 0 order by id desc')
+ 2 APPPATH\Controllers\Questionset\QuestionsetController.php(24): App\Models\Questionset\QuestionsetModel->getQuestionsetList()
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Questionset\QuestionsetController->Questionset()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Questionset\QuestionsetController))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-23 04:14:41 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'field_visit.tbl_question_set' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM tbl_question_set WHERE isdeleted = 0 order by id desc')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM tbl_question_set WHERE isdeleted = 0 order by id desc')
+ 3 APPPATH\Models\Questionset\QuestionsetModel.php(11): CodeIgniter\Database\BaseConnection->query('SELECT * FROM tbl_question_set WHERE isdeleted = 0 order by id desc')
+ 4 APPPATH\Controllers\Questionset\QuestionsetController.php(24): App\Models\Questionset\QuestionsetModel->getQuestionsetList()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Questionset\QuestionsetController->Questionset()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Questionset\QuestionsetController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-23 04:14:41 --> [Caused by] mysqli_sql_exception: Table 'field_visit.tbl_question_set' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT * FROM tbl_question_set WHERE isdeleted = 0 order by id desc', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM tbl_question_set WHERE isdeleted = 0 order by id desc')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM tbl_question_set WHERE isdeleted = 0 order by id desc')
+ 4 APPPATH\Models\Questionset\QuestionsetModel.php(11): CodeIgniter\Database\BaseConnection->query('SELECT * FROM tbl_question_set WHERE isdeleted = 0 order by id desc')
+ 5 APPPATH\Controllers\Questionset\QuestionsetController.php(24): App\Models\Questionset\QuestionsetModel->getQuestionsetList()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Questionset\QuestionsetController->Questionset()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Questionset\QuestionsetController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-23 04:21:59 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "Questionset/AddQuestionset.php"
+[Method: GET, Route: AddQuestionset]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Questionset/AddQuestionset.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('Questionset/AddQuestionset', [], true)
+ 3 APPPATH\Controllers\Questionset\QuestionsetController.php(32): view('Questionset/AddQuestionset')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Questionset\QuestionsetController->AddQuestionset()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Questionset\QuestionsetController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-05-23 05:23:01 --> mysqli_sql_exception: Table 'field_visit.tbl_question_set' doesn't exist in C:\xampp\htdocs\field_visit\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\field_visit\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT * FROM t...', 0)
+#1 C:\xampp\htdocs\field_visit\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM t...')
+#2 C:\xampp\htdocs\field_visit\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM t...')
+#3 C:\xampp\htdocs\field_visit\app\Models\Questionset\QuestionsetModel.php(11): CodeIgniter\Database\BaseConnection->query('SELECT * FROM t...')
+#4 C:\xampp\htdocs\field_visit\app\Controllers\Questionset\QuestionsetController.php(26): App\Models\Questionset\QuestionsetModel->getQuestionsetList()
+#5 C:\xampp\htdocs\field_visit\system\CodeIgniter.php(933): App\Controllers\Questionset\QuestionsetController->Questionset()
+#6 C:\xampp\htdocs\field_visit\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Questionset\QuestionsetController))
+#7 C:\xampp\htdocs\field_visit\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\field_visit\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\field_visit\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\field_visit\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2025-05-23 05:23:01 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'field_visit.tbl_question_set' doesn't exist
+[Method: GET, Route: Questionset]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 APPPATH\Models\Questionset\QuestionsetModel.php(11): CodeIgniter\Database\BaseConnection->query('SELECT * FROM tbl_question_set WHERE isdeleted = 0 order by id desc')
+ 2 APPPATH\Controllers\Questionset\QuestionsetController.php(26): App\Models\Questionset\QuestionsetModel->getQuestionsetList()
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Questionset\QuestionsetController->Questionset()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Questionset\QuestionsetController))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-23 05:23:01 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'field_visit.tbl_question_set' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM tbl_question_set WHERE isdeleted = 0 order by id desc')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM tbl_question_set WHERE isdeleted = 0 order by id desc')
+ 3 APPPATH\Models\Questionset\QuestionsetModel.php(11): CodeIgniter\Database\BaseConnection->query('SELECT * FROM tbl_question_set WHERE isdeleted = 0 order by id desc')
+ 4 APPPATH\Controllers\Questionset\QuestionsetController.php(26): App\Models\Questionset\QuestionsetModel->getQuestionsetList()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Questionset\QuestionsetController->Questionset()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Questionset\QuestionsetController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-23 05:23:01 --> [Caused by] mysqli_sql_exception: Table 'field_visit.tbl_question_set' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT * FROM tbl_question_set WHERE isdeleted = 0 order by id desc', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM tbl_question_set WHERE isdeleted = 0 order by id desc')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM tbl_question_set WHERE isdeleted = 0 order by id desc')
+ 4 APPPATH\Models\Questionset\QuestionsetModel.php(11): CodeIgniter\Database\BaseConnection->query('SELECT * FROM tbl_question_set WHERE isdeleted = 0 order by id desc')
+ 5 APPPATH\Controllers\Questionset\QuestionsetController.php(26): App\Models\Questionset\QuestionsetModel->getQuestionsetList()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Questionset\QuestionsetController->Questionset()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Questionset\QuestionsetController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-23 05:23:09 --> ErrorException: Undefined variable $talukaD
+[Method: POST, Route: AddQuestionsetPro]
+in APPPATH\Views\Office\AddOffice.php on line 47.
+ 1 APPPATH\Views\Office\AddOffice.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $talukaD', 'C:\\xampp\\htdocs\\field_visit\\app\\Views\\Office\\AddOffice.php', 47)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\field_visit\\app\\Views\\Office\\AddOffice.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('Office/addOffice', [], true)
+ 5 APPPATH\Controllers\Questionset\QuestionsetController.php(92): view('Office/addOffice', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Questionset\QuestionsetController->AddQuestionsetPro()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Questionset\QuestionsetController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-23 05:24:20 --> ErrorException: Undefined variable $talukaD
+[Method: POST, Route: AddQuestionsetPro]
+in APPPATH\Views\Office\AddOffice.php on line 47.
+ 1 APPPATH\Views\Office\AddOffice.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $talukaD', 'C:\\xampp\\htdocs\\field_visit\\app\\Views\\Office\\AddOffice.php', 47)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\field_visit\\app\\Views\\Office\\AddOffice.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('Office/addOffice', [], true)
+ 5 APPPATH\Controllers\Questionset\QuestionsetController.php(92): view('Office/addOffice', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Questionset\QuestionsetController->AddQuestionsetPro()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Questionset\QuestionsetController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-23 05:24:25 --> ErrorException: Undefined variable $talukaD
+[Method: POST, Route: AddQuestionsetPro]
+in APPPATH\Views\Office\AddOffice.php on line 47.
+ 1 APPPATH\Views\Office\AddOffice.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $talukaD', 'C:\\xampp\\htdocs\\field_visit\\app\\Views\\Office\\AddOffice.php', 47)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\field_visit\\app\\Views\\Office\\AddOffice.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('Office/addOffice', [], true)
+ 5 APPPATH\Controllers\Questionset\QuestionsetController.php(92): view('Office/addOffice', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Questionset\QuestionsetController->AddQuestionsetPro()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Questionset\QuestionsetController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-23 05:33:56 --> ErrorException: Undefined variable $officeData
+[Method: POST, Route: AddQuestionsetPro]
+in APPPATH\Controllers\Questionset\QuestionsetController.php on line 90.
+ 1 APPPATH\Controllers\Questionset\QuestionsetController.php(90): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $officeData', 'C:\\xampp\\htdocs\\field_visit\\app\\Controllers\\Questionset\\QuestionsetController.php', 90)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Questionset\QuestionsetController->AddQuestionsetPro()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Questionset\QuestionsetController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-23 05:34:41 --> ErrorException: Undefined variable $officeTypeD
+[Method: GET, Route: Questionset]
+in APPPATH\Views\Questionset\AddQuestionset.php on line 43.
+ 1 APPPATH\Views\Questionset\AddQuestionset.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $officeTypeD', 'C:\\xampp\\htdocs\\field_visit\\app\\Views\\Questionset\\AddQuestionset.php', 43)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\field_visit\\app\\Views\\Questionset\\AddQuestionset.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('Questionset/AddQuestionset', [], true)
+ 5 APPPATH\Controllers\Questionset\QuestionsetController.php(27): view('Questionset/AddQuestionset', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Questionset\QuestionsetController->Questionset()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Questionset\QuestionsetController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-23 05:34:50 --> ErrorException: Undefined variable $officeTypeD
+[Method: GET, Route: Questionset]
+in APPPATH\Views\Questionset\AddQuestionset.php on line 43.
+ 1 APPPATH\Views\Questionset\AddQuestionset.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $officeTypeD', 'C:\\xampp\\htdocs\\field_visit\\app\\Views\\Questionset\\AddQuestionset.php', 43)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\field_visit\\app\\Views\\Questionset\\AddQuestionset.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('Questionset/AddQuestionset', [], true)
+ 5 APPPATH\Controllers\Questionset\QuestionsetController.php(27): view('Questionset/AddQuestionset', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Questionset\QuestionsetController->Questionset()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Questionset\QuestionsetController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-23 05:34:55 --> ErrorException: Undefined variable $officeTypeD
+[Method: GET, Route: Questionset]
+in APPPATH\Views\Questionset\AddQuestionset.php on line 43.
+ 1 APPPATH\Views\Questionset\AddQuestionset.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $officeTypeD', 'C:\\xampp\\htdocs\\field_visit\\app\\Views\\Questionset\\AddQuestionset.php', 43)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\field_visit\\app\\Views\\Questionset\\AddQuestionset.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('Questionset/AddQuestionset', [], true)
+ 5 APPPATH\Controllers\Questionset\QuestionsetController.php(27): view('Questionset/AddQuestionset', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Questionset\QuestionsetController->Questionset()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Questionset\QuestionsetController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-23 05:35:28 --> ErrorException: Undefined variable $officeTypeD
+[Method: GET, Route: Questionset]
+in APPPATH\Views\Questionset\AddQuestionset.php on line 43.
+ 1 APPPATH\Views\Questionset\AddQuestionset.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $officeTypeD', 'C:\\xampp\\htdocs\\field_visit\\app\\Views\\Questionset\\AddQuestionset.php', 43)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\field_visit\\app\\Views\\Questionset\\AddQuestionset.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('Questionset/AddQuestionset', [], true)
+ 5 APPPATH\Controllers\Questionset\QuestionsetController.php(27): view('Questionset/AddQuestionset', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Questionset\QuestionsetController->Questionset()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Questionset\QuestionsetController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-23 05:39:46 --> ErrorException: Undefined variable $officeTypeD
+[Method: GET, Route: Questionset]
+in APPPATH\Views\Questionset\AddQuestionset.php on line 43.
+ 1 APPPATH\Views\Questionset\AddQuestionset.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $officeTypeD', 'C:\\xampp\\htdocs\\field_visit\\app\\Views\\Questionset\\AddQuestionset.php', 43)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\field_visit\\app\\Views\\Questionset\\AddQuestionset.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('Questionset/AddQuestionset', [], true)
+ 5 APPPATH\Controllers\Questionset\QuestionsetController.php(27): view('Questionset/AddQuestionset', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Questionset\QuestionsetController->Questionset()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Questionset\QuestionsetController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-23 05:39:48 --> ErrorException: Undefined variable $officeTypeD
+[Method: GET, Route: Questionset]
+in APPPATH\Views\Questionset\AddQuestionset.php on line 43.
+ 1 APPPATH\Views\Questionset\AddQuestionset.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $officeTypeD', 'C:\\xampp\\htdocs\\field_visit\\app\\Views\\Questionset\\AddQuestionset.php', 43)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\field_visit\\app\\Views\\Questionset\\AddQuestionset.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('Questionset/AddQuestionset', [], true)
+ 5 APPPATH\Controllers\Questionset\QuestionsetController.php(27): view('Questionset/AddQuestionset', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Questionset\QuestionsetController->Questionset()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Questionset\QuestionsetController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-23 05:51:47 --> ErrorException: Undefined variable $officeTypeD
+[Method: GET, Route: Questionset]
+in APPPATH\Views\Questionset\AddQuestionset.php on line 43.
+ 1 APPPATH\Views\Questionset\AddQuestionset.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $officeTypeD', 'C:\\xampp\\htdocs\\field_visit\\app\\Views\\Questionset\\AddQuestionset.php', 43)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\field_visit\\app\\Views\\Questionset\\AddQuestionset.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('Questionset/AddQuestionset', [], true)
+ 5 APPPATH\Controllers\Questionset\QuestionsetController.php(27): view('Questionset/AddQuestionset', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Questionset\QuestionsetController->Questionset()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Questionset\QuestionsetController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-23 05:58:46 --> ErrorException: Undefined array key "dropdown_values"
+[Method: GET, Route: Questionset]
+in APPPATH\Views\Questionset\Questionset.php on line 66.
+ 1 APPPATH\Views\Questionset\Questionset.php(66): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "dropdown_values"', 'C:\\xampp\\htdocs\\field_visit\\app\\Views\\Questionset\\Questionset.php', 66)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\field_visit\\app\\Views\\Questionset\\Questionset.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('Questionset/Questionset', [], true)
+ 5 APPPATH\Controllers\Questionset\QuestionsetController.php(27): view('Questionset/Questionset', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Questionset\QuestionsetController->Questionset()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Questionset\QuestionsetController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-23 07:29:49 --> ErrorException: Undefined variable $data
+[Method: POST, Route: AddQuestionsetPro]
+in APPPATH\Controllers\Questionset\QuestionsetController.php on line 96.
+ 1 APPPATH\Controllers\Questionset\QuestionsetController.php(96): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'C:\\xampp\\htdocs\\field_visit\\app\\Controllers\\Questionset\\QuestionsetController.php', 96)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Questionset\QuestionsetController->AddQuestionsetPro()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Questionset\QuestionsetController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-23 10:27:14 --> ErrorException: Undefined array key "cat_id"
+[Method: POST, Route: UpdateQuestionsetPro]
+in APPPATH\Controllers\Questionset\QuestionsetController.php on line 147.
+ 1 APPPATH\Controllers\Questionset\QuestionsetController.php(147): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "cat_id"', 'C:\\xampp\\htdocs\\field_visit\\app\\Controllers\\Questionset\\QuestionsetController.php', 147)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Questionset\QuestionsetController->updateQuestionsetPro()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Questionset\QuestionsetController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-05-23 10:59:22 --> mysqli_sql_exception: Unknown column 'phone_no' in 'where clause' in C:\xampp\htdocs\field_visit\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\field_visit\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\field_visit\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\field_visit\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\field_visit\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\field_visit\app\Controllers\Officer\OfficerController.php(62): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\field_visit\system\CodeIgniter.php(933): App\Controllers\Officer\OfficerController->AddOfficerPro()
+#6 C:\xampp\htdocs\field_visit\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Officer\OfficerController))
+#7 C:\xampp\htdocs\field_visit\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\field_visit\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\field_visit\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\field_visit\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2025-05-23 10:59:22 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'phone_no' in 'where clause'
+[Method: POST, Route: AddOfficerPro]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `login_master`
+WHERE `phone_no` = :phone_no:
+AND `isdeleted` = :isdeleted:', [...], false)
+ 2 APPPATH\Controllers\Officer\OfficerController.php(62): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Officer\OfficerController->AddOfficerPro()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Officer\OfficerController))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-23 10:59:22 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'phone_no' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `login_master`
+WHERE `phone_no` = \'9999999999\'
+AND `isdeleted` = 0')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `login_master`
+WHERE `phone_no` = \'9999999999\'
+AND `isdeleted` = 0')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `login_master`
+WHERE `phone_no` = :phone_no:
+AND `isdeleted` = :isdeleted:', [...], false)
+ 4 APPPATH\Controllers\Officer\OfficerController.php(62): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Officer\OfficerController->AddOfficerPro()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Officer\OfficerController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-23 10:59:22 --> [Caused by] mysqli_sql_exception: Unknown column 'phone_no' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *
+FROM `login_master`
+WHERE `phone_no` = \'9999999999\'
+AND `isdeleted` = 0', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `login_master`
+WHERE `phone_no` = \'9999999999\'
+AND `isdeleted` = 0')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `login_master`
+WHERE `phone_no` = \'9999999999\'
+AND `isdeleted` = 0')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `login_master`
+WHERE `phone_no` = :phone_no:
+AND `isdeleted` = :isdeleted:', [...], false)
+ 5 APPPATH\Controllers\Officer\OfficerController.php(62): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Officer\OfficerController->AddOfficerPro()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Officer\OfficerController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-23 10:59:38 --> Error: Call to undefined function App\Controllers\Officer\generatePassword()
+[Method: POST, Route: AddOfficerPro]
+in APPPATH\Controllers\Officer\OfficerController.php on line 69.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Officer\OfficerController->AddOfficerPro()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Officer\OfficerController))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-05-23 11:00:45 --> mysqli_sql_exception: Unknown column 'officer' in 'field list' in C:\xampp\htdocs\field_visit\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\field_visit\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `lo...', 0)
+#1 C:\xampp\htdocs\field_visit\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `lo...')
+#2 C:\xampp\htdocs\field_visit\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `lo...')
+#3 C:\xampp\htdocs\field_visit\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `lo...', Array, false)
+#4 C:\xampp\htdocs\field_visit\app\Controllers\Officer\OfficerController.php(89): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\field_visit\system\CodeIgniter.php(933): App\Controllers\Officer\OfficerController->AddOfficerPro()
+#6 C:\xampp\htdocs\field_visit\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Officer\OfficerController))
+#7 C:\xampp\htdocs\field_visit\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\field_visit\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\field_visit\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\field_visit\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2025-05-23 11:00:45 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'officer' in 'field list'
+[Method: POST, Route: AddOfficerPro]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `login_master` (`officer`, `phone_no`, `username`, `password`, `email`, `user_type`) VALUES (:officer:, :phone_no:, :username:, :password:, :email:, :user_type:)', [...], false)
+ 2 APPPATH\Controllers\Officer\OfficerController.php(89): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Officer\OfficerController->AddOfficerPro()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Officer\OfficerController))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-23 11:00:45 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'officer' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `login_master` (`officer`, `phone_no`, `username`, `password`, `email`, `user_type`) VALUES (\'निकी \', \'9999999999\', \'9999999999\', \'25Qbrb\', \'a@gmail.com\', 3)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `login_master` (`officer`, `phone_no`, `username`, `password`, `email`, `user_type`) VALUES (\'निकी \', \'9999999999\', \'9999999999\', \'25Qbrb\', \'a@gmail.com\', 3)')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `login_master` (`officer`, `phone_no`, `username`, `password`, `email`, `user_type`) VALUES (:officer:, :phone_no:, :username:, :password:, :email:, :user_type:)', [...], false)
+ 4 APPPATH\Controllers\Officer\OfficerController.php(89): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Officer\OfficerController->AddOfficerPro()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Officer\OfficerController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-23 11:00:45 --> [Caused by] mysqli_sql_exception: Unknown column 'officer' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `login_master` (`officer`, `phone_no`, `username`, `password`, `email`, `user_type`) VALUES (\'निकी \', \'9999999999\', \'9999999999\', \'25Qbrb\', \'a@gmail.com\', 3)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `login_master` (`officer`, `phone_no`, `username`, `password`, `email`, `user_type`) VALUES (\'निकी \', \'9999999999\', \'9999999999\', \'25Qbrb\', \'a@gmail.com\', 3)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `login_master` (`officer`, `phone_no`, `username`, `password`, `email`, `user_type`) VALUES (\'निकी \', \'9999999999\', \'9999999999\', \'25Qbrb\', \'a@gmail.com\', 3)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `login_master` (`officer`, `phone_no`, `username`, `password`, `email`, `user_type`) VALUES (:officer:, :phone_no:, :username:, :password:, :email:, :user_type:)', [...], false)
+ 5 APPPATH\Controllers\Officer\OfficerController.php(89): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Officer\OfficerController->AddOfficerPro()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Officer\OfficerController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-05-23 11:01:02 --> mysqli_sql_exception: Unknown column 'name' in 'field list' in C:\xampp\htdocs\field_visit\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\field_visit\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\xampp\htdocs\field_visit\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\xampp\htdocs\field_visit\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\xampp\htdocs\field_visit\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 C:\xampp\htdocs\field_visit\app\Controllers\Officer\OfficerController.php(97): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\field_visit\system\CodeIgniter.php(933): App\Controllers\Officer\OfficerController->AddOfficerPro()
+#6 C:\xampp\htdocs\field_visit\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Officer\OfficerController))
+#7 C:\xampp\htdocs\field_visit\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\field_visit\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\field_visit\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\field_visit\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2025-05-23 11:01:02 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'name' in 'field list'
+[Method: POST, Route: AddOfficerPro]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_officer` (`login_id`, `name`) VALUES (:login_id:, :name:)', [...], false)
+ 2 APPPATH\Controllers\Officer\OfficerController.php(97): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Officer\OfficerController->AddOfficerPro()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Officer\OfficerController))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-23 11:01:02 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'name' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tbl_officer` (`login_id`, `name`) VALUES (22, \'निकी \')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tbl_officer` (`login_id`, `name`) VALUES (22, \'निकी \')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_officer` (`login_id`, `name`) VALUES (:login_id:, :name:)', [...], false)
+ 4 APPPATH\Controllers\Officer\OfficerController.php(97): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Officer\OfficerController->AddOfficerPro()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Officer\OfficerController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-23 11:01:02 --> [Caused by] mysqli_sql_exception: Unknown column 'name' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `tbl_officer` (`login_id`, `name`) VALUES (22, \'निकी \')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tbl_officer` (`login_id`, `name`) VALUES (22, \'निकी \')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tbl_officer` (`login_id`, `name`) VALUES (22, \'निकी \')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_officer` (`login_id`, `name`) VALUES (:login_id:, :name:)', [...], false)
+ 5 APPPATH\Controllers\Officer\OfficerController.php(97): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Officer\OfficerController->AddOfficerPro()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Officer\OfficerController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-05-23 11:02:22 --> mysqli_sql_exception: Unknown column 'name' in 'field list' in C:\xampp\htdocs\field_visit\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\field_visit\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\xampp\htdocs\field_visit\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\xampp\htdocs\field_visit\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\xampp\htdocs\field_visit\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 C:\xampp\htdocs\field_visit\app\Controllers\Officer\OfficerController.php(97): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\field_visit\system\CodeIgniter.php(933): App\Controllers\Officer\OfficerController->AddOfficerPro()
+#6 C:\xampp\htdocs\field_visit\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Officer\OfficerController))
+#7 C:\xampp\htdocs\field_visit\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\field_visit\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\field_visit\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\field_visit\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2025-05-23 11:02:22 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'name' in 'field list'
+[Method: POST, Route: AddOfficerPro]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_officer` (`login_id`, `name`) VALUES (:login_id:, :name:)', [...], false)
+ 2 APPPATH\Controllers\Officer\OfficerController.php(97): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Officer\OfficerController->AddOfficerPro()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Officer\OfficerController))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-23 11:02:22 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'name' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tbl_officer` (`login_id`, `name`) VALUES (23, \'df\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tbl_officer` (`login_id`, `name`) VALUES (23, \'df\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_officer` (`login_id`, `name`) VALUES (:login_id:, :name:)', [...], false)
+ 4 APPPATH\Controllers\Officer\OfficerController.php(97): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Officer\OfficerController->AddOfficerPro()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Officer\OfficerController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-23 11:02:22 --> [Caused by] mysqli_sql_exception: Unknown column 'name' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `tbl_officer` (`login_id`, `name`) VALUES (23, \'df\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tbl_officer` (`login_id`, `name`) VALUES (23, \'df\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tbl_officer` (`login_id`, `name`) VALUES (23, \'df\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_officer` (`login_id`, `name`) VALUES (:login_id:, :name:)', [...], false)
+ 5 APPPATH\Controllers\Officer\OfficerController.php(97): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Officer\OfficerController->AddOfficerPro()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Officer\OfficerController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-23 11:14:01 --> CodeIgniter\Database\Exceptions\DatabaseException: You must set the database table to be used with your query.
+[Method: GET, Route: UpdateOfficer]
+in SYSTEMPATH\Database\BaseConnection.php on line 941.
+ 1 SYSTEMPATH\Model.php(714): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(920): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Officer\OfficerController.php(120): CodeIgniter\Model->__call('getUserById', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Officer\OfficerController->UpdateOfficer()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Officer\OfficerController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-23 11:14:27 --> ErrorException: Undefined variable $Userlist
+[Method: GET, Route: UpdateOfficer]
+in APPPATH\Controllers\Officer\OfficerController.php on line 123.
+ 1 APPPATH\Controllers\Officer\OfficerController.php(123): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $Userlist', 'C:\\xampp\\htdocs\\field_visit\\app\\Controllers\\Officer\\OfficerController.php', 123)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Officer\OfficerController->UpdateOfficer()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Officer\OfficerController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-23 11:16:05 --> ErrorException: Undefined array key "mobile"
+[Method: POST, Route: UpdateOfficerPro]
+in APPPATH\Controllers\Officer\OfficerController.php on line 148.
+ 1 APPPATH\Controllers\Officer\OfficerController.php(148): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "mobile"', 'C:\\xampp\\htdocs\\field_visit\\app\\Controllers\\Officer\\OfficerController.php', 148)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Officer\OfficerController->UpdateOfficerPro()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Officer\OfficerController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

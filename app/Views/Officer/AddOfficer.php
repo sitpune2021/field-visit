@@ -45,12 +45,43 @@
                                 <div class="text-danger" style="text-align: left; margin-left: 5px; color: #ec536c!important;">
                                     <?= $validation->getError('officer'); ?>
                                 </div>
-                            <?php } else if(session()->getFlashdata('errorOfficer')){ ?>
+                            <?php } ?>
+                        </div>
+
+                          <div class="mb-2 col-md-6">
+                              <label for="phone_no" class="form-label">व्हॉट्सॲप नंबर<span class="text-danger">*</span></label>
+                              <input type="text" id="phone_no" name="phone_no" class="form-control" placeholder="कृपया व्हॉट्सॲप नंबर प्रविष्ट करा" value="<?= set_value('phone_no'); ?>" maxlength="10" onInput="showUsername();">
+                              <?php  if(isset($validation)) {?>
+                                  <div class="text-danger" style="text-align: left;margin-left: 5px;color: #ec536c!important;">
+                                  <?= $error = $validation->getError('phone_no'); ?>
+                                  </div>
+                              <?php } else if(session()->getFlashdata('errorOfficer')){ ?>
                                 <div class="text-danger">
                                     <?= session()->getFlashdata('errorOfficer'); ?>
                                 </div>
                             <?php } ?>
-                        </div>
+                          </div>
+
+													<div class="mb-2 col-md-6">
+                              <label for="username" class="form-label">युजर नेम<span class="text-danger">*</span></label>
+                              <input type="text" id="username" name="username" class="form-control" placeholder="कृपया युजर नेम प्रविष्ट करा" value="<?= set_value('username'); ?>" maxlength="10" readonly>
+                              <?php  if(isset($validation)) {?>
+                                  <div class="text-danger" style="text-align: left;margin-left: 5px;color: #ec536c!important;">
+                                  <?= $error = $validation->getError('username'); ?>
+                                  </div>
+                              <?php }?>
+                          </div>
+
+													<div class="mb-2 col-md-6">
+                              <label for="email" class="form-label">ई-मेल <span class="text-danger">*</span></label>
+                              <input type="email" id="email" name="email" class="form-control" placeholder="कृपया ई-मेल प्रविष्ट करा" value="<?= set_value('email'); ?>">
+                              <?php  if(isset($validation)) {?>
+                                  <div class="text-danger" style="text-align: left;margin-left: 5px;color: #ec536c!important;">
+                                  <?= $error = $validation->getError('email'); ?>
+                                  </div>
+                              <?php }?>
+                          </div>
+
                         </div>
                         <div class="row">
                             <div class="text-start">
@@ -131,4 +162,10 @@ $('.AlphabetsOnlyWithSpace').keypress(function (e) {
         return false;
     }
 });
+
+function showUsername()
+{
+ var phoneNo=$("#phone_no").val();
+ $("#username").val(phoneNo);
+}
 </script>

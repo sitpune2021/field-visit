@@ -46,12 +46,34 @@
                                 <div class="text-danger" style="text-align: left; margin-left: 5px; color: #ec536c!important;">
                                     <?= $validation->getError('officer'); ?>
                                 </div>
-                            <?php } else if(session()->getFlashdata('errorOfficer')){ ?>
+                            <?php } ?>
+                        </div>
+
+                        <div class="mb-2 col-md-6">
+                              <label for="phone_no" class="form-label">व्हॉट्सॲप नंबर<span class="text-danger">*</span></label>
+                              <input type="text" id="phone_no" name="phone_no" class="form-control" placeholder="कृपया व्हॉट्सॲप नंबर प्रविष्ट करा" value="<?= $list['mobile'] ?? set_value('mobile'); ?>" maxlength="10" onInput="showUsername();" disabled>
+                              <input type="hidden" id="phone_no" name="phone_no" class="form-control" placeholder="कृपया व्हॉट्सॲप नंबर प्रविष्ट करा" value="<?= $list['mobile'] ?? set_value('mobile'); ?>" maxlength="10" onInput="showUsername();" >
+                              <?php  if(isset($validation)) {?>
+                                  <div class="text-danger" style="text-align: left;margin-left: 5px;color: #ec536c!important;">
+                                  <?= $error = $validation->getError('phone_no'); ?>
+                                  </div>
+                              <?php } else if(session()->getFlashdata('errorOfficer')){ ?>
                                 <div class="text-danger">
                                     <?= session()->getFlashdata('errorOfficer'); ?>
                                 </div>
                             <?php } ?>
-                        </div>
+                          </div>
+
+													<div class="mb-2 col-md-6">
+                              <label for="email" class="form-label">ई-मेल <span class="text-danger">*</span></label>
+                              <input type="email" id="email" name="email" class="form-control" placeholder="कृपया ई-मेल प्रविष्ट करा" value="<?= $list['email'] ?? set_value('email'); ?>">
+                              <?php  if(isset($validation)) {?>
+                                  <div class="text-danger" style="text-align: left;margin-left: 5px;color: #ec536c!important;">
+                                  <?= $error = $validation->getError('email'); ?>
+                                  </div>
+                              <?php }?>
+                          </div>
+
                         </div>
                         <div class="row">
                             <div class="text-start">
@@ -89,7 +111,7 @@
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-light text-dark me-2" data-bs-dismiss="modal">Close</button>
-                         <a href="<?= base_url(); ?>Officer"><input class="btn btn-danger btn-square" type="button" value="Cancel"></a>
+                         <a href="<?= base_url(); ?>Officer"><input class="btn btn-danger btn-square" type="button" value="Ok"></a>
                     </div>
                 </div>
             </div>

@@ -60,7 +60,7 @@
                         </div>
 
                        <div class="col-md-6">
-                          <label class="form-label" for="exampleFormControlInput1">कार्यालय <span class="mandatory">*</span></label>
+                          <label class="form-label" for="exampleFormControlInput1">कार्यालय प्रकार<span class="mandatory">*</span></label>
                           <?php $officeTypeid = $list['office_type'] ?? set_value('office_type'); ?>
                             <select class="form-select" aria-label="Default select example" name="office_type" id="office_type">
                                 <option value="">कार्यालय प्रकार निवडा</option>

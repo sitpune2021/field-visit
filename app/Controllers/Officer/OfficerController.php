@@ -40,38 +40,67 @@ class OfficerController extends BaseController
         $validationRules = 
         [
             'officer'  => 'required',
+            'phone_no' => 'required',
+            'email'    => 'required',
+
         ];
         $validationMessages = 
         [
             'officer'  => [
                 'required'     => 'कृपया अधिकारी प्रविष्ठ करा.'
-            ]
+            ],
+            'phone_no'      => ['required' => 'कृपया फोन नंबर प्रविष्ट करा.'],
+            'email'         => ['required' => 'कृपया ई-मेल प्रविष्ट करा.']
         ];
     
         if ($this->validate($validationRules, $validationMessages))
         {
-            $officer  = $_POST['officer'];
-            $existingofficer = $db->table('tbl_officer')
-                ->where('officer', $officer)
+            $phone_no  = $_POST['phone_no'];
+            $existingofficer = $db->table('login_master')
+                ->where('mobile', $phone_no)
                 ->where('isdeleted', 0)
                 ->get()
                 ->getRow();
             if ($existingofficer) {
-                session()->setFlashdata('errorOfficer', 'हा अधिकारी आधीच अस्तित्वात आहे.');
+                session()->setFlashdata('errorOfficer', 'हा फोन नंबर आधीच अस्तित्वात आहे.');
                 return redirect()->to('/AddOfficer')->withInput();
             }
+            
+	        // Generate random password with at least 1 uppercase, 1 lowercase, 1 digit, and total 6 characters
+            $uppercase = chr(rand(65, 90)); // A-Z
+            $lowercase = chr(rand(97, 122)); // a-z
+            $digit     = chr(rand(48, 57));  // 0-9
+            $allChars = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
+            $remaining = '';
+            for ($i = 0; $i < 3; $i++) {
+                $remaining .= $allChars[rand(0, strlen($allChars) - 1)];
+            }
+            $password = str_shuffle($uppercase . $lowercase . $digit . $remaining);
 
+            $builder1 = $db->table('login_master');
+            $loginData = array(
+                'name'     => $_POST['officer'],
+                'mobile'   => $_POST['phone_no'],
+                'username' => $_POST['phone_no'],
+                'password' => $password,
+                'email'    => $_POST['email'],
+                'user_type'=> 2
+            );
+            $result = $builder1->insert($loginData);
+            
+            $loginId = $db->insertID();
             $builder = $db->table('tbl_officer');
-			
-			$officerData = array(
-			    'officer'  => $_POST['officer']
-			);
-			
+            $officerData = array(
+                'login_id' => $loginId,
+                'officer'  => $_POST['officer'],
+                'mobile'   => $_POST['phone_no'],
+                'email'    => $_POST['email']
+            );
+            $result = $builder->insert($officerData);
+
 			$officermsg = "अधिकारी यशस्विरित्या अ‍ॅड झाला आहे.";
 			session()->set('officermsg',$officermsg); 
-            $builder->insert($officerData);
             return $this->response->redirect(site_url('/AddOfficer'));
-            
         }else
         {
             $data['officer_list'] = $this->OfficerModel->getOfficerList();
@@ -81,6 +110,7 @@ class OfficerController extends BaseController
             ]);
         }
     }
+
 
     /********* Update Officer - Nikita Nanaware *************/
 	public function UpdateOfficer()
@@ -103,19 +133,21 @@ class OfficerController extends BaseController
 		$validationRules = 
         [
             'officer'  => 'required',
+            'phone_no' => 'required',
+            'email'    => 'required',
         ];
         $validationMessages = 
         [
-            'officer'  => [
-                'required'     => 'कृपया अधिकारी प्रविष्ठ करा.'
-            ]
+            'officer'   => ['required' => 'कृपया अधिकारी प्रविष्ठ करा.'],
+            'phone_no'  => ['required' => 'कृपया फोन नंबर प्रविष्ट करा.'],
+            'email'     => ['required' => 'कृपया ई-मेल प्रविष्ट करा.']
         ];
     
         if ($this->validate($validationRules, $validationMessages))
         {
-            $officer  = $_POST['officer'];
+            $mobile  = $_POST['phone_no'];
             $existingofficer = $db->table('tbl_officer')
-                ->where('officer', $officer)
+                ->where('mobile', $mobile)
                 ->where('isdeleted', 0)
                 ->where('id !=', $editId)
                 ->get()
@@ -134,7 +166,9 @@ class OfficerController extends BaseController
 
             $builder = $db->table('tbl_officer');
 			$officerData = array(
-			    'officer'  => $_POST['officer']
+			    'officer' => $_POST['officer'],
+                'mobile'  => $_POST['phone_no'],
+                'email'   => $_POST['email']
 			);
 
 			$officermsg = "अधिकारी यशस्विरित्या अपडेट झाला आहे.";

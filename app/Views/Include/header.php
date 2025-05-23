@@ -131,6 +131,20 @@
                   </svg>
                   <h6 class="f-w-600">अधिकारी </h6></a>
 			        </li>
+
+              <li class="sidebar-main-title">
+                <div>
+                  <h5 class="f-w-700 sidebar-title pt-3">प्रश्न संच</h5>
+                </div>
+              </li>
+              
+              <li class="sidebar-list"><a class="sidebar-link" href="<?= base_url();?>Questionset">
+                  <svg class="stroke-icon">
+                    <use href="https://admin.pixelstrap.net/admiro/assets/svg/iconly-sprite.svg#Paper"></use>
+                  </svg>
+                  <h6 class="f-w-600">प्रश्न संच </h6></a>
+			        </li>
+
             </ul>
           </div>
           <div class="right-arrow" id="right-arrow"><i data-feather="arrow-right"></i></div>

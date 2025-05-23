@@ -38,4 +38,11 @@ $routes->match(['get','post'],'/AddOfficer'                     , 'Officer\Offic
 $routes->match(['get','post'],'/AddOfficerPro'                  , 'Officer\OfficerController::AddOfficerPro');
 $routes->match(['get','post'],'/UpdateOfficer'                  , 'Officer\OfficerController::UpdateOfficer');
 $routes->match(['get','post'],'/UpdateOfficerPro'               , 'Officer\OfficerController::UpdateOfficerPro');
+
+$routes->match(['get','post'],'/Questionset'                    , 'Questionset\QuestionsetController::Questionset');
+$routes->match(['get','post'],'/AddQuestionset'                 , 'Questionset\QuestionsetController::AddQuestionset');
+$routes->match(['get','post'],'/AddQuestionsetPro'              , 'Questionset\QuestionsetController::AddQuestionsetPro');
+$routes->match(['get','post'],'/updateQuestionset'              , 'Questionset\QuestionsetController::updateQuestionset');
+$routes->match(['get','post'],'/UpdateQuestionsetPro'           , 'Questionset\QuestionsetController::UpdateQuestionsetPro');
+
 /*******************************************************************************************************/
