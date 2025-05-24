@@ -58,8 +58,8 @@
                             <?php } ?>
                         </div>
                         <div class="col-md-6">
-                          <label class="form-label" for="exampleFormControlInput1">अधिकारी <span class="mandatory">*</span></label>
-                          <input class="form-control AlphabetsOnlyWithSpace" id="officer" name="officer" type="text" placeholder="अधिकारी प्रविष्ठ करा." value="<?= $list['officer'] ?? set_value('officer'); ?>">
+                          <label class="form-label" for="exampleFormControlInput1">अधिकाऱ्याचे नाव <span class="mandatory">*</span></label>
+                          <input class="form-control AlphabetsOnlyWithSpace" id="officer" name="officer" type="text" placeholder="अधिकाऱ्याचे नाव प्रविष्ठ करा." value="<?= $list['officer'] ?? set_value('officer'); ?>">
                             <?php if (isset($validation) && $validation->hasError('officer')){ ?>
                                 <div class="text-danger" style="text-align: left; margin-left: 5px; color: #ec536c!important;">
                                     <?= $validation->getError('officer'); ?>

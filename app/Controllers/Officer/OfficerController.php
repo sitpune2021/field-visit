@@ -150,7 +150,7 @@ class OfficerController extends BaseController
         ];
         $validationMessages = 
         [
-            'office_type'  => ['required'     => 'कृपया कार्यालयाचा प्रकार निवडा.'],
+            'office_type'  => ['required' => 'कृपया कार्यालयाचा प्रकार निवडा.'],
             'officer'   => ['required' => 'कृपया अधिकारी प्रविष्ठ करा.'],
             'phone_no'  => ['required' => 'कृपया फोन नंबर प्रविष्ट करा.'],
             'email'     => ['required' => 'कृपया ई-मेल प्रविष्ट करा.']
