@@ -1,0 +1,116 @@
+ERROR - 2025-05-24 05:27:18 --> mysqli_sql_exception: Table 'field_visit.tbl_users' doesn't exist in C:\xampp\htdocs\field_visit\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\field_visit\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT * FROM t...', 0)
+#1 C:\xampp\htdocs\field_visit\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM t...')
+#2 C:\xampp\htdocs\field_visit\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM t...')
+#3 C:\xampp\htdocs\field_visit\app\Controllers\API\Login.php(46): CodeIgniter\Database\BaseConnection->query('SELECT * FROM t...')
+#4 C:\xampp\htdocs\field_visit\system\CodeIgniter.php(933): App\Controllers\API\Login->do_login()
+#5 C:\xampp\htdocs\field_visit\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\API\Login))
+#6 C:\xampp\htdocs\field_visit\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\field_visit\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\field_visit\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#9 C:\xampp\htdocs\field_visit\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#10 {main}
+CRITICAL - 2025-05-24 05:27:18 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'field_visit.tbl_users' doesn't exist
+[Method: POST, Route: do_login]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 APPPATH\Controllers\API\Login.php(46): CodeIgniter\Database\BaseConnection->query('SELECT * FROM tbl_users WHERE login_id = 25')
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\API\Login->do_login()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\API\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-24 05:27:18 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'field_visit.tbl_users' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM tbl_users WHERE login_id = 25')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM tbl_users WHERE login_id = 25')
+ 3 APPPATH\Controllers\API\Login.php(46): CodeIgniter\Database\BaseConnection->query('SELECT * FROM tbl_users WHERE login_id = 25')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\API\Login->do_login()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\API\Login))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-24 05:27:18 --> [Caused by] mysqli_sql_exception: Table 'field_visit.tbl_users' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT * FROM tbl_users WHERE login_id = 25', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM tbl_users WHERE login_id = 25')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM tbl_users WHERE login_id = 25')
+ 4 APPPATH\Controllers\API\Login.php(46): CodeIgniter\Database\BaseConnection->query('SELECT * FROM tbl_users WHERE login_id = 25')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\API\Login->do_login()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\API\Login))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-24 06:39:38 --> ErrorException: Undefined variable $officeTypeD
+[Method: GET, Route: AddOfficer]
+in APPPATH\Views\Officer\AddOfficer.php on line 47.
+ 1 APPPATH\Views\Officer\AddOfficer.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $officeTypeD', 'C:\\xampp\\htdocs\\field_visit\\app\\Views\\Officer\\AddOfficer.php', 47)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\field_visit\\app\\Views\\Officer\\AddOfficer.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('Officer/AddOfficer', [], true)
+ 5 APPPATH\Controllers\Officer\OfficerController.php(32): view('Officer/AddOfficer')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Officer\OfficerController->AddOfficer()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Officer\OfficerController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-24 06:43:17 --> ErrorException: Undefined variable $officeTypeD
+[Method: GET, Route: AddOfficer]
+in APPPATH\Views\Officer\AddOfficer.php on line 47.
+ 1 APPPATH\Views\Officer\AddOfficer.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $officeTypeD', 'C:\\xampp\\htdocs\\field_visit\\app\\Views\\Officer\\AddOfficer.php', 47)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\field_visit\\app\\Views\\Officer\\AddOfficer.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('Officer/AddOfficer', [], true)
+ 5 APPPATH\Controllers\Officer\OfficerController.php(35): view('Officer/AddOfficer', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Officer\OfficerController->AddOfficer()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Officer\OfficerController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-24 06:43:19 --> ErrorException: Undefined variable $officeTypeD
+[Method: GET, Route: AddOfficer]
+in APPPATH\Views\Officer\AddOfficer.php on line 47.
+ 1 APPPATH\Views\Officer\AddOfficer.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $officeTypeD', 'C:\\xampp\\htdocs\\field_visit\\app\\Views\\Officer\\AddOfficer.php', 47)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\field_visit\\app\\Views\\Officer\\AddOfficer.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('Officer/AddOfficer', [], true)
+ 5 APPPATH\Controllers\Officer\OfficerController.php(35): view('Officer/AddOfficer', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Officer\OfficerController->AddOfficer()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Officer\OfficerController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-24 07:00:05 --> ErrorException: Undefined variable $officeD
+[Method: GET, Route: Officer]
+in APPPATH\Views\Officer\Officer.php on line 57.
+ 1 APPPATH\Views\Officer\Officer.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $officeD', 'C:\\xampp\\htdocs\\field_visit\\app\\Views\\Officer\\Officer.php', 57)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\field_visit\\app\\Views\\Officer\\Officer.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('Officer/Officer', [], true)
+ 5 APPPATH\Controllers\Officer\OfficerController.php(27): view('Officer/Officer', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Officer\OfficerController->Officer()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Officer\OfficerController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-24 07:01:40 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: Officer]
+in APPPATH\Views\Officer\Officer.php on line 61.
+ 1 APPPATH\Views\Officer\Officer.php(61): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\field_visit\\app\\Views\\Officer\\Officer.php', 61)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\field_visit\\app\\Views\\Officer\\Officer.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('Officer/Officer', [], true)
+ 5 APPPATH\Controllers\Officer\OfficerController.php(27): view('Officer/Officer', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Officer\OfficerController->Officer()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Officer\OfficerController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

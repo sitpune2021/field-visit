@@ -41,12 +41,6 @@ class Login extends BaseController
 			
 			if(!empty($result))
 			{
-			    $loginId=$result['id'];
-			    $db = db_connect('default');
-                $query = $db->query("SELECT * FROM tbl_users WHERE login_id = $loginId");
-                $user = $query->getRowArray();
-                $UserId = $user['id'];
-                $result['user_id'] = $UserId;
 				$response = array('status'=>'success','message'=>'Successfully logged In.', 'details'=>$result);
 		    }else
 			{
@@ -57,8 +51,7 @@ class Login extends BaseController
 		{
 			$response = array('status'=>'error','message'=>'Parameter Missing.');
 		}
-		echo json_encode($response);
-
+		echo json_encode($response, JSON_UNESCAPED_UNICODE);
 	}
 	
 }

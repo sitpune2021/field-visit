@@ -38,6 +38,26 @@
                        <?php echo form_open('/AddOfficerPro', array('autocomplete' => 'off','class' => 'p-0 row')); ?>
 
                        <div class="row mb-4 mt-3">
+
+                       <div class="col-md-6 mb-2">
+                          <label class="form-label" for="exampleFormControlInput1">कार्यालय प्रकार<span class="mandatory">*</span></label>
+                          <?php $officeTypeid = $list['office_type'] ?? set_value('office_type'); ?>
+                            <select class="form-select" aria-label="Default select example" name="office_type" id="office_type">
+                                <option value="">कार्यालय प्रकार निवडा</option>
+                                <?php foreach($officeTypeD as $officeType) { ?>
+                                    <option value="<?= $officeType['id']; ?>" 
+                                        <?php if($officeTypeid == $officeType['id']) { echo 'selected'; } ?>>
+                                        <?= $officeType['office_type']; ?>
+                                    </option>
+                                <?php } ?>
+                            </select>
+                            <?php if (isset($validation) && $validation->hasError('office_type')){ ?>
+                                <div class="text-danger" style="text-align: left; margin-left: 5px; color: #ec536c!important;">
+                                    <?= $validation->getError('office_type'); ?>
+                                </div>
+                            <?php } ?>
+                        </div>
+
                         <div class="col-md-6">
                           <label class="form-label" for="exampleFormControlInput1">अधिकारी <span class="mandatory">*</span></label>
                           <input class="form-control AlphabetsOnlyWithSpace" id="officer" name="officer" type="text" placeholder="अधिकारी प्रविष्ठ करा." value="<?= set_value('officer'); ?>">

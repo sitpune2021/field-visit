@@ -45,4 +45,8 @@ $routes->match(['get','post'],'/AddQuestionsetPro'              , 'Questionset\Q
 $routes->match(['get','post'],'/updateQuestionset'              , 'Questionset\QuestionsetController::updateQuestionset');
 $routes->match(['get','post'],'/UpdateQuestionsetPro'           , 'Questionset\QuestionsetController::UpdateQuestionsetPro');
 
-/*******************************************************************************************************/
+/***********************************  API - Nikita Nanaware ****************************************/
+$routes->match(['get','post'],'/do_login'                       , 'API\Login::do_login');
+$routes->match(['get','post'],'/taluka_list'                    , 'API\Taluka::taluka_list');
+$routes->match(['get','post'],'/office_type_list'               , 'API\OfficeType::office_type_list');
+$routes->match(['get','post'],'/office_list'                    , 'API\Office::office_list');

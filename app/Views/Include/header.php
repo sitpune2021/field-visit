@@ -109,25 +109,26 @@
               
               <li class="sidebar-list"><a class="sidebar-link" href="<?= base_url();?>Taluka">
                   <svg class="stroke-icon">
-                    <use href="<?= base_url(); ?>/public/Backend-Assets/svg/iconly-sprite.svg#Paper"></use>
+                    <use href="<?= base_url(); ?>/public/Backend-Assets/svg/iconly-sprite.svg#Discovery"></use>
                   </svg>
                   <h6 class="f-w-600">तालुका </h6></a>
 			        </li>
               <li class="sidebar-list"><a class="sidebar-link" href="<?= base_url();?>officeTypeList">
                   <svg class="stroke-icon">
-                    <use href="<?= base_url(); ?>/public/Backend-Assets/svg/iconly-sprite.svg#Paper"></use>
+                    <use href="<?= base_url(); ?>/public/Backend-Assets/svg/iconly-sprite.svg#Category"></use>
+
                   </svg>
                   <h6 class="f-w-600">कार्यालय प्रकार  </h6></a>
 			        </li>
               <li class="sidebar-list"><a class="sidebar-link" href="<?= base_url();?>officeList">
                   <svg class="stroke-icon">
-                    <use href="<?= base_url(); ?>/public/Backend-Assets/svg/iconly-sprite.svg#Paper"></use>
+                    <use href="<?= base_url(); ?>/public/Backend-Assets/svg/iconly-sprite.svg#Work"></use>
                   </svg>
                   <h6 class="f-w-600">कार्यालय </h6></a>
 			        </li>
               <li class="sidebar-list"><a class="sidebar-link" href="<?= base_url();?>Officer">
                   <svg class="stroke-icon">
-                    <use href="<?= base_url(); ?>/public/Backend-Assets/svg/iconly-sprite.svg#Paper"></use>
+                    <use href="<?= base_url(); ?>/public/Backend-Assets/svg/iconly-sprite.svg#Profile"></use>
                   </svg>
                   <h6 class="f-w-600">अधिकारी </h6></a>
 			        </li>
@@ -140,7 +141,7 @@
               
               <li class="sidebar-list"><a class="sidebar-link" href="<?= base_url();?>Questionset">
                   <svg class="stroke-icon">
-                    <use href="<?= base_url(); ?>/public/Backend-Assets/svg/iconly-sprite.svg#Paper"></use>
+                    <use href="<?= base_url(); ?>/public/Backend-Assets/svg/iconly-sprite.svg#Document"></use>
                   </svg>
                   <h6 class="f-w-600">प्रश्न संच </h6></a>
 			        </li>

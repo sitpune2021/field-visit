@@ -607,3 +607,21 @@ in APPPATH\Controllers\Officer\OfficerController.php on line 148.
  5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
  6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
  7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-23 12:38:09 --> ErrorException: Undefined array key "name"
+[Method: GET, Route: Officer]
+in APPPATH\Views\Include\header.php on line 62.
+ 1 APPPATH\Views\Include\header.php(62): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "name"', 'C:\\xampp\\htdocs\\field_visit\\app\\Views\\Include\\header.php', 62)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\field_visit\\app\\Views\\Include\\header.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('Include/header', [], true)
+ 5 APPPATH\Views\Officer\Officer.php(12): view('Include/header')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\field_visit\\app\\Views\\Officer\\Officer.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('Officer/Officer', [], true)
+ 9 APPPATH\Controllers\Officer\OfficerController.php(25): view('Officer/Officer', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Officer\OfficerController->Officer()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Officer\OfficerController))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

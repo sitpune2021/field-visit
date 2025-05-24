@@ -18,4 +18,10 @@ class OfficeModel extends Model
         return $query->getRowArray();
 	}
 
+    public function getOfficeByTypeAndTaluka($office_type_id,$taluka_id)
+    {
+        $query = $this->db->query("SELECT * FROM tbl_office WHERE office_type = $office_type_id AND taluka=$taluka_id AND isdeleted = 0");
+        return $query->getResultArray();
+	}
+
 }

@@ -39,6 +39,7 @@
                             <tr>
                                 <th>अ.क्र.</th>
                                 <th>अधिकारी </th>
+                                <th>कार्यालय प्रकार </th>
                                 <th>व्हॉट्सॲप नंबर </th>
                                 <th>ई-मेल </th>
                                 <th>दिनांक </th>
@@ -49,10 +50,15 @@
                         <?php 
                             $count=1;$status=''; 
                             foreach($officer_list as $row){ 
+                              $db = db_connect('default');
+                              $officeType = $row['office_type'];
+                              $query = $db->query("SELECT office_type FROM tbl_office_type WHERE id = $officeType");
+                              $officeD = $query->getRowArray();
                         ?>
                         <tr>
                             <td><?=$count;?></td>
                             <td><?=$row['officer'];?></td>
+                            <td><?=$officeD['office_type'];?></td>
                             <td><?=$row['mobile'];?></td>
                             <td><?=$row['email'];?></td>
                             <td><?=date("d M Y h:i:s",strtotime($row['created_at']));?></td>

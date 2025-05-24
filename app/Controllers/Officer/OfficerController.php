@@ -2,6 +2,7 @@
 namespace App\Controllers\Officer;
 use App\Controllers\BaseController;
 use App\Models\Officer\OfficerModel;
+use App\Models\OfficeType\OfficeTypeModel;
 
 class OfficerController extends BaseController
 {
@@ -13,6 +14,7 @@ class OfficerController extends BaseController
         $this->session->start();
         $db = db_connect();
         $this->OfficerModel = new OfficerModel($db);
+        $this->OfficeTypeModel = new OfficeTypeModel($db);
     }
    
     /********** Officer List - Nikita Nanaware *************/
@@ -29,7 +31,8 @@ class OfficerController extends BaseController
 
     public function AddOfficer()
     {
-        return view('Officer/AddOfficer');
+        $data['officeTypeD'] = $this->OfficeTypeModel->getOfficeTypeList();
+        return view('Officer/AddOfficer',$data);
     }
 
     public function AddOfficerPro()
@@ -39,13 +42,16 @@ class OfficerController extends BaseController
         $validation = \Config\Services::validation();
         $validationRules = 
         [
-            'officer'  => 'required',
-            'phone_no' => 'required',
-            'email'    => 'required',
-
+            'office_type'  => 'required',
+            'officer'      => 'required',
+            'phone_no'     => 'required',
+            'email'        => 'required',
         ];
         $validationMessages = 
         [
+            'office_type'  => [
+                'required'     => 'कृपया कार्यालयाचा प्रकार निवडा.'
+            ],
             'officer'  => [
                 'required'     => 'कृपया अधिकारी प्रविष्ठ करा.'
             ],
@@ -55,16 +61,16 @@ class OfficerController extends BaseController
     
         if ($this->validate($validationRules, $validationMessages))
         {
-            $phone_no  = $_POST['phone_no'];
-            $existingofficer = $db->table('login_master')
-                ->where('mobile', $phone_no)
-                ->where('isdeleted', 0)
-                ->get()
-                ->getRow();
-            if ($existingofficer) {
-                session()->setFlashdata('errorOfficer', 'हा फोन नंबर आधीच अस्तित्वात आहे.');
-                return redirect()->to('/AddOfficer')->withInput();
-            }
+            // $phone_no  = $_POST['phone_no'];
+            // $existingofficer = $db->table('login_master')
+            //     ->where('mobile', $phone_no)
+            //     ->where('isdeleted', 0)
+            //     ->get()
+            //     ->getRow();
+            // if ($existingofficer) {
+            //     session()->setFlashdata('errorOfficer', 'हा फोन नंबर आधीच अस्तित्वात आहे.');
+            //     return redirect()->to('/AddOfficer')->withInput();
+            // }
             
 	        // Generate random password with at least 1 uppercase, 1 lowercase, 1 digit, and total 6 characters
             $uppercase = chr(rand(65, 90)); // A-Z
@@ -91,10 +97,11 @@ class OfficerController extends BaseController
             $loginId = $db->insertID();
             $builder = $db->table('tbl_officer');
             $officerData = array(
-                'login_id' => $loginId,
-                'officer'  => $_POST['officer'],
-                'mobile'   => $_POST['phone_no'],
-                'email'    => $_POST['email']
+                'login_id'    => $loginId,
+                'office_type' => $_POST['office_type'],
+                'officer'     => $_POST['officer'],
+                'mobile'      => $_POST['phone_no'],
+                'email'       => $_POST['email']
             );
             $result = $builder->insert($officerData);
 
@@ -103,10 +110,12 @@ class OfficerController extends BaseController
             return $this->response->redirect(site_url('/AddOfficer'));
         }else
         {
+            $data['officeTypeD'] = $this->OfficeTypeModel->getOfficeTypeList();
             $data['officer_list'] = $this->OfficerModel->getOfficerList();
             return view('Officer/AddOfficer', [
                 'validation' => $validation,
-                'officer_list' => $data['officer_list']
+                'officer_list' => $data['officer_list'],
+                'officeTypeD' => $data['officeTypeD']
             ]);
         }
     }
@@ -117,10 +126,12 @@ class OfficerController extends BaseController
     {
 		$id = base64_decode($_GET['ID']);
 		$list = $this->OfficerModel->getOfficerById($id);
+        $data['officeTypeD'] = $this->OfficeTypeModel->getOfficeTypeList();
 		$data['officer_list'] = $this->OfficerModel->getOfficerList();
         return view('Officer/UpdateOfficer', [
         'list' => $list, 
-        'officer_list' => $data['officer_list']
+        'officer_list' => $data['officer_list'],
+        'officeTypeD' => $data['officeTypeD']
     ]);
     }
 	
@@ -132,12 +143,14 @@ class OfficerController extends BaseController
         $validation = \Config\Services::validation();
 		$validationRules = 
         [
+            'office_type'  => 'required',
             'officer'  => 'required',
             'phone_no' => 'required',
             'email'    => 'required',
         ];
         $validationMessages = 
         [
+            'office_type'  => ['required'     => 'कृपया कार्यालयाचा प्रकार निवडा.'],
             'officer'   => ['required' => 'कृपया अधिकारी प्रविष्ठ करा.'],
             'phone_no'  => ['required' => 'कृपया फोन नंबर प्रविष्ट करा.'],
             'email'     => ['required' => 'कृपया ई-मेल प्रविष्ट करा.']
@@ -145,27 +158,28 @@ class OfficerController extends BaseController
     
         if ($this->validate($validationRules, $validationMessages))
         {
-            $mobile  = $_POST['phone_no'];
-            $existingofficer = $db->table('tbl_officer')
-                ->where('mobile', $mobile)
-                ->where('isdeleted', 0)
-                ->where('id !=', $editId)
-                ->get()
-                ->getRow();
+            // $mobile  = $_POST['phone_no'];
+            // $existingofficer = $db->table('tbl_officer')
+            //     ->where('mobile', $mobile)
+            //     ->where('isdeleted', 0)
+            //     ->where('id !=', $editId)
+            //     ->get()
+            //     ->getRow();
     
-            if ($existingofficer) {
-                $data['list'] = $this->OfficerModel->getOfficerById($editId);
-                session()->setFlashdata('errorOfficer', 'हा अधिकारी आधीच अस्तित्वात आहे.');
-                return view('Officer/UpdateOfficer', [
-                    'validation' => $validation,
-                    'errorOfficer' => 'हा अधिकारी आधीच अस्तित्वात आहे.',
-                    'id' => $editId,
-                    'list' => $data['list']
-                ]);
-            }
+            // if ($existingofficer) {
+            //     $data['list'] = $this->OfficerModel->getOfficerById($editId);
+            //     session()->setFlashdata('errorOfficer', 'हा अधिकारी आधीच अस्तित्वात आहे.');
+            //     return view('Officer/UpdateOfficer', [
+            //         'validation' => $validation,
+            //         'errorOfficer' => 'हा अधिकारी आधीच अस्तित्वात आहे.',
+            //         'id' => $editId,
+            //         'list' => $data['list']
+            //     ]);
+            // }
 
             $builder = $db->table('tbl_officer');
 			$officerData = array(
+                'office_type' => $_POST['office_type'],
 			    'officer' => $_POST['officer'],
                 'mobile'  => $_POST['phone_no'],
                 'email'   => $_POST['email']
@@ -177,9 +191,10 @@ class OfficerController extends BaseController
 			return $this->response->redirect(site_url('/UpdateOfficer?ID=' . base64_encode($editId)));
 		}else
         {
+            $data['officeTypeD'] = $this->OfficeTypeModel->getOfficeTypeList();
             $data['officer_list'] = $this->OfficerModel->getOfficerList();
             $list = $this->OfficerModel->getOfficerById($editId);
-			return view('Officer/UpdateOfficer', ['validation' => $validation,'list' => $list,'officer_list' => $data['officer_list']]);
+			return view('Officer/UpdateOfficer', ['validation' => $validation,'list' => $list,'officer_list' => $data['officer_list'],'officeTypeD' => $data['officeTypeD']]);
         }
     }
 	

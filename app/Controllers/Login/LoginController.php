@@ -51,10 +51,10 @@ class LoginController extends BaseController
                 {
                     return $this->response->redirect(site_url('adminDashboard')); 
                 }
-                else if($user_type == 2)
-                {
-                    return $this->response->redirect(site_url('employeeDashboard')); 
-                }
+                // else if($user_type == 2)
+                // {
+                //     return $this->response->redirect(site_url('employeeDashboard')); 
+                // }
                 else{
                     //session distroy
                     return $this->response->redirect(site_url('/')); 
